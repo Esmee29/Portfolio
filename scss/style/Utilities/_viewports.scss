@@ -1,0 +1,287 @@
+//base//
+.page-content{
+    @include viewport(large) {   
+        margin: 6px;
+        }
+        @include viewport(x-large) {   
+            margin: 6px;
+            }       
+}
+p{
+    @include viewport(small) {
+        font-size: 1rem;
+    }
+    @include viewport(medium) {   
+    font-size: 1rem;
+    }      
+}
+h1{
+    @include viewport(small) {
+        font-size: 2rem;
+    }
+    @include viewport(medium) {   
+    font-size: 3rem;
+    }      
+}
+h2{
+    @include viewport(small) {
+        font-size: 2rem;
+    }
+    @include viewport(medium) {   
+    font-size: 2rem;
+    }      
+}
+h3{
+    @include viewport(small) {
+        font-size: 2rem;
+    }
+    @include viewport(medium) {   
+    font-size: 2rem;
+    }      
+}
+h4{
+    @include viewport(small) {
+        font-size: 1rem;
+    }
+    @include viewport(medium) {   
+    font-size: 1.5rem;
+    }      
+}
+h5{
+    @include viewport(small) {
+        font-size: 1rem;
+    }
+    @include viewport(medium) {   
+    font-size: 1.5rem;
+    }
+    @include viewport(large) {   
+        font-size: 1rem;
+        }      
+    @include viewport(x-large) {   
+        font-size: 1rem;
+        } 
+}
+//about//
+.about-container {
+    @include viewport(small) { 
+        margin: 20px 10px;
+    }   
+}
+.about-container {
+    margin: 120px 1rem 0 1rem;
+    border-top: 3px solid #fff;
+    border: 1ex solid #185ad4;
+    padding: 20px;  
+}
+.about-container-tech{
+    @include viewport(small) { 
+        margin: 20px 10px;
+    } 
+}
+
+.about p{
+    @include viewport(small) {
+        font-size: 1rem;
+        }
+        .about-container {
+            margin: 120px 1rem 0 1rem;
+            border-top: 3px solid #fff;
+            border: 1ex solid #185ad4;
+            padding: 20px;
+            @include viewport(small) { 
+                margin: 20px 10px;
+            }   
+        .about-container-tech{
+            @include viewport(small) { 
+                margin: 20px 10px;
+            } 
+        }
+
+        .about-tools{
+            @include viewport(small) {
+                display: flex;
+                flex-wrap: wrap;
+             }
+            @include viewport(medium) { 
+                display: flex;
+                flex-wrap: wrap; 
+            }            
+        }
+        .adobe{
+            @include viewport(small) {
+                height:50px;
+                width: 50px;
+                margin-left: 25px;
+             }
+             @include viewport(medium) {
+                height: 60px;
+            width: 60px;
+            margin-left: 25px;
+             }              
+        }
+     }
+    @include viewport(medium) { 
+        font-size: 1.2rem; 
+    }        
+}
+.about-tools{
+    @include viewport(small) {
+        display: flex;
+        flex-wrap: wrap;
+     }
+    @include viewport(medium) { 
+        display: flex;
+        flex-wrap: wrap; 
+    } }           
+.adobe{
+    @include viewport(small) {
+        height:50px;
+        width: 50px;
+        margin-left: 25px;
+     }
+     @include viewport(medium) {
+        height: 60px;
+    width: 60px;
+    margin-left: 25px;
+     }
+     @include viewport(large) {
+    margin-left: 15px
+     }
+     @include viewport(x-large) {
+        margin-left: 15px
+         }               
+}
+//contact//
+
+.contact-container {
+    @include viewport(small) {
+        margin: 20px 10px;
+    }
+    @include viewport(medium) {
+        margin: 20px 10px;
+    }
+    @include viewport(x-large){    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        margin: 5% 1rem;
+    }
+    
+}
+
+.get-in-touch-form{
+    @include viewport(small){
+        margin: 0 10px 20px
+    }
+    @include viewport(medium){
+        margin: 0 10px 20px
+    }  
+}
+//header//
+.inner-header {
+    @include viewport(small){
+      height:45vh;
+    }
+    @include viewport(medium){
+      height:45vh;
+    }
+  }
+  
+  .header{
+     
+    @include viewport(large){
+      margin-left: 6px;
+    }
+      @include viewport(x-large){
+        margin-left: 6px;
+}
+}
+//projects//
+
+.projects-block-tools{
+    @include viewport(small) {
+        display: flex;
+        flex-wrap: wrap;
+     }
+    @include viewport(medium) { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+    }   
+}
+.projects-block-tools li{
+@include viewport(small) {
+   font-size: 1.8rem;
+}
+@include viewport(medium) { 
+    font-size: 1.8rem; 
+}
+}
+.symbol{
+    @include viewport(small) {
+       font-size: 3rem;
+    }
+    @include viewport(medium) { 
+        font-size: 3rem; 
+    }
+    }
+.projects-block-button{
+    @include viewport(small) {
+        margin-bottom: 20px;
+     }
+     @include viewport(medium) {
+        margin-bottom: 20px;
+     }
+}
+
+.projects-block{
+    @include viewport(small) {
+        margin: 20px 10px;
+    }
+    @include viewport(medium) {   
+    max-width: 100%;
+    margin: 20px 10px;
+    }      
+}
+.project-grid {
+    @include viewport(small) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include viewport(medium) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include viewport(large) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: none;
+        margin: 0 1rem;
+    }
+    @include viewport(x-large) {
+        grid-template-columns: repeat(3, 1fr);    
+    margin: 0 1rem;
+    }
+ }
+ .projects-grid{
+    @include viewport(small) {
+        margin: 0 20px;
+    }   
+ }
+ //scion//
+ .content-grid {
+    @include viewport(small) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include viewport(large) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include viewport(x-large) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.treehouse-container{
+    @include viewport(small) {
+        margin:  0 10px;
+    }       
+}
