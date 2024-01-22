@@ -65,7 +65,7 @@ a{
   .primary-nav__subpages-menu li a:active {
     color: white;
   }
-  @media (max-width: calc(899px)){
+  @media (max-width: calc(992px)){
 .primary-nav--hidden {
     position: absolute;
     width: 1px;
@@ -94,6 +94,15 @@ a{
   font-size: 42px;
   margin-right: 5px;
   color: #329FF4;
+}
+.link:hover{
+  color: #0077B5;
+}
+.git:hover{
+  color: #6E40C9;
+}
+.insta:hover{
+  color: #E1306C;
 }
 .primary-nav__flex-container {
   display: flex;

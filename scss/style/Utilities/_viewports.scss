@@ -224,7 +224,6 @@ h5{
   }
   
   .header{
-     
     @include viewport(large){
       margin-left: 6px;
     }
@@ -330,6 +329,17 @@ h5{
         margin: 0 20px;
     }   
  }
+ .projects-block:hover {
+    @include viewport(small) {
+        transform: translate(0, -5px);
+    transform: scale(0.95);
+    }
+    @include viewport(medium) {
+        transform: translate(0, -5px);
+    transform: scale(0.95);
+    }
+    
+  }
  //scion//
  .content-grid {
     @include viewport(small) {
