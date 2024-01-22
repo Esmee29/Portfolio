@@ -565,11 +565,16 @@ p {
 }
 
 /* line 16, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
-a {
+.primary-nav__logo:hover {
   text-decoration: none;
 }
 
 /* line 19, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 22, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav {
   display: flex;
   flex-direction: column;
@@ -581,38 +586,38 @@ a {
   margin-top: 0;
 }
 
-/* line 29, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 32, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 34, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 37, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__vertical-flex-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* line 39, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 42, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 li {
   text-decoration: none;
 }
 
-/* line 43, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 46, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu {
   margin: 2rem;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-/* line 49, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li {
   border-bottom: 0.2rem solid #185ad4;
   margin: 0;
 }
 
-/* line 53, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a {
   display: block;
   padding: 1rem;
@@ -620,20 +625,20 @@ li {
   color: #329FF4;
 }
 
-/* line 59, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 62, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:hover {
   text-decoration: none;
   color: #FFF;
   background-color: #3BCEE9;
 }
 
-/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 68, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:active {
   color: white;
 }
 
 @media (max-width: calc(992px)) {
-  /* line 69, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+  /* line 72, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
   .primary-nav--hidden {
     position: absolute;
     width: 1px;
@@ -647,7 +652,7 @@ li {
   }
 }
 
-/* line 81, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 84, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials {
   display: flex;
   justify-content: center;
@@ -655,39 +660,39 @@ li {
   padding: 0;
 }
 
-/* line 87, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials a {
   text-decoration: none;
 }
 
-/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 93, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials li {
   display: inline-block;
 }
 
-/* line 93, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 96, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .social {
   font-size: 42px;
   margin-right: 5px;
   color: #329FF4;
 }
 
-/* line 98, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 101, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .link:hover {
   color: #0077B5;
 }
 
-/* line 101, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 104, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .git:hover {
   color: #6E40C9;
 }
 
-/* line 104, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 107, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .insta:hover {
   color: #E1306C;
 }
 
-/* line 107, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 110, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__flex-container {
   display: flex;
   flex-direction: column;
