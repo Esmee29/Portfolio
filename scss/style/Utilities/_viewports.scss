@@ -202,12 +202,23 @@ h5{
     @include viewport(small) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center; 
      }
     @include viewport(medium) { 
         display: flex;
         flex-direction: row;
         justify-content: center; 
-    }   
+    }
+    @include viewport(large) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+     }
+     @include viewport(x-large) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+     }    
 }
 .projects-block-tools li{
 @include viewport(small) {
