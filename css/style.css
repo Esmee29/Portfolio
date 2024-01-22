@@ -87,7 +87,6 @@ p {
 /* line 66, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 .scroll {
   text-decoration: none !important;
-  font-weight: 500;
   color: #329FF4;
   font-size: 36px;
 }
@@ -219,15 +218,17 @@ p {
   padding: 15px 33px;
   margin: 10px 0px;
   background-color: #3BCEE9;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
 }
 
-/* line 23, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 25, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .form-field {
   color: #fff;
   padding: 0 10px;
 }
 
-/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 29, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #submit {
   display: block;
   background-color: #329FF4;
@@ -242,31 +243,31 @@ p {
   margin-bottom: 10px;
 }
 
-/* line 41, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 43, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 47, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 49, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 53, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 59, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 61, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #subject::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 67, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message::placeholder {
   color: black;
   font-size: 1.5rem;
