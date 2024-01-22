@@ -34,7 +34,11 @@ font-weight: 400;
     justify-content: space-between;
     border: 1ex solid #185ad4;
 }
- 
+
+.projects-block:hover {
+    transform: translate(0, -10px);
+    transform: scale(1.1);
+  }
 
 #projects {
     padding-top: 0.01rem;
@@ -83,7 +87,6 @@ font-weight: 400;
 .projects-block-button{
     background-color: #3BCEE9;
     margin-bottom: 10px;
-    border: 2px solid#185ad4;
 }
 .projects-block-button a{
     color: #fff;

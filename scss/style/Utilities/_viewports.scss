@@ -241,7 +241,14 @@ h5{
     @include viewport(medium) {   
     max-width: 100%;
     margin: 20px 10px;
-    }      
+    }
+    @include viewport(large) {   
+        margin: 20px 10px;
+        }
+    
+    @include viewport(x-large) {   
+        margin: 20px 10px;
+        }
 }
 .project-grid {
     @include viewport(small) {
