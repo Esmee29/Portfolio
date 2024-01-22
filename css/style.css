@@ -78,6 +78,20 @@ p {
   background-color: #FFF;
 }
 
+/* line 62, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+.scroll-container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* line 66, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+.scroll {
+  text-decoration: none !important;
+  font-weight: 500;
+  color: #329FF4;
+  font-size: 36px;
+}
+
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-container {
   margin: 120px 1rem 0 1rem;
@@ -87,33 +101,23 @@ p {
 }
 
 /* line 7, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
-.about-container:hover {
-  transform: translate(0, -30px);
-}
-
-/* line 10, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-container-tech {
   margin: 50px 1rem 0 1rem;
   border-top: 3px solid #fff;
   border: 1ex solid #185ad4;
 }
 
-/* line 15, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
-.about-container-tech:hover {
-  transform: translate(0, -30px);
-}
-
-/* line 18, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 12, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about h3 {
   color: #185ad4;
 }
 
-/* line 21, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 15, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about p {
   font-size: 16px;
 }
 
-/* line 24, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 18, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-container {
   margin: 120px 1rem 0 1rem;
   border-top: 3px solid #fff;
@@ -121,24 +125,24 @@ p {
   padding: 20px;
 }
 
-/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 24, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-container-tech {
   margin: 50px 1rem 0 1rem;
   border-top: 3px solid #fff;
   border: 1ex solid #185ad4;
 }
 
-/* line 35, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 29, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about h3 {
   color: #185ad4;
 }
 
-/* line 38, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 32, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about p {
   font-size: 16px;
 }
 
-/* line 41, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 35, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-tools li {
   color: #185ad4;
   list-style: none;
@@ -146,22 +150,22 @@ p {
   align-items: center;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/* line 43, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+.about-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* line 49, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
-.about-tools {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .adobe {
   height: 30px;
   width: 30px;
 }
 
-/* line 61, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-tools li {
   color: #185ad4;
   list-style: none;
@@ -171,20 +175,20 @@ p {
   margin-bottom: 1rem;
 }
 
-/* line 69, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 63, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-tools {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 74, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 68, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .adobe {
   height: 30px;
   width: 30px;
 }
 
-/* line 79, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
+/* line 73, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
 .about-icons {
   font-size: 24px;
   color: #3BCEE9;
@@ -200,18 +204,13 @@ p {
 }
 
 /* line 8, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.contact-container:hover {
-  transform: translate(0, -30px);
-}
-
-/* line 11, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .get-in-touch {
   padding-top: 0px;
   margin-left: auto;
   margin-right: Auto;
 }
 
-/* line 17, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 14, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .input-field {
   width: 100%;
   border: 1px solid transparent;
@@ -222,13 +221,13 @@ p {
   background-color: #3BCEE9;
 }
 
-/* line 26, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 23, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .form-field {
   color: #fff;
   padding: 0 10px;
 }
 
-/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #submit {
   display: block;
   background-color: #329FF4;
@@ -243,31 +242,31 @@ p {
   margin-bottom: 10px;
 }
 
-/* line 44, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 41, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 50, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 47, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 53, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 62, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 59, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #subject::placeholder {
   color: black;
   font-size: 1.5rem;
 }
 
-/* line 68, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message::placeholder {
   color: black;
   font-size: 1.5rem;
@@ -444,45 +443,43 @@ p {
 
 /* line 66, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .icon {
-  display: flex;
   color: #3BCEE9;
   margin-right: 0.5rem;
 }
 
-/* line 71, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 70, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block > h3 {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
-/* line 76, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 75, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-tools li {
   color: #185ad4;
   list-style: none;
   display: inline-block;
-  align-items: center;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 84, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 82, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .symbol {
   font-size: 30px;
 }
 
-/* line 87, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 85, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-button {
   background-color: #3BCEE9;
   margin-bottom: 10px;
 }
 
-/* line 91, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 89, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-button a {
   color: #fff;
 }
 
-/* line 94, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 92, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .empty {
   padding-bottom: 200px;
 }
@@ -608,7 +605,7 @@ li {
 
 /* line 66, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:focus {
-  outline: 1rem solid #329FF4;
+  outline: 1rem solid #185ad4;
 }
 
 /* line 69, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
