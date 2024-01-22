@@ -12,10 +12,10 @@ p{
         font-size: 1rem;
     }
     @include viewport(medium) {   
-    font-size: 1rem;
+    font-size: 1.5rem;
     }
     @include viewport(large) {   
-        font-size: 1.5rem;
+        font-size: 24px
         }
     @include viewport(x-large) {   
         font-size: 1.5rem;
@@ -127,51 +127,42 @@ h5{
         margin: 20px 10px;
     } 
 }
+.about-container {
+    margin: 120px 1rem 0 1rem;
+    border-top: 3px solid #fff;
+    border: 1ex solid #185ad4;
+    padding: 20px;
+    @include viewport(small) { 
+        margin: 20px 10px;
+    }   
+.about-container-tech{
+    @include viewport(small) { 
+        margin: 20px 10px;
+    } 
+}
 
-.about p{
+.about-tools{
     @include viewport(small) {
-        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
         }
-        .about-container {
-            margin: 120px 1rem 0 1rem;
-            border-top: 3px solid #fff;
-            border: 1ex solid #185ad4;
-            padding: 20px;
-            @include viewport(small) { 
-                margin: 20px 10px;
-            }   
-        .about-container-tech{
-            @include viewport(small) { 
-                margin: 20px 10px;
-            } 
-        }
-
-        .about-tools{
-            @include viewport(small) {
-                display: flex;
-                flex-wrap: wrap;
-             }
-            @include viewport(medium) { 
-                display: flex;
-                flex-wrap: wrap; 
-            }            
-        }
-        .adobe{
-            @include viewport(small) {
-                height:50px;
-                width: 50px;
-                margin-left: 25px;
-             }
-             @include viewport(medium) {
-                height: 60px;
-            width: 60px;
-            margin-left: 25px;
-             }              
-        }
-     }
     @include viewport(medium) { 
-        font-size: 1.2rem; 
-    }        
+        display: flex;
+        flex-wrap: wrap; 
+    }            
+}
+.adobe{
+    @include viewport(small) {
+        height:50px;
+        width: 50px;
+        margin-left: 25px;
+        }
+        @include viewport(medium) {
+        height: 60px;
+    width: 60px;
+    margin-left: 25px;
+        }              
+}
 }
 .about-tools{
     @include viewport(small) {
