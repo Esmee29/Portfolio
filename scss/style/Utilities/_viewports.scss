@@ -14,6 +14,12 @@ p{
     @include viewport(medium) {   
     font-size: 1rem;
     }
+    @include viewport(large) {   
+        font-size: 1.5rem;
+        }
+    @include viewport(x-large) {   
+        font-size: 1.5rem;
+        }
     @include viewport(xx-large) {   
         font-size: 2rem;
         }      
@@ -103,6 +109,7 @@ h5{
         font-size: 2rem;
         }
 }
+
 //about//
 .about-container {
     @include viewport(small) { 
@@ -377,7 +384,30 @@ h5{
     @include viewport(medium) {   
     font-size: 1rem;
     }
+    @include viewport(large) {   
+        font-size: 1.5rem;
+        }
+    @include viewport(x-large) {   
+        font-size: 1.5rem;
+        }
     @include viewport(xx-large) {   
         font-size: 2rem;
         } 
+}
+.tree-text{
+    @include viewport(large) {
+        margin: 100px 20px 0;
+    }
+    @include viewport(x-large) {
+        margin: 100px 20px 0;
+    }    
+    
+}
+.projects-block-button-group{
+    @include viewport(large) {
+        margin-top: 50px;
+    }
+    @include viewport(x-large) {
+        margin-top: 50px;
+    }
 }

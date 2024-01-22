@@ -733,6 +733,20 @@ li {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 10, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 2559px) {
+  /* line 10, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 2560px) {
   /* line 10, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   p {
@@ -741,181 +755,181 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 21, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 27, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h1 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 21, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 27, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 21, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 27, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h1 {
     font-size: 6rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 33, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 39, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .h1 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 33, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 39, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 33, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 39, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .h1 {
     font-size: 6rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 44, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 50, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h2 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 44, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 50, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h2 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 44, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 50, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h2 {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 55, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h3 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 55, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h3 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 55, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h3 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 55, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h3 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 55, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h3 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 72, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h4 {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 72, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h4 {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 72, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h4 {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 72, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h4 {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 72, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h4 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 89, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 95, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h5 {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 89, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 95, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h5 {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 89, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 95, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h5 {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 89, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 95, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h5 {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 89, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 95, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   h5 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 107, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 114, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about-container {
     margin: 20px 10px;
   }
 }
 
-/* line 112, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+/* line 119, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
 .about-container {
   margin: 120px 1rem 0 1rem;
   border-top: 3px solid #fff;
@@ -924,20 +938,20 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 118, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 125, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about-container-tech {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 124, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 131, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p {
     font-size: 1rem;
   }
 }
 
-/* line 128, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+/* line 135, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
 .about p .about-container {
   margin: 120px 1rem 0 1rem;
   border-top: 3px solid #fff;
@@ -946,21 +960,21 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 128, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 135, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 136, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 143, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container .about-container-tech {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 142, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 149, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container .about-tools {
     display: flex;
     flex-wrap: wrap;
@@ -968,7 +982,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 142, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 149, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container .about-tools {
     display: flex;
     flex-wrap: wrap;
@@ -976,7 +990,7 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 152, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 159, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container .adobe {
     height: 50px;
     width: 50px;
@@ -985,7 +999,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 152, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 159, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p .about-container .adobe {
     height: 60px;
     width: 60px;
@@ -994,14 +1008,14 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 124, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 131, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about p {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 169, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 176, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about-tools {
     display: flex;
     flex-wrap: wrap;
@@ -1009,7 +1023,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 169, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 176, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .about-tools {
     display: flex;
     flex-wrap: wrap;
@@ -1017,7 +1031,7 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 178, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 185, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .adobe {
     height: 50px;
     width: 50px;
@@ -1026,7 +1040,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 178, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 185, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .adobe {
     height: 60px;
     width: 60px;
@@ -1035,35 +1049,35 @@ li {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 178, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 185, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .adobe {
     margin-left: 15px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 178, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 185, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .adobe {
     margin-left: 15px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 198, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 205, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .contact-container {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 198, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 205, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .contact-container {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 198, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 205, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .contact-container {
     padding: 20px;
     margin: 5% 1rem;
@@ -1071,7 +1085,7 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 211, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 218, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -1079,56 +1093,56 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 217, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 224, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .get-in-touch-form {
     margin: 0 10px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 217, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 224, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .get-in-touch-form {
     margin: 0 20px 20px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 217, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 224, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .get-in-touch-form {
     margin: 0 10px 20px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 217, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 224, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .get-in-touch-form {
     margin: 0 10px 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 232, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 239, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .inner-header {
     height: 65vh;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 238, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 245, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .header {
     margin-left: 6px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 238, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 245, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .header {
     margin-left: 6px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 248, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 255, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -1137,7 +1151,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 248, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 255, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-direction: row;
@@ -1146,7 +1160,7 @@ li {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 248, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 255, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -1155,7 +1169,7 @@ li {
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 248, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 255, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -1164,56 +1178,56 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 271, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 278, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools li {
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 271, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 278, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools li {
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 279, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 286, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .symbol {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 279, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 286, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .symbol {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 287, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 287, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 296, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 303, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 296, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 303, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     max-width: 100%;
     margin: 20px 10px;
@@ -1221,28 +1235,28 @@ li {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 296, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 303, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 296, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 303, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 296, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 303, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 315, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 322, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     display: flex;
     flex-direction: column;
@@ -1250,7 +1264,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 315, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 322, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     display: flex;
     flex-direction: column;
@@ -1258,7 +1272,7 @@ li {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 315, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 322, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
@@ -1267,7 +1281,7 @@ li {
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 315, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 322, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 1rem;
@@ -1275,7 +1289,7 @@ li {
 }
 
 @media (min-width: 2560px) {
-  /* line 315, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 322, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 2rem;
@@ -1284,14 +1298,14 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 339, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 346, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-grid {
     margin: 0 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 344, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 351, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block:hover {
     transform: translate(0, -5px);
     transform: scale(0.95);
@@ -1299,7 +1313,7 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 344, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 351, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block:hover {
     transform: translate(0, -5px);
     transform: scale(0.95);
@@ -1307,7 +1321,7 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 356, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 363, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     display: flex;
     flex-direction: column;
@@ -1315,44 +1329,86 @@ li {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 356, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 363, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 356, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 363, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 368, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 375, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .treehouse-container {
     margin: 0 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 380, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 380, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1rem;
   }
 }
 
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 380, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .net li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 2559px) {
+  /* line 380, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .net li {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 2560px) {
-  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 380, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 397, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .tree-text {
+    margin: 100px 20px 0;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 2559px) {
+  /* line 397, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .tree-text {
+    margin: 100px 20px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 406, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .projects-block-button-group {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 2559px) {
+  /* line 406, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .projects-block-button-group {
+    margin-top: 50px;
   }
 }
 
