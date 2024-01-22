@@ -602,24 +602,19 @@ li {
 }
 
 /* line 58, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
-.primary-nav__subpages-menu li a:visited {
-  color: #185ad4;
-}
-
-/* line 61, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:hover {
   text-decoration: none;
   color: #FFF;
   background-color: #3BCEE9;
 }
 
-/* line 67, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:active {
   color: white;
 }
 
 @media (max-width: calc(899px)) {
-  /* line 71, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+  /* line 68, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
   .primary-nav--hidden {
     position: absolute;
     width: 1px;
