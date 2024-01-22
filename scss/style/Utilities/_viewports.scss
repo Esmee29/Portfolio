@@ -348,3 +348,14 @@ h5{
         margin:  0 10px;
     }       
 }
+.net li{
+    @include viewport(small) {
+        font-size: 1rem;
+    }
+    @include viewport(medium) {   
+    font-size: 1rem;
+    }
+    @include viewport(xx-large) {   
+        font-size: 2rem;
+        } 
+}

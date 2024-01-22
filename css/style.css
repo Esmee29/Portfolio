@@ -530,6 +530,25 @@ p {
   font-weight: 400;
 }
 
+/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+.net li {
+  list-style: circle;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* line 36, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+.scion-container {
+  margin: 120px 1rem 30px 1rem;
+  border-top: 3px solid #fff;
+  border: 1ex solid #185ad4;
+  padding: 20px;
+}
+
 /* line 3, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__logo {
   display: flex;
@@ -1249,6 +1268,27 @@ li {
   /* line 346, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .treehouse-container {
     margin: 0 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 351, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .net li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 351, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .net li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  /* line 351, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .net li {
+    font-size: 2rem;
   }
 }
 
