@@ -29,6 +29,18 @@ h1{
         font-size: 6rem;
         }     
 }
+
+.h1{
+    @include viewport(small) {
+        font-size: 2rem;
+    }
+    @include viewport(medium) {   
+    font-size: 3rem;
+    } 
+    @include viewport(xx-large) {   
+        font-size: 6rem;
+        }     
+  }
 h2{
     @include viewport(small) {
         font-size: 2rem;
