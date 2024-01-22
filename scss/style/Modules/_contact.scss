@@ -8,7 +8,9 @@
 .get-in-touch {
     padding-top: 0px;
     margin-left: auto;
-    margin-right: Auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-field {
@@ -68,4 +70,10 @@
         color: black;
         font-size: 1.5rem;
     }
+}
+.contact-form{
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
 }

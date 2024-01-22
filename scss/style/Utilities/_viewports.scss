@@ -13,7 +13,10 @@ p{
     }
     @include viewport(medium) {   
     font-size: 1rem;
-    }      
+    }
+    @include viewport(xx-large) {   
+        font-size: 2rem;
+        }      
 }
 h1{
     @include viewport(small) {
@@ -21,7 +24,10 @@ h1{
     }
     @include viewport(medium) {   
     font-size: 3rem;
-    }      
+    } 
+    @include viewport(xx-large) {   
+        font-size: 6rem;
+        }     
 }
 h2{
     @include viewport(small) {
@@ -29,7 +35,10 @@ h2{
     }
     @include viewport(medium) {   
     font-size: 2rem;
-    }      
+    }
+    @include viewport(xx-large) {   
+        font-size: 4rem;
+        }      
 }
 h3{
     @include viewport(small) {
@@ -37,7 +46,16 @@ h3{
     }
     @include viewport(medium) {   
     font-size: 2rem;
-    }      
+    }
+    @include viewport(large) {   
+        font-size: 2rem;
+        }      
+    @include viewport(x-large) {   
+        font-size: 2rem;
+        }
+        @include viewport(xx-large) {   
+            font-size: 3rem;
+            }       
 }
 h4{
     @include viewport(small) {
@@ -45,7 +63,16 @@ h4{
     }
     @include viewport(medium) {   
     font-size: 1.5rem;
-    }      
+    }
+    @include viewport(large) {   
+        font-size: 1rem;
+        }      
+    @include viewport(x-large) {   
+        font-size: 1.5rem;
+        }
+        @include viewport(xx-large) {   
+            font-size: 2rem;
+            }
 }
 h5{
     @include viewport(small) {
@@ -58,8 +85,11 @@ h5{
         font-size: 1rem;
         }      
     @include viewport(x-large) {   
-        font-size: 1rem;
-        } 
+        font-size: 1.5rem;
+        }
+    @include viewport(xx-large) {   
+        font-size: 2rem;
+        }
 }
 //about//
 .about-container {
@@ -160,30 +190,36 @@ h5{
     @include viewport(medium) {
         margin: 20px 10px;
     }
-    @include viewport(x-large){    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    @include viewport(x-large){
         padding: 20px;
         margin: 5% 1rem;
     }
     
 }
-
+.contact-form{
+    @include viewport(small) {
+        display: flex;
+        flex-direction: column;
+    } 
+}
 .get-in-touch-form{
     @include viewport(small){
         margin: 0 10px 20px
     }
     @include viewport(medium){
+        margin: 0 20px 20px
+    }
+    @include viewport(large){
         margin: 0 10px 20px
-    }  
+    } 
+    @include viewport(x-large){
+        margin: 0 10px 20px
+    }   
 }
 //header//
 .inner-header {
     @include viewport(small){
-      height:45vh;
-    }
-    @include viewport(medium){
-      height:60vh;
+      height:65vh;
     }
   }
   
@@ -220,6 +256,7 @@ h5{
         justify-content: center; 
      }    
 }
+
 .projects-block-tools li{
 @include viewport(small) {
    font-size: 1.8rem;
@@ -260,6 +297,9 @@ h5{
     @include viewport(x-large) {   
         margin: 20px 10px;
         }
+        @include viewport(xx-large) {   
+            margin: 20px 10px;
+            }
 }
 .project-grid {
     @include viewport(small) {
@@ -278,6 +318,11 @@ h5{
     @include viewport(x-large) {
         grid-template-columns: repeat(3, 1fr);    
     margin: 0 1rem;
+    }
+    @include viewport(xx-large) {
+        grid-template-columns: repeat(3, 1fr);    
+    margin: 0 2rem;
+    gap: 2rem
     }
  }
  .projects-grid{
