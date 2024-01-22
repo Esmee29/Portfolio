@@ -77,3 +77,20 @@ a{
     border: 0;
 }
   }
+  .nav-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+}
+.nav-socials a{
+  text-decoration:none;
+}
+.nav-socials li{
+  display: inline-block;
+}
+.social{
+  font-size: 42px;
+  margin-right: 5px;
+  color: #329FF4;
+}

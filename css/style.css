@@ -628,6 +628,31 @@ li {
   }
 }
 
+/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.nav-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 86, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.nav-socials a {
+  text-decoration: none;
+}
+
+/* line 89, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.nav-socials li {
+  display: inline-block;
+}
+
+/* line 92, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.social {
+  font-size: 42px;
+  margin-right: 5px;
+  color: #329FF4;
+}
+
 @media (min-width: 992px) and (max-width: 1259px) {
   /* line 2, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .page-content {
