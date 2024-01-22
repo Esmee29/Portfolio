@@ -587,13 +587,13 @@ li {
   font-weight: 600;
 }
 
-/* line 48, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 49, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li {
   border-bottom: 0.2rem solid #185ad4;
   margin: 0;
 }
 
-/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 53, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a {
   display: block;
   padding: 1rem;
@@ -601,20 +601,20 @@ li {
   color: #329FF4;
 }
 
-/* line 58, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 59, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:hover {
   text-decoration: none;
   color: #FFF;
   background-color: #3BCEE9;
 }
 
-/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .primary-nav__subpages-menu li a:active {
   color: white;
 }
 
 @media (max-width: calc(899px)) {
-  /* line 68, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+  /* line 69, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
   .primary-nav--hidden {
     position: absolute;
     width: 1px;
@@ -628,7 +628,7 @@ li {
   }
 }
 
-/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 81, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials {
   display: flex;
   justify-content: center;
@@ -636,21 +636,27 @@ li {
   padding: 0;
 }
 
-/* line 86, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 87, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials a {
   text-decoration: none;
 }
 
-/* line 89, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .nav-socials li {
   display: inline-block;
 }
 
-/* line 92, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+/* line 93, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
 .social {
   font-size: 42px;
   margin-right: 5px;
   color: #329FF4;
+}
+
+/* line 98, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.primary-nav__flex-container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {

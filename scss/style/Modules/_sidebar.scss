@@ -44,6 +44,7 @@ a{
     margin: 2rem;
     font-size: 1.25rem;
     font-weight: 600;
+    
   }
   .primary-nav__subpages-menu li {
     border-bottom: 0.2rem solid #185ad4;
@@ -93,4 +94,8 @@ a{
   font-size: 42px;
   margin-right: 5px;
   color: #329FF4;
+}
+.primary-nav__flex-container {
+  display: flex;
+  flex-direction: column;
 }
