@@ -191,6 +191,44 @@ p {
   margin: 0 10px;
 }
 
+/* line 1, ../../GitHub/Portfolio/scss/style/Modules/_code.scss */
+.code-container {
+  margin: 120px 1rem 0 1rem;
+  border: 1ex solid #185ad4;
+  padding: 20px;
+  background-color: #3E3E42;
+  margin-top: 4rem;
+  overflow-x: auto;
+  text-align: left;
+}
+
+/* line 10, ../../GitHub/Portfolio/scss/style/Modules/_code.scss */
+.code-container-small {
+  margin: 120px 1rem 30px 1rem;
+  border: 1ex solid #185ad4;
+  padding: 20px;
+  background-color: #3E3E42;
+  margin-top: 4rem;
+  text-align: left;
+}
+
+/* line 18, ../../GitHub/Portfolio/scss/style/Modules/_code.scss */
+code {
+  display: inline-block;
+  color: white;
+  margin-left: -200px;
+}
+
+/* line 23, ../../GitHub/Portfolio/scss/style/Modules/_code.scss */
+.code-large {
+  margin-left: -200px;
+}
+
+/* line 26, ../../GitHub/Portfolio/scss/style/Modules/_code.scss */
+.code-small {
+  margin-left: -400px;
+}
+
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .contact-container {
   margin: 120px 1rem 0 1rem;
@@ -1213,21 +1251,21 @@ li {
 @media (min-width: 992px) and (max-width: 1259px) {
   /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
-    margin: 20px 10px;
+    margin: 30px 10px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
   /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
-    margin: 20px 10px;
+    margin: 30px 10px;
   }
 }
 
 @media (min-width: 2560px) {
   /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
-    margin: 20px 10px;
+    margin: 45px 10px;
   }
 }
 

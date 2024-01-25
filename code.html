@@ -84,11 +84,54 @@
                         <div class="about">
                             <div class="title">
                             <h2 class="h1">Coding Examples</h2>
+                            <h3>Breakpoints</h3>
                         </div>
-                            <div class="about-container">
-                                <h3>Coming Soon</h3>
-                                
+                            <div class="code-container">
+                                <code class="code-large">
+                                    <pre>
+                                        @mixin viewport($break) {
+    
+                                            @if $break == "small" { // small generally used for mobile phones
+                                                @media (min-width: $brkpoint-sm) and (max-width: #{$brkpoint-md - 1}) { // between 320px and 767px
+                                                    @content;
+                                                }
+                                            }
+                                            @else if $break == "medium" { 
+                                                @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
+                                                    @content;
+                                                }
+                                            }
+                                            @else if $break == "large" { // large generally used for desktop monitors
+                                                @media (min-width: $brkpoint-lg) and (max-width: #{$brkpoint-xlg - 1}) { // between 992px and 1259px
+                                                    @content;
+                                                }
+                                            }
+                                            @else if $break == "x-large" { // extra large
+                                                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 2559px
+                                                    @content;
+                                                }
+                                            }
+                                            @else if $break == "xx-large" { // extra large
+                                                @media (min-width: $brkpoint-xxlg) { // greater than 2560px
+                                                    @content;
+                                                }
+                                            }
+                                            @else {
+                                                @error "No value could be retrieved for break for `#{$break}`";
+                                            }
+                                        
+                                            
+                                        }
+                                    
+                                    </pre>
+                                </code>
                                 </div>
+                                <div class="about-container">
+                                    <p>Above is code I have used when I was recreating Netmatters Homepage and this Sass code allows the styling to adapt and elements change
+                                        at certain screen sizes.
+                                    </p>
+                                    </div>
+                                        
                                 
                     </div>   
                 <!--Contact Form-->
