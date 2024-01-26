@@ -6,9 +6,9 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border-bottom: 0.5rem solid #185ad4;
+    border-bottom: 0.5rem solid $color-primary;
     background: linear-gradient(89.8deg, rgb(39, 115, 255) 4.3%, rgb(62, 211, 232) 101.4%);
-    color: white;
+    color: $white;
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 64px;
@@ -25,8 +25,8 @@ a{
     width: 16rem;
     position: fixed;
     height: 100vh;
-    border-right: 0.5rem solid #185ad4;
-    background-color: #FFF;
+    border-right: 0.5rem solid $color-primary;
+    background-color: $white;
     margin-top: 0;
   }
   .primary-nav ul {
@@ -50,23 +50,23 @@ a{
     
   }
   .primary-nav__subpages-menu li {
-    border-bottom: 0.2rem solid #185ad4;
+    border-bottom: 0.2rem solid $color-primary;
     margin: 0;
   }
   .primary-nav__subpages-menu li a {
     display: block;
     padding: 1rem;
     text-align: center;
-    color: #329FF4;
+    color: $color-third;
   }
   .primary-nav__subpages-menu li a:hover {
     text-decoration: none;
-    color: #FFF;
-    background-color: #3BCEE9;
+    color: $white;
+    background-color: $color-secondary;
   }
   
   .primary-nav__subpages-menu li a:active {
-    color: white;
+    color: $white;
   }
   @media (max-width: calc(992px)){
 .primary-nav--hidden {
@@ -96,7 +96,7 @@ a{
 .social{
   font-size: 42px;
   margin-right: 5px;
-  color: #329FF4;
+  color: $color-third;
 }
 .link:hover{
   color: #0077B5;

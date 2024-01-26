@@ -5,8 +5,8 @@
 }
 .treehouse-container{
     margin: 120px 1rem 0 1rem;
-    border-top: 3px solid #fff;
-    border: 1ex solid #185ad4;
+    border-top: 3px solid $white;
+    border: 1ex solid $color-primary;
     padding: 20px;     
 }
 .treehouse-container:hover {
@@ -21,22 +21,22 @@
 }
 .tree-title {
     text-align: center;
-    color: #185ad4;
+    color: $color-primary;
     font-weight: 400;
 }
 .net li{
     list-style:circle;
     letter-spacing: 1px;
   font-size:14px;
-  color: black;
+  color: $black;
   font-weight: 600;
     line-height: 1.5;
     text-align: left;
 }
 .scion-container {
     margin: 120px 1rem 30px 1rem;
-    border-top: 3px solid #fff;
-    border: 1ex solid #185ad4;
+    border-top: 3px solid $white;
+    border: 1ex solid $color-primary;
     padding: 20px;
     }
     

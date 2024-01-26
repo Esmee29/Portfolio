@@ -1,8 +1,8 @@
 .contact-container {
     margin: 120px 1rem 0 1rem;
-    border-top: 3px solid #fff;
-    color: #185ad4;
-    border: 1ex solid #185ad4;
+    border-top: 3px solid $white;
+    color: $color-primary;
+    border: 1ex solid $color-primary;
 
     }
 .get-in-touch {
@@ -20,12 +20,12 @@
     margin-top: 10px;
     padding: 15px 33px;
     margin: 10px 0px;
-    background-color: #3BCEE9;
+    background-color: $color-secondary;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
 }
 .form-field{
-    color: #fff;
+    color: $white;
     padding: 0 10px;
 }
 #submit {
@@ -33,7 +33,7 @@
     background-color: #329FF4;
     width: 150px;
     justify-self: center;
-    color: #fff;
+    color: $white;
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
@@ -43,19 +43,19 @@
 }
 #first {
     &::placeholder {
-        color: black;
+        color: $black;
         font-size: 1.5rem;
     }
 }
 #last {
     &::placeholder {
-        color: black;
+        color: $black;
         font-size: 1.5rem;
     }
 }
 #email {
     &::placeholder {
-        color: black;
+        color: $black;
         font-size: 1.5rem;
     }
 }
@@ -67,7 +67,7 @@
 }
 #message {
     &::placeholder {
-        color: black;
+        color: $black;
         font-size: 1.5rem;
     }
 }

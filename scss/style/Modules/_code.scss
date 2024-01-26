@@ -1,24 +1,24 @@
 .code-container{
     margin: 120px 1rem 0 1rem;
-    border: 1ex solid #185ad4;
+    border: 1ex solid $color-primary;
     padding: 20px;
-    background-color: #3E3E42;
+    background-color: $code;
     margin-top: 4rem;
     overflow-x: auto;
     text-align: left;  
 }
 .code-container-small{
     margin: 120px 1rem 30px 1rem;
-    border: 1ex solid #185ad4;
+    border: 1ex solid $color-primary;
     padding: 20px;
-    background-color: #3E3E42;
+    background-color: $code;
     margin-top: 4rem;
     text-align: left;
     width: 400px;  
 }
 .text-container-small{
     margin: 120px 1rem 30px 1rem;
-    border: 1ex solid #185ad4;
+    border: 1ex solid $color-primary;
     padding: 20px;
     margin-top: 4rem;
     text-align: left;
@@ -26,7 +26,7 @@
 }
 code {
     display: inline-block;
-    color: white;
+    color: $white;
     margin-left: -200px;
 }
 .code-large{
@@ -39,8 +39,8 @@ code {
 }
 .text-container{
     margin: 50px 1rem 0 1rem;
-    border-top: 3px solid #fff;
-    border: 1ex solid #185ad4;
+    border-top: 3px solid $white;
+    border: 1ex solid $color-primary;
     padding: 20px
 }
 .content-grid-code{
