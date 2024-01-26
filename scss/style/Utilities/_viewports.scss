@@ -350,6 +350,21 @@ h5{
     }
     
   }
+  //code//
+  .content-grid-code{
+    @include viewport(small){
+        display: flex;
+        flex-direction: column;
+    }
+    @include viewport(x-large){
+        display: flex;
+        justify-content: center;
+    }
+    @include viewport(large){
+        display: flex;
+        justify-content: space-evenly;
+    }
+    }
  //scion//
  .content-grid {
     @include viewport(small) {

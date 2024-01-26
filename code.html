@@ -107,12 +107,12 @@
                                                 }
                                             }
                                             @else if $break == "x-large" { // extra large
-                                                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 2559px
+                                                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1439px
                                                     @content;
                                                 }
                                             }
                                             @else if $break == "xx-large" { // extra large
-                                                @media (min-width: $brkpoint-xxlg) { // greater than 2560px
+                                                @media (min-width: $brkpoint-xxlg) { // greater than 1440px
                                                     @content;
                                                 }
                                             }
@@ -126,12 +126,32 @@
                                     </pre>
                                 </code>
                                 </div>
-                                <div class="about-container">
+                                <div class="text-container">
                                     <p>Above is code I have used when I was recreating Netmatters Homepage and this Sass code allows the styling to adapt and elements change
                                         at certain screen sizes.
                                     </p>
                                     </div>
-                                        
+                                    <div class="content-grid-code">
+                                        <div class="code-container-small">
+                                            <code class="code-small">
+                                                <pre>
+                                                    .logo {
+                                                        @include viewport(x-large) {
+                                                        height: 64px;
+                                                             }
+                                                            }
+                                                </pre>
+                                            </code>
+                                            </div>
+                                            <div class="text-container-small">
+                                                <p>Left is an example of the viewport mixin being used and here I have used it to set the height of the logo to 64px
+                                                    for the extra large screen size which is between 1260px and 1439px.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                       
+                                    
                                 
                     </div>   
                 <!--Contact Form-->
