@@ -1,50 +1,24 @@
-.code-container{
-    margin: 120px 1rem 0 1rem;
-    border: 1ex solid $color-primary;
-    padding: 20px;
+pre{
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;   
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+    
+        
+}
+code, pre {
     background-color: $code;
-    margin-top: 4rem;
-    overflow-x: auto;
-    text-align: left;  
-}
-.code-container-small{
-    margin: 120px 1rem 30px 1rem;
-    border: 1ex solid $color-primary;
-    padding: 20px;
-    background-color: $code;
-    margin-top: 4rem;
-    text-align: left;
-    width: 400px;  
-}
-.text-container-small{
-    margin: 120px 1rem 30px 1rem;
-    border: 1ex solid $color-primary;
-    padding: 20px;
-    margin-top: 4rem;
-    text-align: left;
-    width: 400px;  
-}
-code {
-    display: inline-block;
     color: $white;
-    margin-left: -200px;
+    font-size: 0.8rem;
+    text-align: start;
+    
 }
-.code-large{
-    margin-left: -200px;    
+.code-logo{
+    margin: 1.5rem 0;
+    padding: 0.5rem;   
 }
-.code-small{
-    margin-left: -550px;
-    margin-top: 80px;
-    font-size: 1.2rem;    
-}
-.text-container{
-    margin: 50px 1rem 0 1rem;
-    border-top: 3px solid $white;
-    border: 1ex solid $color-primary;
-    padding: 20px
-}
-.content-grid-code{
-    display: flex;
-}
-
-   

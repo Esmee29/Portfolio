@@ -81,78 +81,69 @@
                     
                 </div>
                 <div class="page-content"><!--Everything under header -->
-                        <div class="about">
-                            <div class="title">
-                            <h2 class="h1">Coding Examples</h2>
-                            <h3>Breakpoints</h3>
-                        </div>
-                            <div class="code-container">
-                                <code class="code-large">
-                                    <pre>
-                                        @mixin viewport($break) {
-    
-                                            @if $break == "small" { // small generally used for mobile phones
-                                                @media (min-width: $brkpoint-sm) and (max-width: #{$brkpoint-md - 1}) { // between 320px and 767px
-                                                    @content;
-                                                }
-                                            }
-                                            @else if $break == "medium" { 
-                                                @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
-                                                    @content;
-                                                }
-                                            }
-                                            @else if $break == "large" { // large generally used for desktop monitors
-                                                @media (min-width: $brkpoint-lg) and (max-width: #{$brkpoint-xlg - 1}) { // between 992px and 1259px
-                                                    @content;
-                                                }
-                                            }
-                                            @else if $break == "x-large" { // extra large
-                                                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1439px
-                                                    @content;
-                                                }
-                                            }
-                                            @else if $break == "xx-large" { // extra large
-                                                @media (min-width: $brkpoint-xxlg) { // greater than 1440px
-                                                    @content;
-                                                }
-                                            }
-                                            @else {
-                                                @error "No value could be retrieved for break for `#{$break}`";
-                                            }
-                                        
-                                            
-                                        }
-                                    
-                                    </pre>
+                    <div class="about">
+                        <div class="title">
+                        <h2 class="h1">Code Examples</h2>
+                    </div>
+                    <div class="about-container">
+                        <h3>Breakpoints</h3>
+                        <p>To have a responsive websites, adaptable for all screen-sizes, breakpoints 
+                            the smallest unit where screen-sizes change, are used to mark where elements need to 
+                            be modified for larger or smaller screens. Below are the breakpoint mixins I set for the Netmatters Homepage project.</p>
+                            <pre class="code-breaks">
+                                <code>
+        @mixin viewport($break) {
+
+            @if $break == "small" { // small generally used for mobile phones
+                @media (min-width: $brkpoint-sm) and (max-width: #{$brkpoint-md - 1}) { // between 320px and 767px
+                    @content;
+                }
+            }
+            @else if $break == "smedium" {
+                @media (max-width: $brkpoint-smd) { // between 650px and 767px
+                    @content;
+                }
+            }
+            @else if $break == "medium" { 
+                @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
+                    @content;
+                }
+            }
+            @else if $break == "large" { // large generally used for desktop monitors
+                @media (min-width: $brkpoint-lg) and (max-width: #{$brkpoint-xlg - 1}) { // between 992px and 1259px
+                    @content;
+                }
+            }
+            @else if $break == "x-large" { // large generally used for desktop monitors
+                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1439px
+                    @content;
+                }
+            }
+            @else if $break == "xx-large" { // extra large
+                @media (min-width: $brkpoint-xxlg) { // greater than 1440px
+                    @content;
+                }
+            }
+            @else {
+                @error "No value could be retrieved for break for `#{$break}`";
+            }
+
+            
+        }  
                                 </code>
-                                </div>
-                                <div class="text-container">
-                                    <p>Above is code I have used when I was recreating Netmatters Homepage and this Sass code allows the styling to adapt and elements change
-                                        at certain screen sizes.
-                                    </p>
-                                    </div>
-                                    <div class="content-grid-code">
-                                        <div class="code-container-small">
-                                            <code class="code-small">
-                                                <pre>
-                                                    .logo {
-                                                        @include viewport(x-large) {
-                                                        height: 64px;
-                                                             }
-                                                            }
-                                                </pre>
-                                            </code>
-                                            </div>
-                                            <div class="text-container-small">
-                                                <p>Left is an example of the viewport mixin being used and here I have used it to set the height of the logo to 64px
-                                                    for the extra large screen size which is between 1260px and 1439px.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        </div>
-                                       
-                                    
-                                
+                            </pre>
+                            <p>When an changes to elements are made at specific screen-sizes the viewport mixin is called in for example in the code before
+                                at the x-large screen-size which is between 1260px and 1439px the logo element is changing height to 64px. </p>
+                                <pre class="code-breaks">
+                                    <code>
+        .logo {
+            @include viewport(x-large) {
+            height: 64px;
+                }
+                }  
+                                    </code>
+                                </pre>
+                        </div>
                     </div>   
                 <!--Contact Form-->
                 <div class="contact-container" id="contact">
