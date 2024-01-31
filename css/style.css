@@ -1006,11 +1006,25 @@ code, pre {
 .header {
   position: relative;
   text-align: center;
-  background: linear-gradient(60deg, #2773ff 4.3%, #3ed3e8 101.4%);
   color: #fff;
+  background: linear-gradient(270deg, #3bcee9, #329ff4, #185ad4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-/* line 9, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* line 21, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .inner-header {
   height: 85vh;
   width: 100%;
@@ -1021,7 +1035,7 @@ code, pre {
   flex-direction: column;
 }
 
-/* line 19, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 31, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .waves {
   position: relative;
   width: 100%;
@@ -1031,7 +1045,7 @@ code, pre {
   max-height: 150px;
 }
 
-/* line 28, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .content {
   position: relative;
   height: 20vh;
@@ -1040,30 +1054,30 @@ code, pre {
 }
 
 /* Animation */
-/* line 37, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 49, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
-/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
 
-/* line 44, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
 
-/* line 48, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 60, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
 
-/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
@@ -1080,12 +1094,12 @@ code, pre {
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  /* line 66, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+  /* line 78, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
   .waves {
     height: 40px;
     min-height: 40px;
   }
-  /* line 70, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+  /* line 82, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
   .content {
     height: 30vh;
   }
@@ -1415,6 +1429,42 @@ li {
 .primary-nav__flex-container {
   display: flex;
   flex-direction: column;
+}
+
+/* line 115, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.primary-nav__hamburger {
+  position: fixed;
+  z-index: 1;
+  vertical-align: middle;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+@media (min-width: 992px) {
+  /* line 125, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+  .primary-nav__hamburger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_sidebar.scss */
+.hamburger {
+  padding: 0;
+  border: 3px solid #185ad4;
+  border-radius: 3px;
+  background-color: #FFF;
+  color: #185ad4;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

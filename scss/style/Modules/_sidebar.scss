@@ -111,3 +111,34 @@ a{
   display: flex;
   flex-direction: column;
 }
+//hamburger//
+.primary-nav__hamburger {
+  position: fixed;
+  z-index: 1;
+  vertical-align: middle;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+@media (min-width: 992px) {
+  .primary-nav__hamburger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+.hamburger {
+    padding: 0;
+    border: 3px solid $color-primary;
+    border-radius: 3px;
+    background-color: #FFF;
+    color: $color-primary;
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
-//Banner text
-//const timeline = gsap.timeline({repeat: -1});
+//Header text//
 const headerElement = document.querySelector("#header1");
 const subHeaderElement = document.querySelector("#header2")
 
@@ -24,5 +23,5 @@ if (subHeaderElement !== null) // some pages don't have the h2 on banner, so thi
 {
     typingEffect(subHeaderElement, 200);
 }
-
+//Hamburger Menu//
 
