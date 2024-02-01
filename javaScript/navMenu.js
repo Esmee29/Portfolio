@@ -6,8 +6,6 @@ const navLogo = document.getElementsByClassName("primary-nav__logo");
 const navSocials = document.getElementsByClassName("nav-socials");
 const navContact = document.getElementById("primary-nav__contact");
 const navPortfolio = document.getElementById("primary-nav__portfolio");
-const burgerLines = document.querySelector('g.primary-nav__menu-button-burger-lines');
-const crossLines = document.querySelector('g.primary-nav__menu-button-cross-lines');
 const btnHamburger = document.getElementById("btn__hamburger");
 let isToggled = document.getElementsByClassName(".ishidden_nav");
 console.log(btnHamburger.classList); // undefined ???
@@ -25,7 +23,7 @@ if (screenWidth <= 992) // Inital check of screenwidth on page load
 }
 else
 {
-    navMenu[0].style.width = "15rem";
+    navMenu[0].style.width = "16rem";
     navMenu[0].style.borderRight = "8px solid #185ad4";
     navLogo[0].style.display = "flex";
     navButtons[0].style.display = "block";
@@ -55,7 +53,7 @@ window.onresize = function() { // Check of screenwidth on window resize
     {
         isToggled = true;
         console.log("screenwidth large");
-        navMenu[0].style.width = "15rem";
+        navMenu[0].style.width = "16rem";
         navMenu[0].style.borderRight = "8px solid #185ad4";
         navLogo[0].style.display = "flex";
         navButtons[0].style.display = "block";
@@ -133,15 +131,5 @@ function closeMenu() {
         navSocials[0].style.display = "flex";
     }
     
-}
-function toggleFullScreenNavMenu() {
-
-    // Toggle the icon on the menu button
-    burgerLines.classList.toggle('primary-nav__menu-button-burger-lines--hidden');
-    crossLines.classList.toggle('primary-nav__menu-button-cross-lines--hidden');
-
-    // Toggle the visibility of the primary nav as a full-screen menu
-    primaryNav.classList.toggle('primary-nav--hidden');
-    primaryNav.classList.toggle('primary-nav--full-screen');
 }
 

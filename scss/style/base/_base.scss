@@ -16,7 +16,8 @@ a:hover{
     row-gap: 0.625em;
   }
   html{
-    font-family: 'Work Sans', sans-serif;}
+    font-family: 'Josefin Sans', sans-serif;
+  }
  
 body {
   margin:0;
@@ -24,12 +25,12 @@ body {
 }
 
 h1 {
-  font-weight:600;
+  font-weight:700;
   letter-spacing: 2px;
   font-size:48px;
 }
 .h1{
-  font-weight:600;
+  font-weight:700;
   letter-spacing: 2px;
   font-size:48px;
 }
@@ -48,13 +49,15 @@ h2 {
   }
 p {
   letter-spacing: 1px;
-  font-size:14px;
+  font-size:18px;
   color: black;
   font-weight: 600;
     line-height: 1.5;
     text-align: left;
 }
-
+a{
+  font-family: 'Josefin Sans', sans-serif;
+}
 *,
 ::before,
 ::after {

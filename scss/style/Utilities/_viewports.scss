@@ -350,6 +350,14 @@ h5{
     }
     
   }
+  .projects{
+    @include viewport(x-large) {
+        width: 100%;
+    }
+    @include viewport(xx-large) {
+        width: 100%;
+    } 
+  }
  //scion//
  .content-grid {
     @include viewport(small) {

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/clash-display.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/356a53e20f.js" crossorigin="anonymous"></script>
 
@@ -20,18 +23,18 @@
 <body>
      <!-- Hamburger-->
      <div class="primary-nav__hamburger ishidden__hamburger">
-        <button id="btn__hamburger" type="button" class="primary-nav__hamburger hamburger inactive">
+        <button id="btn__hamburger" type="button" class="primary-nav__hamburger hamburger hamburger-spin-backwards inactive">
             <svg viewBox="0 0 100 100" aria-hidden="true">
-                <g class="primary-nav__menu-button-burger-lines">
-                    <line x1="20" y1="25" x2="80" y2="25" />
-                    <line x1="20" y1="50" x2="80" y2="50" />
-                    <line x1="20" y1="75" x2="80" y2="75" />
-                </g>
-                <g class="primary-nav__menu-button-cross-lines primary-nav__menu-button-cross-lines--hidden">
-                    <line x1="28" y1="28" x2="72" y2="72" />
-                    <line x1="28" y1="72" x2="72" y2="28" />
-                </g>
-            </svg>
+            <g class="primary-nav__menu-button-burger-lines">
+                <line x1="20" y1="25" x2="80" y2="25" />
+                <line x1="20" y1="50" x2="80" y2="50" />
+                <line x1="20" y1="75" x2="80" y2="75" />
+            </g>
+            <g class="primary-nav__menu-button-cross-lines">
+                <line x1="28" y1="28" x2="72" y2="72" />
+                <line x1="28" y1="72" x2="72" y2="28" />
+            </g>
+        </svg>
         </button>
     </div>
     <aside>
@@ -68,7 +71,7 @@
         </nav>
     </aside>
       
-            <div class="main-body layout-vertical-flex-container" id="main">
+            <div class="main-body" id="main">
                 <div class="header" id="header">
                     <!--Content before waves-->
                     <div class="inner-header">
@@ -96,7 +99,7 @@
                     
                 </div>
                 <div class="page-content"><!--Everything under header -->
-                        <section id="projects">
+                        <section id="projects" class="projects">
                                     <div class="title">
                                     <h2 class="h1">Projects</h2>
                                 </div>

@@ -26,7 +26,7 @@ a{
     flex-direction: column;
     width: 16rem;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     border-right: 0.5rem solid $color-primary;
     background-color: $white;
     margin-top: 0;
@@ -121,41 +121,47 @@ a{
   position: fixed;
   z-index: 1;
   vertical-align: middle;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 3.125rem;
-  height: 3.125rem;
+  top: toRem(20);
+  right: toRem(20);
+  width: toRem(50);
+  height: toRem(50);
+
 }
-.hamburger-spin {
+
+@media (min-width: 992px){
+.primary-nav__hamburger {
+    display: none;
+}
+}
+
+.hamburger {
+  width: 3.5rem;
+  height: 4rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  padding: 0;
+  border: 0.5rem solid $color-primary;
+  background-color: $white;
   cursor: pointer;
 }
-.hamburger {
-  width: 5rem;
-    height: 5rem;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 20;
-    padding: 0;
-    border: 0.5rem solid $color-primary;
-    background-color: #FFF;
-    cursor: pointer;
-}
-.primary-nav__hamburger svg {
+
+.hamburger-spin-backwards .primary-nav__menu-button-burger-lines {
   width: 100%;
   height: 100%;
   stroke: $color-primary;
   stroke-width: 12%;
+  transition: .5s ease;
 }
-.primary-nav__hamburger svg g.primary-nav__menu-button-cross-lines--hidden {
-  opacity: 0;
-  rotate: -45deg;
+.hamburger-spin .primary-nav__menu-button-cross-lines{
+  width: 100%;
+  height: 100%;
+  stroke: $color-primary;
+  stroke-width: 12%;
+  transition: .5s ease;
+  background-color: $color-secondary
 }
-.primary-nav__hamburger svg g.primary-nav__menu-button-burger-lines--hidden {
-  opacity: 0;
-  rotate: 45deg;
-}
-.primary-nav__hamburger svg g.primary-nav__menu-button-burger-lines, .primary-nav__hamburger svg g.primary-nav__menu-button-cross-lines {
-  transform-origin: center;
-  transition: 300ms;
+.primary-nav__hamburger:hover .primary-nav__hamburger:focus-visible .primary-nav__hamburger:focus{
+  background-color: $color-secondary;
 }
