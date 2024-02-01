@@ -20,6 +20,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @media (min-width: 992px){
+        .main-body {
+            margin-left: 14rem;
+        }
+        }
     
 .title {
 margin: 105px 0;

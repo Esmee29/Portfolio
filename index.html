@@ -18,52 +18,58 @@
 </head>
     
 <body>
-    <div class="grid">
-        <div class="primary-nav primary-nav--hidden">
-            <div class="primary-nav__vertical-flex-container">
-                <a href="" class="primary-nav__logo"><span>EF</span></a>
-                <div class="primary-nav__flex-container">
-                    <ul class="primary-nav__subpages-menu"> <!-- Primary navigation -->
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#projects">Portfolio</a></li>
-                        <li><a href="code.html">Coding Examples</a></li>
-                        <li><a href="course.html">SCS Scheme</a></li>
-                        <li><a href="#contact">Contact</a></li>
+     <!-- Hamburger-->
+     <div class="primary-nav__hamburger ishidden__hamburger">
+        <button id="btn__hamburger" type="button" class="primary-nav__hamburger hamburger inactive">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+                <g class="primary-nav__menu-button-burger-lines">
+                    <line x1="20" y1="25" x2="80" y2="25" />
+                    <line x1="20" y1="50" x2="80" y2="50" />
+                    <line x1="20" y1="75" x2="80" y2="75" />
+                </g>
+                <g class="primary-nav__menu-button-cross-lines primary-nav__menu-button-cross-lines--hidden">
+                    <line x1="28" y1="28" x2="72" y2="72" />
+                    <line x1="28" y1="72" x2="72" y2="28" />
+                </g>
+            </svg>
+        </button>
+    </div>
+    <aside>
+        <nav class="ishidden__nav primary-nav primary-nav-toggle" style="width: 0px;border-right: transparent;">
+            <a href="" class="primary-nav__logo"><span>EF</span></a>
+            <div class="primary-nav__flex-container">
+                <ul class="primary-nav__subpages-menu" style="display: none;"> <!-- Primary navigation -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="code.html">Coding Examples</a></li>
+                    <li><a href="course.html">SCS Scheme</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                    <ul class="nav-socials" style="display: none;">
+                        <li>
+                            <a href="https://www.linkedin.com/in/esmee-fulcher-261b3321a/" target="_blank">
+            <i class="devicon-linkedin-plain social link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Esmee29/" target="_blank">
+                                <i class="devicon-github-original social git"></i>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/esmeefdesigns/" target="_blank">
+                                <i class="fa-brands fa-instagram social insta"></i>
+                            </a>
+                            
+                        </li>
                     </ul>
-                    <div class="nav-socials">
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/esmee-fulcher-261b3321a/" target="_blank">
-                <i class="devicon-linkedin-plain social link"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Esmee29/" target="_blank">
-                                    <i class="devicon-github-original social git"></i>
-                                </a>
-                                
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/esmeefdesigns/" target="_blank">
-                                    <i class="fa-brands fa-instagram social insta"></i>
-                                </a>
-                                
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
             </div>
-        </div>
-            <div class="main-body">
+        </nav>
+    </aside>
+      
+            <div class="main-body layout-vertical-flex-container" id="main">
                 <div class="header" id="header">
-                        <div class="primary-nav__hamburger ishidden__hamburger">
-                            <button id="btn-hamburger" type="button" class="primary-nav__hamburger hamburger hamburger-spin-backwards inactive">
-                                <span class="hamburger-box">
-                                    <i class="fa-solid fa-bars"></i>
-                                </span>
-                            </button> 
-                        </div>
                     <!--Content before waves-->
                     <div class="inner-header">
                     <h1 id="header1"> Esmee Fulcher</h1>
