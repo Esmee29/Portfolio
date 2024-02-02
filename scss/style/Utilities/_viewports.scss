@@ -114,7 +114,18 @@ h5{
         @include viewport(large){
         display: none;
     }
+    @include viewport(x-large){
+        display: none;
     }
+    @include viewport(xx-large){
+        display: none;
+    }
+    }
+    @media (orientation: landscape){
+        .primary-nav {
+            overflow-x: auto;
+        }
+          }
 //about//
 .about-container {
     @include viewport(small) { 
