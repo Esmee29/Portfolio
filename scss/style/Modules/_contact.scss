@@ -102,6 +102,9 @@ input, textarea {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.btn-submit:hover{
+    background-color: $color-primary;
+}
 #first-name {
     &::placeholder {
         color: red;

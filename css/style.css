@@ -709,20 +709,6 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1259px) {
-  /* line 424, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .projects-block-button-group {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 424, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .projects-block-button-group {
-    margin-top: 50px;
-  }
-}
-
 /* line 1, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 a:hover {
   text-decoration: underline;
@@ -757,14 +743,14 @@ body {
 
 /* line 27, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h1 {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
 /* line 32, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 .h1 {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 2px;
   font-size: 48px;
 }
@@ -790,19 +776,19 @@ h4 {
 /* line 50, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 p {
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   font-weight: 600;
   line-height: 1.5;
   text-align: left;
 }
 
-/* line 58, ../../GitHub/Portfolio/scss/style/base/_base.scss */
-a {
-  font-family: 'Josefin Sans', sans-serif;
+/* line 59, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+a:hover {
+  text-decoration: none;
 }
 
-/* line 61, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 63, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 *,
 ::before,
 ::after {
@@ -810,22 +796,9 @@ a {
   /* 1 */
 }
 
-/* line 67, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 69, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 .page-content {
   background-color: #FFF;
-}
-
-/* line 70, ../../GitHub/Portfolio/scss/style/base/_base.scss */
-.scroll-container {
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-/* line 74, ../../GitHub/Portfolio/scss/style/base/_base.scss */
-.scroll {
-  text-decoration: none !important;
-  color: #329FF4;
-  font-size: 36px;
 }
 
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
@@ -1083,32 +1056,37 @@ input, textarea {
   margin-bottom: 2rem;
 }
 
-/* line 106, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 105, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.btn-submit:hover {
+  background-color: #185ad4;
+}
+
+/* line 109, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first-name::placeholder {
   color: red;
 }
 
-/* line 111, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 114, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last-name::placeholder {
   color: red;
 }
 
-/* line 116, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 119, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
   color: red;
 }
 
-/* line 121, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 124, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #phone::placeholder {
   color: black;
 }
 
-/* line 126, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 129, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #subject::placeholder {
   color: #000;
 }
 
-/* line 131, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 134, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message::placeholder {
   color: #000;
 }
@@ -1370,23 +1348,29 @@ input, textarea {
 }
 
 /* line 97, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.projects-block-button:hover {
+  background-color: #329FF4;
+  margin-bottom: 10px;
+}
+
+/* line 101, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-button a {
   color: #fff;
 }
 
-/* line 100, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 104, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .empty {
   padding-bottom: 200px;
 }
 
-/* line 103, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 107, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .btn {
   position: relative;
   display: inline-block;
-  padding: 12px 36px;
+  padding: 12px 20px;
   margin: 10px;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 16px;
   letter-spacing: 2px;
   border-radius: 5px;
   outline: none;
@@ -1394,68 +1378,6 @@ input, textarea {
   cursor: pointer;
   text-transform: uppercase;
   box-sizing: border-box;
-}
-
-/* line 117, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn {
-  overflow: hidden;
-}
-
-/* line 119, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn span {
-  position: relative;
-  z-index: 1;
-}
-
-/* line 123, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn:hover div {
-  top: -120px;
-}
-
-/* line 126, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn div {
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #4973ff;
-  box-shadow: inset 0 0 50px #3BCEE9;
-  transition: 0.5s;
-}
-
-/* line 136, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn div::before, .btn--liquidBtn div::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 200%;
-  height: 200%;
-  transform: translate(-50%, -75%);
-}
-
-/* line 146, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn div::before {
-  border-radius: 45%;
-  background: #3BCEE9;
-  animation: liquidAnimation 10s linear infinite;
-}
-
-/* line 151, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
-.btn--liquidBtn div::after {
-  border-radius: 40%;
-  background: #3BCEE9;
-  animation: liquidAnimation 10s linear infinite;
-}
-
-@keyframes liquidAnimation {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
 }
 
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */

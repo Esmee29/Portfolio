@@ -421,11 +421,4 @@ h5{
     }    
     
 }
-.projects-block-button-group{
-    @include viewport(large) {
-        margin-top: 50px;
-    }
-    @include viewport(x-large) {
-        margin-top: 50px;
-    }
-}
+
