@@ -192,7 +192,14 @@ h5{
          }               
 }
 //contact//
-
+.contact-container{
+    @include viewport(small) {
+        max-width: 400px;
+     }
+     @include viewport(medium) {
+        max-width: 700px;
+     }
+}
 .first-name {
         @include viewport(x-large) {
         grid-column-start: 1;
@@ -330,6 +337,7 @@ h5{
     }
     @include viewport(x-large) {
         grid-template-columns: repeat(3, 1fr);
+        margin: 0 1rem;
     }
     @include viewport(xx-large) {
         grid-template-columns: repeat(3, 1fr);    
