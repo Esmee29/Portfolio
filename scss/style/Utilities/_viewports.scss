@@ -193,39 +193,43 @@ h5{
 }
 //contact//
 
-.contact-container {
-    @include viewport(small) {
-        margin: 20px 10px;
+.first-name {
+        @include viewport(x-large) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        }
     }
-    @include viewport(medium) {
-        margin: 20px 10px;
+.last-name {
+    @include viewport(x-large) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+}
+.email {
+    @include viewport(x-large) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        }
+}  
+.phone {
+    @include viewport(x-large) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+}
+}
+@media (min-width: 1260px){
+    .subject{
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
-    @include viewport(x-large){
-        padding: 20px;
-        margin: 5% 1rem;
+    }
+@media (min-width: 1260px){
+    .message {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
     }
     
-}
-.contact-form{
-    @include viewport(small) {
-        display: flex;
-        flex-direction: column;
-    } 
-}
-.get-in-touch-form{
-    @include viewport(small){
-        margin: 0 10px 20px
-    }
-    @include viewport(medium){
-        margin: 0 20px 20px
-    }
-    @include viewport(large){
-        margin: 0 10px 20px
-    } 
-    @include viewport(x-large){
-        margin: 0 10px 20px
-    }   
-}
 //header//
 .inner-header {
     @include viewport(small){
@@ -316,8 +320,8 @@ h5{
         flex-direction: column;
     }
     @include viewport(medium) {
-        display: flex;
-        flex-direction: column;
+        max-width: 600px;
+    margin: 0 auto;
     }
     @include viewport(large) {
         grid-template-columns: repeat(2, 1fr);
@@ -325,8 +329,7 @@ h5{
         margin: 0 1rem;
     }
     @include viewport(x-large) {
-        grid-template-columns: repeat(3, 1fr);    
-    margin: 0 1rem;
+        grid-template-columns: repeat(3, 1fr);
     }
     @include viewport(xx-large) {
         grid-template-columns: repeat(3, 1fr);    
@@ -357,6 +360,14 @@ h5{
     @include viewport(xx-large) {
         width: 100%;
     } 
+  }
+  .projects-block-tools h5{
+    @include viewport(small) {
+        display: none;
+    }
+    @include viewport(medium) {
+        display: none;
+    }  
   }
  //scion//
  .content-grid {

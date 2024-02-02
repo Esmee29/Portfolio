@@ -341,87 +341,77 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 1260px) and (max-width: 2559px) {
   /* line 196, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .contact-container {
-    margin: 20px 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 196, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .contact-container {
-    margin: 20px 10px;
+  .first-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 196, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .contact-container {
-    padding: 20px;
-    margin: 5% 1rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  /* line 209, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  /* line 215, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .get-in-touch-form {
-    margin: 0 10px 20px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* line 215, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .get-in-touch-form {
-    margin: 0 20px 20px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  /* line 215, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .get-in-touch-form {
-    margin: 0 10px 20px;
+  /* line 202, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .last-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 215, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
-  .get-in-touch-form {
-    margin: 0 10px 20px;
+  /* line 208, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .email {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 2559px) {
+  /* line 214, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .phone {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 221, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .subject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 227, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .message {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 230, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 234, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .inner-header {
     height: 65vh;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 236, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 240, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .header {
     margin-left: 6px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 236, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 240, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .header {
     margin-left: 6px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 246, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 250, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -430,7 +420,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 246, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 250, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-direction: row;
@@ -439,7 +429,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 246, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 250, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -448,7 +438,7 @@
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 246, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 250, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools {
     display: flex;
     flex-wrap: wrap;
@@ -457,56 +447,56 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 269, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 273, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools li {
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 269, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 273, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-tools li {
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 277, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 281, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .symbol {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 277, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 281, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .symbol {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 285, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 289, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 285, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 289, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 298, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 20px 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 298, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     max-width: 100%;
     margin: 20px 10px;
@@ -514,28 +504,28 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 298, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 30px 10px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 298, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 30px 10px;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 294, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 298, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block {
     margin: 45px 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 313, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 317, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     display: flex;
     flex-direction: column;
@@ -543,15 +533,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 313, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 317, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
-    display: flex;
-    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 313, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 317, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
@@ -560,15 +550,14 @@
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 313, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 317, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 1rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 313, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 317, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 2rem;
@@ -577,14 +566,14 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 337, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 340, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-grid {
     margin: 0 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 342, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 345, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block:hover {
     transform: translate(0, -5px);
     transform: scale(0.95);
@@ -592,7 +581,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 342, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 345, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block:hover {
     transform: translate(0, -5px);
     transform: scale(0.95);
@@ -600,21 +589,35 @@
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 353, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 356, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects {
     width: 100%;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 353, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 356, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects {
     width: 100%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 362, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 364, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .projects-block-tools h5 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 364, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  .projects-block-tools h5 {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     display: flex;
     flex-direction: column;
@@ -622,84 +625,84 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 362, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 362, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 373, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .content-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 374, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 385, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .treehouse-container {
     margin: 0 10px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 379, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 390, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 379, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 390, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 379, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 390, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 379, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 390, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 2560px) {
-  /* line 379, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 390, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .net li {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 396, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 407, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .tree-text {
     margin: 100px 20px 0;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 396, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 407, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .tree-text {
     margin: 100px 20px 0;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 405, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 416, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button-group {
     margin-top: 50px;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 2559px) {
-  /* line 405, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
+  /* line 416, ../../GitHub/Portfolio/scss/style/Utilities/_viewports.scss */
   .projects-block-button-group {
     margin-top: 50px;
   }
@@ -933,92 +936,166 @@ code, pre {
 }
 
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.contact-container {
-  margin: 120px 1rem 0 1rem;
-  border-top: 3px solid #fff;
+.get-in-touch h3 {
   color: #185ad4;
-  border: 1ex solid #185ad4;
 }
 
-/* line 8, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.get-in-touch {
-  padding-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 16, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.input-field {
-  width: 100%;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  margin-top: 10px;
-  padding: 15px 33px;
-  margin: 10px 0px;
-  background-color: #3BCEE9;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
-}
-
-/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.form-field {
-  color: #fff;
-  padding: 0 10px;
-}
-
-/* line 31, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#submit {
-  display: block;
-  background-color: #329FF4;
-  width: 150px;
-  justify-self: center;
-  color: #fff;
-  border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  border: transparent;
-  margin-bottom: 10px;
-}
-
-/* line 45, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#first::placeholder {
-  color: #000;
-  font-size: 1.5rem;
-}
-
-/* line 51, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#last::placeholder {
-  color: #000;
-  font-size: 1.5rem;
-}
-
-/* line 57, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#email::placeholder {
-  color: #000;
-  font-size: 1.5rem;
-}
-
-/* line 63, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#subject::placeholder {
-  color: black;
-  font-size: 1.5rem;
-}
-
-/* line 69, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-#message::placeholder {
-  color: #000;
-  font-size: 1.5rem;
-}
-
-/* line 74, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
-.contact-form {
+/* line 4, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.contact-form-content {
   display: grid;
   width: 100%;
   gap: 10px;
   grid-template-columns: 50% 50%;
+}
+
+/* line 10, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.contact-container {
+  width: 75%;
+  align-self: center;
+  margin: 5rem auto;
+}
+
+/* line 16, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+input[type=text], textarea[type=text] {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  position: center;
+  width: 100%;
+  background-color: #3BCEE9;
+  color: #000;
+  border: 2px solid #185ad4;
+  border-radius: 2px;
+}
+
+/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+input, textarea {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.first-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* line 34, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.last-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* line 39, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.email {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* line 44, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.phone {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (min-width: 1260px) {
+  /* line 49, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  .message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/* line 54, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (min-width: 1260px) {
+  /* line 59, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  .subject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.subject {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* line 68, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#message {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  position: center;
+  width: 100%;
+  background-color: #3BCEE9;
+  color: #000;
+  border: 2px solid #185ad4;
+  border-radius: 2px;
+}
+
+/* line 79, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#phone {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  position: center;
+  width: 100%;
+  background-color: #3BCEE9;
+  color: #000;
+  border: 2px solid #185ad4;
+  border-radius: 2px;
+}
+
+/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+.btn-submit {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 3px;
+  background-color: #329FF4;
+  border: 2px solid #185ad4;
+  color: #fff;
+  row-gap: 0.20833em;
+  padding: 0.625em 2.08333em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 106, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#first-name::placeholder {
+  color: red;
+}
+
+/* line 111, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#last-name::placeholder {
+  color: red;
+}
+
+/* line 116, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#email::placeholder {
+  color: red;
+}
+
+/* line 121, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#phone::placeholder {
+  color: black;
+}
+
+/* line 126, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#subject::placeholder {
+  color: #000;
+}
+
+/* line 131, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+#message::placeholder {
+  color: #000;
 }
 
 /* line 2, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
@@ -1026,7 +1103,7 @@ code, pre {
   position: relative;
   text-align: center;
   color: #fff;
-  background: linear-gradient(270deg, #3bcee9, #329ff4, #185ad4);
+  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -1043,7 +1120,35 @@ code, pre {
   }
 }
 
-/* line 21, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 22, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+.footer {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  bottom: 0;
+}
+
+/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+.scroll-container {
+  height: 40vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+.scroll {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+}
+
+/* line 45, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .inner-header {
   height: 85vh;
   width: 100%;
@@ -1054,7 +1159,7 @@ code, pre {
   flex-direction: column;
 }
 
-/* line 31, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .waves {
   position: relative;
   width: 100%;
@@ -1064,7 +1169,7 @@ code, pre {
   max-height: 150px;
 }
 
-/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .content {
   position: relative;
   height: 20vh;
@@ -1073,30 +1178,30 @@ code, pre {
 }
 
 /* Animation */
-/* line 49, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 73, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
-/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 76, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
 
-/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
 
-/* line 60, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 84, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
 
-/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+/* line 88, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
 .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
@@ -1113,12 +1218,12 @@ code, pre {
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  /* line 78, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+  /* line 102, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
   .waves {
     height: 40px;
     min-height: 40px;
   }
-  /* line 82, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
+  /* line 106, ../../GitHub/Portfolio/scss/style/Modules/_header.scss */
   .content {
     height: 30vh;
   }
@@ -1234,24 +1339,108 @@ code, pre {
 }
 
 /* line 87, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.projects-block-tools h5 {
+  font-size: 16px;
+}
+
+/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .symbol {
   font-size: 30px;
 }
 
-/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 93, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-button {
   background-color: #3BCEE9;
   margin-bottom: 10px;
 }
 
-/* line 94, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 97, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .projects-block-button a {
   color: #fff;
 }
 
-/* line 97, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+/* line 100, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
 .empty {
   padding-bottom: 200px;
+}
+
+/* line 103, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+/* line 117, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn {
+  overflow: hidden;
+}
+
+/* line 119, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 123, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn:hover div {
+  top: -120px;
+}
+
+/* line 126, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn div {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px #3BCEE9;
+  transition: 0.5s;
+}
+
+/* line 136, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn div::before, .btn--liquidBtn div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -75%);
+}
+
+/* line 146, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn div::before {
+  border-radius: 45%;
+  background: #3BCEE9;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+/* line 151, ../../GitHub/Portfolio/scss/style/Modules/_projects.scss */
+.btn--liquidBtn div::after {
+  border-radius: 40%;
+  background: #3BCEE9;
+  animation: liquidAnimation 10s linear infinite;
+}
+
+@keyframes liquidAnimation {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
 
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
@@ -1317,7 +1506,7 @@ code, pre {
   align-items: center;
   padding: 2rem;
   border-bottom: 0.5rem solid #185ad4;
-  background: linear-gradient(270deg, #3bcee9, #329ff4, #185ad4);
+  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: #fff;

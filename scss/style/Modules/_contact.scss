@@ -1,79 +1,134 @@
-.contact-container {
-    margin: 120px 1rem 0 1rem;
-    border-top: 3px solid $white;
+.get-in-touch h3{
     color: $color-primary;
-    border: 1ex solid $color-primary;
-
-    }
-.get-in-touch {
-    padding-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
 }
-
-.input-field {
+.contact-form-content {
+    display: grid;
     width: 100%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    margin-top: 10px;
-    padding: 15px 33px;
-    margin: 10px 0px;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+.contact-container{
+    width: 75%;
+    align-self: center;
+    margin: 5rem auto;
+}
+
+input[type=text], textarea[type=text] {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    position: center;
+    width: 100%;
     background-color: $color-secondary;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    color: $black;
+    border: 2px solid $color-primary;
+    border-radius: 2px;
 }
-.form-field{
-    color: $white;
-    padding: 0 10px;
+input, textarea {
+    font-family: 'Josefin Sans', sans-serif;
 }
-#submit {
-    display: block;
-    background-color: #329FF4;
-    width: 150px;
-    justify-self: center;
-    color: $white;
+.first-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.last-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.email {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.phone {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media (min-width: 1260px){
+.message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+}
+.message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media (min-width: 1260px){
+    .subject{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    }
+    .subject {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+#message {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    position: center;
+    width: 100%;
+    background-color: $color-secondary;
+    color: $black;
+    border: 2px solid $color-primary;
+    border-radius: 2px;
+}
+#phone {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    position: center;
+    width: 100%;
+    background-color: $color-secondary;
+    color: $black;
+    border: 2px solid $color-primary;
+    border-radius: 2px;
+}
+.btn-submit {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1em;
     border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    border: transparent;
-    margin-bottom: 10px;
+    background-color: $color-third;
+    border: 2px solid $color-primary;
+    color: $white;
+    row-gap: 0.20833em;
+    padding: 0.625em 2.08333em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-#first {
+#first-name {
     &::placeholder {
-        color: $black;
-        font-size: 1.5rem;
+        color: red;
     }
 }
-#last {
+#last-name {
     &::placeholder {
-        color: $black;
-        font-size: 1.5rem;
+        color: red;
     }
 }
 #email {
     &::placeholder {
-        color: $black;
-        font-size: 1.5rem;
+        color: red;
+    }
+}
+#phone {
+    &::placeholder {
+        color: black;
     }
 }
 #subject {
     &::placeholder {
-        color: black;
-        font-size: 1.5rem;
+        color: $black;
     }
 }
 #message {
     &::placeholder {
         color: $black;
-        font-size: 1.5rem;
     }
-}
-.contact-form{
-    display: grid;
-    width: 100%;
-    gap: 10px;
-    grid-template-columns: 50% 50%;
 }
