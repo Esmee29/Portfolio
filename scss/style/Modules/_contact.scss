@@ -107,17 +107,17 @@ input, textarea {
 }
 #first-name {
     &::placeholder {
-        color: red;
+        color: black;
     }
 }
 #last-name {
     &::placeholder {
-        color: red;
+        color: black;
     }
 }
 #email {
     &::placeholder {
-        color: red;
+        color: black;
     }
 }
 #phone {

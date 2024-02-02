@@ -1063,17 +1063,17 @@ input, textarea {
 
 /* line 109, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first-name::placeholder {
-  color: red;
+  color: black;
 }
 
 /* line 114, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last-name::placeholder {
-  color: red;
+  color: black;
 }
 
 /* line 119, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
-  color: red;
+  color: black;
 }
 
 /* line 124, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
