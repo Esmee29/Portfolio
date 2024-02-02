@@ -33,6 +33,11 @@ a{
     transition: 0.5s;
     z-index: 5;
   }
+  @media (orientation: landscape){
+.primary-nav {
+    overflow-x: auto;
+}
+  }
   .primary-nav ul {
     list-style: none;
     padding: 0;
@@ -127,13 +132,6 @@ a{
   height: toRem(50);
 
 }
-
-@media (min-width: 992px){
-.primary-nav__hamburger {
-    display: none;
-}
-}
-
 .hamburger {
   width: 3.5rem;
   height: 4rem;

@@ -109,7 +109,12 @@ h5{
         font-size: 2rem;
         }
 }
-
+//sidebar nav//
+    .primary-nav__hamburger {
+        @include viewport(large){
+        display: none;
+    }
+    }
 //about//
 .about-container {
     @include viewport(small) { 
