@@ -320,7 +320,7 @@ h5{
 
 .projects-block{
     @include viewport(small) {
-        margin: 20px 10px;
+        margin: 20px 20px;
     }
     @include viewport(medium) {   
     max-width: 100%;

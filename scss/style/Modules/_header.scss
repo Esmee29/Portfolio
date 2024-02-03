@@ -36,11 +36,13 @@ height: 40vh;
   justify-content: center;
   flex-direction: column;
 }
-
+.scroll h4{
+  color: $white;
+}
 .scroll {
   text-decoration: none;
   color: $white;
-  font-size: 36px;
+  font-size: 16px;
 }
 .inner-header {
     height:85vh;

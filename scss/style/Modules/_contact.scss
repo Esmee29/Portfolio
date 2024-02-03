@@ -10,7 +10,7 @@
 .contact-container{
     width: 75%;
     align-self: center;
-    margin: 5rem auto;
+    margin: 3rem auto;
 }
 
 input[type=text], textarea[type=text] {
@@ -100,7 +100,6 @@ input, textarea {
     row-gap: 0.20833em;
     padding: 0.625em 2.08333em;
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 .btn-submit:hover{
     background-color: $color-secondary;
