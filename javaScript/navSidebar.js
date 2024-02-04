@@ -8,12 +8,12 @@ const navContact = document.getElementById("primary-nav__contact");
 const navPortfolio = document.getElementById("primary-nav__portfolio");
 const btnHamburger = document.getElementById("btn__hamburger");
 let isToggled = document.getElementsByClassName(".ishidden_nav");
-console.log(btnHamburger.classList); // undefined ???
+console.log(btnHamburger.classList);
 isToggled = false;
 
 let screenWidth = window.screen.width;
 
-if (screenWidth <= 992) // Inital check of screenwidth on page load
+if (screenWidth <= 992) 
 {
     navMenu[0].style.width = "0";
     navMenu[0].style.borderRight = "transparent";
@@ -30,9 +30,8 @@ else
     navSocials[0].style.display = "flex";
 }
 
-window.onresize = function() { // Check of screenwidth on window resize
+window.onresize = function() {
     let screenWidth = window.screen.width;
-    //console.log(screenWidth);
 
     if (screenWidth <= 992 && btnHamburger.classList.contains("inactive"))
     {
@@ -79,9 +78,8 @@ function mobileMenu() {
         btnHamburger.classList.remove("hamburger-spin");
         btnHamburger.classList.remove("active");
     }
-    //hamburger.classList.toggle("hamburger-spin");
     console.log(hamburger);
-    if (isToggled) { // When mobile viewer CANNOT see nav menu
+    if (isToggled) {
         isToggled = false;
         navMenu[0].style.width = "0";
         navMenu[0].style.borderRight = "transparent";
@@ -103,7 +101,7 @@ function mobileMenu() {
 }
 
 
-if (navContact || navPortfolio !== null) // prevents errors on webpages that don't have these elements
+if (navContact || navPortfolio !== null)
 {
     navContact.addEventListener("click", closeMenu);
     navPortfolio.addEventListener("click", closeMenu);
