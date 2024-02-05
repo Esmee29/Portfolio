@@ -1007,59 +1007,59 @@ input, textarea {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 31, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .first-name {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 34, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 35, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .last-name {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 39, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .email {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 44, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 45, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .phone {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 @media (min-width: 1260px) {
-  /* line 49, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  /* line 50, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
   .message {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 }
 
-/* line 54, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .message {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 @media (min-width: 1260px) {
-  /* line 59, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  /* line 60, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
   .subject {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 }
 
-/* line 64, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .subject {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 68, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 69, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message {
   box-sizing: border-box;
   padding: 12px 20px;
@@ -1072,7 +1072,7 @@ input, textarea {
   border-radius: 2px;
 }
 
-/* line 79, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #phone {
   box-sizing: border-box;
   padding: 12px 20px;
@@ -1085,7 +1085,7 @@ input, textarea {
   border-radius: 2px;
 }
 
-/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 91, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .button-fill-submit {
   flex: 1;
   padding: 5px 15px;
@@ -1102,43 +1102,43 @@ input, textarea {
   transition: 2s ease;
 }
 
-/* line 105, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 106, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .button-fill-submit:hover {
   background-position: 500% 100%;
   color: white;
 }
 
-/* line 110, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 111, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 button:nth-child {
   filter: hue-rotate(340deg);
 }
 
-/* line 116, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 117, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first-name::placeholder {
   color: black;
 }
 
-/* line 121, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 122, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last-name::placeholder {
   color: black;
 }
 
-/* line 126, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 127, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
   color: black;
 }
 
-/* line 131, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 132, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #phone::placeholder {
   color: black;
 }
 
-/* line 136, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #subject::placeholder {
   color: #000;
 }
 
-/* line 141, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 142, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message::placeholder {
   color: #000;
 }

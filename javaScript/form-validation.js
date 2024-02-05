@@ -37,10 +37,10 @@ submitButton.addEventListener('click', function(event) {
   // Optional validations
   // Validate phone number (exactly 11 digits), if provided //
   const phoneNumber = phoneInput.value;
-  if (phoneNumber.length > 0 && !/^\d{11}$/.test(phoneNumber)) {
-    alert('Please enter a valid phone number');
-    return;
-  }
+if (phoneNumber.length > 0 && !/^[\d-+]{11,}$/.test(phoneNumber)) {
+  alert('Please enter a valid phone number');
+  return;
+}
 
   // Validate subject (any characters), if provided //
   const subject = subjectInput.value;
