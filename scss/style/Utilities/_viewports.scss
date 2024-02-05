@@ -449,13 +449,21 @@ h5{
         font-size: 2rem;
         } 
 }
-.tree-text{
-    @include viewport(large) {
-        margin: 100px 20px 0;
-    }
-    @include viewport(x-large) {
-        margin: 100px 20px 0;
-    }    
+ul.net {
+    @include viewport(medium) {   
+        columns: 2;
+        }
+        @include viewport(large) {   
+            columns: 2;
+            }
+        @include viewport(x-large) {   
+            columns: 2;
+            }
+        @include viewport(xx-large) {   
+            columns: 2;
+            } 
     
 }
+
+    
 

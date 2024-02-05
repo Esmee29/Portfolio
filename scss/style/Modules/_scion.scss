@@ -22,14 +22,16 @@
     color: $color-primary;
     font-weight: 400;
 }
+
 .net li{
     list-style:circle;
     letter-spacing: 1px;
-  font-size:14px;
+  font-size:16px;
   color: $black;
   font-weight: 500;
     line-height: 1.5;
     text-align: left;
+    padding: 0 10px;
 }
 .scion-container {
     margin: 120px 1rem 30px 1rem;
@@ -37,4 +39,12 @@
     border: 1ex solid $color-primary;
     padding: 20px;
     }
+    .scion-container p{
+        font-size: 18px;
+        padding: 0 10px;
+        }
+        .tree-text{
+            font-size: 18px;
+            padding: 0 10px;
+        }
     
