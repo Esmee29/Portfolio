@@ -3,17 +3,17 @@ const hamburger = document.querySelector(".primary-nav__hamburger");
 const navMenu = document.getElementsByClassName("primary-nav");
 const navButtons = document.getElementsByTagName("ul");
 const navLogo = document.getElementsByClassName("primary-nav__logo");
-const navSocials = document.getElementsByClassName("nav-socials");
+const navSocials = document.getElementsByClassName("primary-nav__socials");
 const navContact = document.getElementById("primary-nav__contact");
 const navPortfolio = document.getElementById("primary-nav__portfolio");
 const btnHamburger = document.getElementById("btn__hamburger");
 let isToggled = document.getElementsByClassName(".ishidden_nav");
-console.log(btnHamburger.classList);
+console.log(btnHamburger.classList); // undefined ???
 isToggled = false;
 
 let screenWidth = window.screen.width;
 
-if (screenWidth <= 992) 
+if (screenWidth <= 992) // Inital check of screenwidth on page load
 {
     navMenu[0].style.width = "0";
     navMenu[0].style.borderRight = "transparent";
@@ -23,15 +23,16 @@ if (screenWidth <= 992)
 }
 else
 {
-    navMenu[0].style.width = "16rem";
+    navMenu[0].style.width = "15rem";
     navMenu[0].style.borderRight = "8px solid #185ad4";
     navLogo[0].style.display = "flex";
     navButtons[0].style.display = "block";
     navSocials[0].style.display = "flex";
 }
 
-window.onresize = function() {
+window.onresize = function() { // Check of screenwidth on window resize
     let screenWidth = window.screen.width;
+    //console.log(screenWidth);
 
     if (screenWidth <= 992 && btnHamburger.classList.contains("inactive"))
     {
@@ -52,7 +53,7 @@ window.onresize = function() {
     {
         isToggled = true;
         console.log("screenwidth large");
-        navMenu[0].style.width = "16rem";
+        navMenu[0].style.width = "15rem";
         navMenu[0].style.borderRight = "8px solid #185ad4";
         navLogo[0].style.display = "flex";
         navButtons[0].style.display = "block";
@@ -78,8 +79,9 @@ function mobileMenu() {
         btnHamburger.classList.remove("hamburger-spin");
         btnHamburger.classList.remove("active");
     }
+    //hamburger.classList.toggle("hamburger-spin");
     console.log(hamburger);
-    if (isToggled) {
+    if (isToggled) { // When mobile viewer CANNOT see nav menu
         isToggled = false;
         navMenu[0].style.width = "0";
         navMenu[0].style.borderRight = "transparent";
@@ -101,7 +103,7 @@ function mobileMenu() {
 }
 
 
-if (navContact || navPortfolio !== null)
+if (navContact || navPortfolio !== null) // prevents errors on webpages that don't have these elements
 {
     navContact.addEventListener("click", closeMenu);
     navPortfolio.addEventListener("click", closeMenu);
@@ -130,4 +132,5 @@ function closeMenu() {
     }
     
 }
+
 
