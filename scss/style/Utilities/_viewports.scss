@@ -248,8 +248,20 @@ h5{
 //header//
 .inner-header {
     @include viewport(small){
-      height:65vh;
+      height:85vh;
     }
+    @include viewport(medium){
+        height:80vh;
+      }
+      @include viewport(large){
+        height:75vh;
+      }
+        @include viewport(x-large){
+            height:75vh;
+        }
+  @include viewport(xx-large){
+    height:75vh;
+}
   }
   
   .header{

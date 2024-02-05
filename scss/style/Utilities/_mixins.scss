@@ -21,7 +21,7 @@
         }
     }
     @else if $break == "x-large" { // extra large
-        @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 2559px
+        @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1440px
             @content;
         }
     }
