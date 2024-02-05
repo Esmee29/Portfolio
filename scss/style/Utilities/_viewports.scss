@@ -305,6 +305,23 @@ h5{
     font-size: 1.8rem; 
 }
 }
+.primary-nav__pages li a {
+    @include viewport(small) {
+        padding: 1rem;
+     }
+     @include viewport(medium) { 
+        padding: 1rem; 
+     }
+     @include viewport(large) {
+        padding: 2rem 1rem; 
+     }
+     @include viewport(x-large) {
+        padding: 2rem 1rem;
+     }
+     @include viewport(xx-large) {
+        padding: 2rem 1rem;
+     }    
+  }
 .symbol{
     @include viewport(small) {
        font-size: 3rem;

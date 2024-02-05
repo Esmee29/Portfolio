@@ -24,7 +24,7 @@ if (screenWidth <= 992) // Inital check of screenwidth on page load
 else
 {
     navMenu[0].style.width = "15rem";
-    navMenu[0].style.borderRight = "8px solid #185ad4";
+    navMenu[0].style.borderRight = "0.5rem solid #185ad4";
     navLogo[0].style.display = "flex";
     navButtons[0].style.display = "block";
     navSocials[0].style.display = "flex";
@@ -54,7 +54,7 @@ window.onresize = function() { // Check of screenwidth on window resize
         isToggled = true;
         console.log("screenwidth large");
         navMenu[0].style.width = "15rem";
-        navMenu[0].style.borderRight = "8px solid #185ad4";
+        navMenu[0].style.borderRight = "0.5rem solid #185ad4";
         navLogo[0].style.display = "flex";
         navButtons[0].style.display = "block";
         navSocials[0].style.display = "flex";
@@ -93,7 +93,7 @@ function mobileMenu() {
     {
         isToggled = true;
         navMenu[0].style.width = "15rem";
-        navMenu[0].style.borderRight = "8px solid #185ad4";
+        navMenu[0].style.borderRight = "0.5rem solid #185ad4";
         navLogo[0].style.display = "flex";
         navButtons[0].style.display = "block";
         navSocials[0].style.display = "flex";
@@ -125,7 +125,7 @@ function closeMenu() {
     {
         isToggled = true;
         navMenu[0].style.width = "15rem";
-        navMenu[0].style.borderRight = "8px solid #185ad4";
+        navMenu[0].style.borderRight = "0.5rem solid #185ad4";
         navLogo[0].style.display = "flex";
         navButtons[0].style.display = "block";
         navSocials[0].style.display = "flex";
