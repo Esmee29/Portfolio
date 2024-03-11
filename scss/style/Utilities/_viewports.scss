@@ -92,23 +92,7 @@ h4{
             font-size: 2rem;
             }
 }
-h5{
-    @include viewport(small) {
-        font-size: 1rem;
-    }
-    @include viewport(medium) {   
-    font-size: 1.5rem;
-    }
-    @include viewport(large) {   
-        font-size: 1rem;
-        }      
-    @include viewport(x-large) {   
-        font-size: 1.5rem;
-        }
-    @include viewport(xx-large) {   
-        font-size: 2rem;
-        }
-}
+
 //sidebar nav//
     .primary-nav__hamburger {
         @include viewport(large){
@@ -137,6 +121,9 @@ h5{
 .about-container-tech{
     @include viewport(small) { 
         margin: 20px 10px;
+    }
+    @include viewport(x-large) { 
+        height: 225px;
     } 
 }
 .about-container {

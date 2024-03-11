@@ -33,7 +33,14 @@
             
 }
 .about-icons{
-    font-size: 24px;
+    font-size: 16px;
     color:$color-secondary;
     margin:0 10px;
   }
+  .about-tools li h5 {
+    display: none;
+}
+
+.about-tools li:hover h5 {
+    display: block;
+}

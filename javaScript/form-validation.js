@@ -27,12 +27,12 @@ submitButton.addEventListener('click', function(event) {
   }
 
   // Validate email (format: xxx@xxx.xxx) //
-  const email = emailInput.value;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
-  if (!emailRegex.test(email)) {
-    alert('Please enter a valid email address');
-    return;
-  }
+const email = emailInput.value;
+const emailRegex = /^[^\s@]+([-][^\s@]+)?@[^\s@]+\.[^\s@]+$/;;
+if (!emailRegex.test(email)) {
+  alert('Please enter a valid email address');
+  return;
+}
 
   // Optional validations
   // Validate phone number (exactly 11 digits), if provided //
