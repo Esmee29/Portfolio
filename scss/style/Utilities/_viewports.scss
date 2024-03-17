@@ -1,12 +1,5 @@
 //base//
-.page-content{
-    @include viewport(large) {   
-        margin: 6px;
-        }
-        @include viewport(x-large) {   
-            margin: 6px;
-            }       
-}
+
 p{
     @include viewport(small) {
         font-size: 1rem;
@@ -260,12 +253,14 @@ h4{
 }
 }
 //projects//
-
+.tools-title{
+    @include viewport(small) {
+        display: none;
+     }
+}
 .projects-block-tools{
     @include viewport(small) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
+        display: none;
      }
     @include viewport(medium) { 
         display: flex;
@@ -346,10 +341,6 @@ h4{
             }
 }
 .project-grid {
-    @include viewport(small) {
-        display: flex;
-        flex-direction: column;
-    }
     @include viewport(medium) {
         max-width: 600px;
     margin: 0 auto;

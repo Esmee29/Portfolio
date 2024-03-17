@@ -27,12 +27,18 @@
         }
         }
     
-.title {
-margin: 105px 0;
+        .title {
+            margin: 105px 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.index-title{
+    margin: 105px 0;
 text-align: center;
-color: $color-primary;
+color: white;
 font-weight: 400;
-
 }
 .projects-block {
     display: flex;
@@ -46,14 +52,7 @@ font-weight: 400;
     transform: scale(1.1);
   }
 
-#projects {
-    padding-top: 0.01rem;
-}
 
-.project-grid {
-    display: grid;
-    gap: 1.5rem;
-}
 
 .projects-block img {
     display: block;
@@ -69,34 +68,13 @@ font-weight: 400;
     margin-left: 8px;
   margin-right: 5px;
 }
-.icon {
-    color: $color-secondary;
-    margin-right: 0.5rem;
-}
+
 .projects-block > h3 {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
-.projects-block-tools li{
-    color: $color-primary;
-    list-style: none;
-    margin-right: 1.5rem;
-    margin-bottom: 1rem;  
-}
-.projects-block-tools h5{
- font-size: 16px;  
-}
-.projects-block-tools h5 {
-    display: none;
-}
 
-.projects-block-tools:hover h5 {
-    display: block;
-}
-.symbol{
-    font-size: 30px;
-}
 .projects-block-button{
     background-color: $color-secondary;
     margin-bottom: 10px;
@@ -114,20 +92,6 @@ font-weight: 400;
 }
 
 
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-sizing: border-box;
-}
+
     
     
