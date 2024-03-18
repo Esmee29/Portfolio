@@ -259,24 +259,9 @@ h4{
      }
 }
 .projects-block-tools{
-    @include viewport(small) {
-        display: none;
-     }
-    @include viewport(medium) { 
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
-    }
-    @include viewport(large) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
-     }
-     @include viewport(x-large) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
-     }    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects-block-tools li{
