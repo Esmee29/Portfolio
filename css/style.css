@@ -1093,7 +1093,7 @@ button:nth-child {
 /* line 1, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card {
   position: relative;
-  width: 400px;
+  width: 450px;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
   display: flex;
@@ -1103,7 +1103,7 @@ button:nth-child {
   perspective: 1000px;
   box-shadow: 0 0 0 5px #185ad4;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 350px;
+  height: 400px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1137,42 +1137,40 @@ button:nth-child {
 }
 
 /* line 34, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
-.card svg {
-  width: 150px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.image-card-app {
+  height: inherit;
 }
 
-/* line 39, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 37, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .image-array {
   font-size: 40px;
 }
 
-/* line 42, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .image-card {
   max-width: 360px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 42, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 40, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .image-card {
     max-width: 260px;
   }
 }
 
-/* line 48, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 46, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__image {
   display: block;
   width: 100%;
 }
 
-/* line 53, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 51, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 0 5px #185ad4;
 }
 
-/* line 58, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__content {
   position: absolute;
   top: 0;
@@ -1187,12 +1185,12 @@ button:nth-child {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* line 72, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 70, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card:hover .card__content {
   transform: rotateX(0deg);
 }
 
-/* line 76, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 74, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__title {
   margin: 0;
   font-size: 24px;
@@ -1201,18 +1199,13 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 76, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 74, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card__title {
     font-size: 26px;
   }
 }
 
-/* line 86, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
-.card:hover svg {
-  scale: 0;
-}
-
-/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 84, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__description {
   margin: 10px 0 10px;
   font-size: 16px;
@@ -1221,13 +1214,13 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 90, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 84, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card__description {
     font-size: 18px;
   }
 }
 
-/* line 100, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 94, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__button {
   padding: 15px;
   border-radius: 8px;
@@ -1236,26 +1229,26 @@ button:nth-child {
   color: white;
 }
 
-/* line 107, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 101, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__button:hover {
   background: #185ad4;
 }
 
-/* line 111, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 105, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .secondary {
   background: transparent;
   color: #329FF4;
   border: 1px solid #329FF4;
 }
 
-/* line 116, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 110, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .secondary:hover {
   background: #329FF4;
   color: #fff;
   border: 1px solid #329FF4;
 }
 
-/* line 121, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 115, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools li {
   color: #185ad4;
   list-style: none;
@@ -1264,50 +1257,50 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 121, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 115, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .projects-block-tools li {
     display: none;
   }
 }
 
-/* line 130, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 124, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools h5 {
   font-size: 12px;
 }
 
-/* line 133, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 127, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools h5 {
   display: none;
 }
 
-/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 131, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools:hover h5 {
   display: block;
 }
 
-/* line 140, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 134, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .symbol {
   font-size: 30px;
 }
 
-/* line 143, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .php {
   font-size: 40px;
 }
 
-/* line 146, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 140, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .icon {
   color: #3BCEE9;
   margin-right: 0.5rem;
 }
 
-/* line 150, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 144, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 #projects {
   padding-top: 0.01rem;
   padding-bottom: 3rem;
 }
 
-/* line 155, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 149, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1315,7 +1308,7 @@ button:nth-child {
   justify-content: center;
 }
 
-/* line 161, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 155, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .btn {
   position: relative;
   display: inline-block;
@@ -1605,9 +1598,10 @@ button:nth-child {
   border-top: 3px solid #fff;
   border: 1ex solid #185ad4;
   padding: 20px;
+  background-color: #fff;
 }
 
-/* line 13, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 14, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .image {
   max-width: 200px;
   max-height: 200px;
@@ -1616,14 +1610,14 @@ button:nth-child {
   padding-bottom: 20px;
 }
 
-/* line 20, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 21, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .tree-title {
   text-align: center;
   color: #185ad4;
   font-weight: 400;
 }
 
-/* line 26, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .net li {
   list-style: circle;
   letter-spacing: 1px;
@@ -1635,21 +1629,22 @@ button:nth-child {
   padding: 0 10px;
 }
 
-/* line 36, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 37, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .scion-container {
   margin: 120px 1rem 30px 1rem;
   border-top: 3px solid #fff;
   border: 1ex solid #185ad4;
   padding: 20px;
+  background-color: #fff;
 }
 
-/* line 42, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 44, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .scion-container p {
   font-size: 18px;
   padding: 0 10px;
 }
 
-/* line 46, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
+/* line 48, ../../GitHub/Portfolio/scss/style/Modules/_scion.scss */
 .tree-text {
   font-size: 18px;
   padding: 0 10px;
