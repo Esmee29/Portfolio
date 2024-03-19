@@ -755,47 +755,46 @@ html {
 /* line 22, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 body {
   margin: 0;
-  background-color: #fff;
 }
 
-/* line 27, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 26, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h1 {
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
-/* line 32, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 31, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 .h1 {
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 48px;
 }
 
-/* line 37, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 36, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h2 {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 24px;
 }
 
-/* line 42, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 41, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h3 {
   font-size: 2rem;
 }
 
-/* line 46, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 45, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h4 {
   font-weight: 600;
   color: #329FF4;
 }
 
-/* line 50, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 49, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 h5 {
   font-size: 1rem;
 }
 
-/* line 54, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 53, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 p {
   letter-spacing: 1px;
   font-size: 16px;
@@ -805,12 +804,12 @@ p {
   text-align: left;
 }
 
-/* line 63, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 62, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 67, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 66, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 *,
 ::before,
 ::after {
@@ -818,7 +817,7 @@ a:hover {
   /* 1 */
 }
 
-/* line 73, ../../GitHub/Portfolio/scss/style/base/_base.scss */
+/* line 72, ../../GitHub/Portfolio/scss/style/base/_base.scss */
 .page-content {
   background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
   background-size: 400% 400%;
@@ -878,12 +877,12 @@ a:hover {
 }
 
 /* line 42, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
-.about-tools li h5 {
+.about-tools h5 {
   display: none;
 }
 
 /* line 46, ../../GitHub/Portfolio/scss/style/Modules/_about.scss */
-.about-tools li:hover h5 {
+.about-tools:hover h5 {
   display: block;
 }
 
@@ -934,9 +933,10 @@ code, pre {
   width: 75%;
   align-self: center;
   margin: 3rem auto;
+  background-color: white;
 }
 
-/* line 16, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 17, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 input[type=text], textarea[type=text] {
   box-sizing: border-box;
   padding: 12px 20px;
@@ -949,64 +949,64 @@ input[type=text], textarea[type=text] {
   border-radius: 2px;
 }
 
-/* line 27, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 28, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 input, textarea {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* line 31, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 32, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .first-name {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 35, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 36, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .last-name {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 41, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .email {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 45, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 46, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .phone {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 @media (min-width: 1260px) {
-  /* line 50, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  /* line 51, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
   .message {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 }
 
-/* line 55, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .message {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 @media (min-width: 1260px) {
-  /* line 60, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+  /* line 61, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
   .subject {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 }
 
-/* line 65, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 66, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .subject {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-/* line 69, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 70, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message {
   box-sizing: border-box;
   padding: 12px 20px;
@@ -1019,7 +1019,7 @@ input, textarea {
   border-radius: 2px;
 }
 
-/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 81, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #phone {
   box-sizing: border-box;
   padding: 12px 20px;
@@ -1032,7 +1032,7 @@ input, textarea {
   border-radius: 2px;
 }
 
-/* line 91, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 92, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .button-fill-submit {
   flex: 1;
   padding: 5px 15px;
@@ -1049,43 +1049,43 @@ input, textarea {
   transition: 2s ease;
 }
 
-/* line 106, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 107, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 .button-fill-submit:hover {
   background-position: 500% 100%;
   color: white;
 }
 
-/* line 111, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 112, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 button:nth-child {
   filter: hue-rotate(340deg);
 }
 
-/* line 117, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 118, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #first-name::placeholder {
   color: black;
 }
 
-/* line 122, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 123, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #last-name::placeholder {
   color: black;
 }
 
-/* line 127, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 128, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #email::placeholder {
   color: black;
 }
 
-/* line 132, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 133, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #phone::placeholder {
   color: black;
 }
 
-/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 138, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #subject::placeholder {
   color: #000;
 }
 
-/* line 142, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
+/* line 143, ../../GitHub/Portfolio/scss/style/Modules/_contact.scss */
 #message::placeholder {
   color: #000;
 }

@@ -39,10 +39,10 @@
     color:$color-secondary;
     margin:0 10px;
   }
-  .about-tools li h5 {
+  .about-tools h5 {
     display: none;
 }
 
-.about-tools li:hover h5 {
+.about-tools:hover h5 {
     display: block;
 }
