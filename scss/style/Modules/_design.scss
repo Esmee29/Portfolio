@@ -14,15 +14,17 @@
 }
   .card{
     @include viewport(small) {
-        width: 280px;
-        height: 320px;
+      width: 90vw;
+      height: 460px;
     }
     @include viewport(medium) {
-        height: 320px;
+        width: 500px;
     }
+    @include viewport(x-large) {
+      height: 420px;
+  }
     @include viewport(xx-large) {
-        height: 380px;
-        width: 450px;
+        height: 450px;
     }
   }
   .projects-block-tools{
@@ -30,18 +32,22 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.card__buttons{
+  display: flex;
+  flex-direction: row;
+  @include viewport(small) {
+    flex-direction: column;
+}
+}
 .image-card-app{
-    height: inherit;
+    height: 100%;
 }
   .image-array{
     font-size: 40px;
   }
   .image-card{
-    max-width: 360px;
-    @include viewport(small) {
-        max-width: 260px;
-    }
+    height: 100%;
+    width: 100%;
 }
   .card__image {
     display: block;
@@ -97,6 +103,8 @@
     background: $color-secondary;
     border: none;
     color: white;
+    margin: 0 10px 10px 0;
+    width: 150px;
   }
   .card__button:hover {
     background: $color-primary;

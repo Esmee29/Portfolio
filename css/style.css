@@ -1109,68 +1109,81 @@ button:nth-child {
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 15, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card {
-    width: 280px;
-    height: 320px;
+    width: 90vw;
+    height: 460px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 15, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card {
-    height: 320px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1439px) {
+  /* line 15, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  .card {
+    height: 420px;
   }
 }
 
 @media (min-width: 1440px) {
   /* line 15, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card {
-    height: 380px;
-    width: 450px;
+    height: 450px;
   }
 }
 
-/* line 28, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 30, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 34, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
-.image-card-app {
-  height: inherit;
+/* line 35, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+.card__buttons {
+  display: flex;
+  flex-direction: row;
 }
 
-/* line 37, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 35, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  .card__buttons {
+    flex-direction: column;
+  }
+}
+
+/* line 42, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+.image-card-app {
+  height: 100%;
+}
+
+/* line 45, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .image-array {
   font-size: 40px;
 }
 
-/* line 40, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 48, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .image-card {
-  max-width: 360px;
+  height: 100%;
+  width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  /* line 40, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
-  .image-card {
-    max-width: 260px;
-  }
-}
-
-/* line 46, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 52, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__image {
   display: block;
   width: 100%;
 }
 
-/* line 51, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 57, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 0 5px #185ad4;
 }
 
-/* line 56, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 62, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__content {
   position: absolute;
   top: 0;
@@ -1185,12 +1198,12 @@ button:nth-child {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* line 70, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 76, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card:hover .card__content {
   transform: rotateX(0deg);
 }
 
-/* line 74, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 80, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__title {
   margin: 0;
   font-size: 24px;
@@ -1199,13 +1212,13 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 74, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 80, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card__title {
     font-size: 26px;
   }
 }
 
-/* line 84, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 90, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__description {
   margin: 10px 0 10px;
   font-size: 16px;
@@ -1214,41 +1227,43 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 84, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 90, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .card__description {
     font-size: 18px;
   }
 }
 
-/* line 94, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 100, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__button {
   padding: 15px;
   border-radius: 8px;
   background: #3BCEE9;
   border: none;
   color: white;
+  margin: 0 10px 10px 0;
+  width: 150px;
 }
 
-/* line 101, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 109, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .card__button:hover {
   background: #185ad4;
 }
 
-/* line 105, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 113, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .secondary {
   background: transparent;
   color: #329FF4;
   border: 1px solid #329FF4;
 }
 
-/* line 110, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 118, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .secondary:hover {
   background: #329FF4;
   color: #fff;
   border: 1px solid #329FF4;
 }
 
-/* line 115, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 123, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools li {
   color: #185ad4;
   list-style: none;
@@ -1257,50 +1272,50 @@ button:nth-child {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 115, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+  /* line 123, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
   .projects-block-tools li {
     display: none;
   }
 }
 
-/* line 124, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 132, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools h5 {
   font-size: 12px;
 }
 
-/* line 127, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 135, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools h5 {
   display: none;
 }
 
-/* line 131, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 139, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .projects-block-tools:hover h5 {
   display: block;
 }
 
-/* line 134, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 142, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .symbol {
   font-size: 30px;
 }
 
-/* line 137, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 145, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .php {
   font-size: 40px;
 }
 
-/* line 140, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 148, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .icon {
   color: #3BCEE9;
   margin-right: 0.5rem;
 }
 
-/* line 144, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 152, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 #projects {
   padding-top: 0.01rem;
   padding-bottom: 3rem;
 }
 
-/* line 149, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 157, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1308,7 +1323,7 @@ button:nth-child {
   justify-content: center;
 }
 
-/* line 155, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
+/* line 163, ../../GitHub/Portfolio/scss/style/Modules/_design.scss */
 .btn {
   position: relative;
   display: inline-block;
