@@ -43,12 +43,12 @@
                 EF
             </a>
             <div class="primary-nav__flex-container">
-            <ul class="primary-nav__pages">
+                <ul class="primary-nav__pages">
                     <li><a href="about.php">About</a></li>
                     <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
-                    <li><a id ="primary-nav__contact" href="#contact">Contact</a></li>
+                    <li><a id ="primary-nav__contact" href="contact.php">Contact</a></li>
                 </ul>
                 <ul class="primary-nav__socials">
                     <li>
@@ -82,7 +82,7 @@
                     <h2 id="header2">Web Developer</h2>
                     </div>
                     <div class="scroll-down">
-                        <a href="#course" class="scroll">
+                        <a href="#about" class="scroll">
                             <i class="fa-solid fa-arrow-down footer-arrow"></i>
                             <br>
                             <h4>Scroll down</h4>
@@ -106,79 +106,18 @@
                     <!--Waves end-->
                     
                 </div>
-    <!--Header ends-->
-                <div class="page-content"><!--Everything under header -->
-                    <section id="scion">
-                    <div class="about" id="course">
-                            <div class="title">
-                            <h2 class="h1">Scion Coalition Scheme</h2>
-                        </div>
-                            <div class="scion-container">
-                                <h3>Introduction to Scion Coalition Scheme</h3>
-                                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters 
-                                    in order to give willing candidates the opportunity to enter the industry as web developers. 
-                                    Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. 
-                                    The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-                                    <div class="projects-block-button-group">
-                                        <button class="projects-block-button btn"><a href="https://www.netmatters.co.uk/scions-coalition-scheme" target="_blank" >Find Out More 
-                                            <span class="icon-arrow-right"></span></a> </button>
-                                        
-                                    </div>
-                            </div>
-                    </div>
-                    <div class="content-grid">
-                        <div class="treehouse-container">
-                                <div class="tree-title">
-                                <h3>Treehouse</h3>
-                            </div>
-                                <img src="Images/treehouse.png" alt="TeamTreeHouse logo" class="image">   
-                            
-                                    <p class="tree-text">Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
-                                <div class="projects-block-button-group">
-                                    <div class="projects-block-button btn"><a href="https://teamtreehouse.com/profiles/esmeefulcher2" target="_blank" >Check My Score 
-                                        <span class="icon-arrow-right"></span></a> </div>
-                            </div>
-                            
-                        </div>
-                        <div class="treehouse-container">
-                                <div class="tree-title">
-                                <h3>About Netmatters</h3>
-                            </div>
-                                <img src="Images/netmatterslogo-fotor-bg-remover-2024011611259.png" alt="TeamTreeHouse logo" class="image">   
-                             <ul class="net">
-                                    <li>Established in 2008</li>
-                                    <li>Norfolk's leading technology company</li>
-                                    <li>Winner of the Princess Royal Training Award</li>
-                                    <li>Winner of EDP Skills of Tomorrow Award</li>
-                                    <li>80+ staff, 2 locations across Norfolk</li>
-                                    <li>Digital Marketing, Website & Software development & IT Support</li>
-                                    <li>Broad spectrum of clients, working nationwide</li>
-                                    <li>Operate to strict company values</li>
-                                </ul>
-                                <div class="projects-block-button-group">
-                                    <div class="projects-block-button btn"><a href="https://www.netmatters.co.uk/" target="_blank" >Find Out More 
-                                        <span class="icon-arrow-right"></span></a> </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </section>
-                       
-                    </div>
-                <!--Contact Form-->
-                <div class="contact-container" id="contact">
-            <?php include 'php/contact_form.php';?>
+                <div class="page-content">
+                    <?php include 'php/contact_form.php'; ?>   
+                </div><!--Everything under header -->
+
         
-</div>
+
                 
-        
-    
         
                 
             
         
-</div>
+
 <footer>
 <div class="footer">
     <div class="scroll-container">
@@ -208,16 +147,15 @@
     
 </div>
 
-    
+</div>    
    
 </footer>
                         
                     
-        </div>
     </div>
-    </div>
-    <script src="javaScript/main.js"></script>
+</div>
+<script src="javaScript/main.js"></script>
     <script src="javaScript/navSidebar.js"></script>
-    <script src="javaScript/form-validation.js"></script> 
+    <script src="javaScript/form-validation.js"></script>
 </body>
 </html>

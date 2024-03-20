@@ -107,10 +107,10 @@
                     
                 </div>
                 <div class="page-content">
-                    <div class="about" id="about">
+                    <section class="about" id="about">
                         <div class="title">
                         <h2 class="h1">About Me</h2>
-                    </div>
+                        </div>
                         <div class="about-container">
                             <h3>Graphic Designer turned Web Developer <i class="fa-solid fa-palette about-icons"></i><i class="fa-solid fa-code about-icons"></i></h3>
                             <p>Hey there! I'm Esmee, a creative individual with a passion for bringing ideas and concepts to life.
@@ -155,7 +155,7 @@
                                                 </div><h5>PHP</h5></li>
                                 </ul>
                                 </div>
-                </div>   
+                </section>   
                 </div><!--Everything under header -->
                         
                 <!--Contact Form-->
@@ -172,7 +172,7 @@
 <footer>
 <div class="footer">
     <div class="scroll-container">
-    <a href="#header" class="scroll-up">
+    <a href="#header" class="scroll">
         <i class="fa-solid fa-arrow-up"></i>
         <br>
         <h3>Back to top</h3>

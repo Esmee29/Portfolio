@@ -143,20 +143,20 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  .scroll-up {
-    margin-left: 200px;
+  .scroll-container {
+    margin-left: 14.5rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 1439px) {
-  .scroll-up {
-    margin-left: 200px;
+  .scroll-container {
+    margin-left: 14.5rem;
   }
 }
 
 @media (min-width: 1440px) {
-  .scroll-up {
-    margin-left: 200px;
+  .scroll-container {
+    margin-left: 14.5rem;
   }
 }
 
@@ -747,6 +747,11 @@ a:hover {
   color: #185ad4;
 }
 
+#about {
+  padding-top: 0.01rem;
+  padding-bottom: 3rem;
+}
+
 .about-tools li {
   color: #185ad4;
   list-style: none;
@@ -804,6 +809,11 @@ code, pre {
 .code-logo {
   margin: 1.5rem 0;
   padding: 0.5rem;
+}
+
+#coding {
+  padding-top: 0.01rem;
+  padding-bottom: 3rem;
 }
 
 .get-in-touch h3 {
@@ -1241,10 +1251,6 @@ button:nth-child {
   flex-direction: column;
 }
 
-.scroll-up {
-  color: #fff;
-}
-
 .scroll-down {
   width: 100%;
   margin: 0;
@@ -1487,6 +1493,11 @@ button:nth-child {
 .tree-text {
   font-size: 18px;
   padding: 0 10px;
+}
+
+#scion {
+  padding-top: 0.01rem;
+  padding-bottom: 3rem;
 }
 
 .primary-nav__logo {

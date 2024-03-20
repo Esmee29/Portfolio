@@ -86,15 +86,15 @@ h4{
             }
 }
 //footer
-.scroll-up{
+.scroll-container{
     @include viewport(large) {   
-        margin-left: 200px;
+        margin-left: 14.5rem;
         }      
     @include viewport(x-large) {   
-        margin-left: 200px;
+        margin-left: 14.5rem;
         }
         @include viewport(xx-large) {   
-            margin-left: 200px;
+            margin-left: 14.5rem;
             }
       
     }

@@ -107,7 +107,8 @@
                     
                 </div>
                 <div class="page-content"><!--Everything under header -->
-                    <div class="about" id="code">
+                <section id="coding">
+                <div class="about" id="code">
                         <div class="title">
                         <h2 class="h1">Code Examples</h2>
                     </div>
@@ -247,6 +248,8 @@
                             
                         </div>
                     </div>
+                </section>
+                    
                 </div>
 
                 <!--Contact Form-->
@@ -263,7 +266,7 @@
 <footer>
 <div class="footer">
     <div class="scroll-container">
-    <a href="#header" class="scroll-up">
+    <a href="#header" class="scroll">
         <i class="fa-solid fa-arrow-up"></i>
         <br>
         <h3>Back to top</h3>
