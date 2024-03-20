@@ -85,7 +85,19 @@ h4{
             font-size: 2rem;
             }
 }
-
+//footer
+.scroll-up{
+    @include viewport(large) {   
+        margin-left: 200px;
+        }      
+    @include viewport(x-large) {   
+        margin-left: 200px;
+        }
+        @include viewport(xx-large) {   
+            margin-left: 200px;
+            }
+      
+    }
 //sidebar nav//
     .primary-nav__hamburger {
         @include viewport(large){

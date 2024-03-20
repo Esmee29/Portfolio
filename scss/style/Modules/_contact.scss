@@ -32,21 +32,21 @@ input, textarea {
 .first-name {
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: left;
 }
 .last-name {
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: left;
 }
 
 .email {
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: left;
 }
 
-.phone {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+
 @media (min-width: 1260px){
 .message {
     grid-column-start: 1;
@@ -56,6 +56,7 @@ input, textarea {
 .message {
     grid-column-start: 1;
     grid-column-end: 3;
+    text-align: left;
 }
 @media (min-width: 1260px){
     .subject{
@@ -66,6 +67,7 @@ input, textarea {
     .subject {
         grid-column-start: 1;
         grid-column-end: 3;
+        text-align: left;
     }
 #message {
     box-sizing: border-box;
@@ -78,17 +80,7 @@ input, textarea {
     border: 2px solid $color-primary;
     border-radius: 2px;
 }
-#phone {
-    box-sizing: border-box;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    position: center;
-    width: 100%;
-    background-color: $color-secondary;
-    color: $black;
-    border: 2px solid $color-primary;
-    border-radius: 2px;
-}
+
 .button-fill-submit{
     flex: 1;
     padding: 5px 15px;
@@ -144,3 +136,43 @@ button:nth-child{
         color: $black;
     }
 }
+
+    .required {
+        font-weight: 600;
+        color: #272936 !important;
+    }
+    .required::after {
+        content: " *";
+        color: #d64541;
+    }
+
+        //messages
+        .alert-error{
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2dede;
+            color: #a94442;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ebccd1;
+            border-radius: 2px;
+        }
+        .alert-success{
+            display: flex;
+            justify-content: space-between;
+            background-color: #ddffdd;
+            color: #00b67b;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #9ae9b2;
+            border-radius: 2px;
+    }
+    .close-btn{
+        
+        position: relative;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+    }
+    

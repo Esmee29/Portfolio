@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,15 +39,15 @@
     </div>
     <aside>
         <nav class="ishidden__nav primary-nav">
-            <a href="index.html" class="primary-nav__logo">
+            <a href="index.php" class="primary-nav__logo">
                 EF
             </a>
             <div class="primary-nav__flex-container">
                 <ul class="primary-nav__pages">
-                    <li><a href="about.html">About</a></li>
-                    <li><a id="primary-nav__portfolio" href="index.html#projects">Portfolio</a></li>
-                    <li><a href="code.html">Coding Examples</a></li>
-                    <li><a href="course.html">SCS Scheme</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
+                    <li><a href="code.php">Coding Examples</a></li>
+                    <li><a href="course.php">SCS Scheme</a></li>
                     <li><a id ="primary-nav__contact" href="#contact">Contact</a></li>
                 </ul>
                 <ul class="primary-nav__socials">
@@ -112,14 +113,12 @@
                     </div>
                         <div class="about-container">
                             <h3>Graphic Designer turned Web Developer <i class="fa-solid fa-palette about-icons"></i><i class="fa-solid fa-code about-icons"></i></h3>
-                            <p>Hey there! I'm Esmee, a creative mind with a passion for bringing digital ideas to life.
+                            <p>Hey there! I'm Esmee, a creative individual with a passion for bringing ideas and concepts to life.
                                 I graduated from Nottingham Trent University in 2023 after studying Graphic Design and achieved a 2.1.<i class="fa-solid fa-graduation-cap about-icons"></i><i class="fa-solid fa-palette about-icons"></i><i class="fa-solid fa-pen-nib about-icons"></i></p>
-                                <p>During my university years, I discovered a particular interest in crafting visually appealing websites and user interfaces. 
-                                    The process of bringing designs to life on the digital canvas ignited a new spark within me, 
-                                    leading me to embark on an exciting adventure into the realm of web development.<i class="fa-solid fa-mobile-screen-button about-icons"></i><i class="fa-solid fa-laptop about-icons"></i></p>
+                                <p>During my university years, I developed a keen interest in crafting visually appealing websites and user interfaces. The process of translating designs into functioning code ignited a new spark within me, propelling me into the realm of web development.<i class="fa-solid fa-mobile-screen-button about-icons"></i><i class="fa-solid fa-laptop about-icons"></i></p>
                                 <p>Now, I am enthusiastically honing my skills in web development, eager to transform my design concepts into functional 
                                     and interactive websites and apps. I have more interested in the front-end of development as I am visual person but I am studying to become a full-stack developer which
-                                    will allow me to understand all areas of development and my goal is to merge the realms of design and development seamlessly, creating digital spaces that not only look visually appealing but also function flawlessly.
+                                    will allow me to understand all areas of development and my goal is to seamlessly merge the realms of design and development, creating websites and user interfaces that not only look visually appealing but also function flawlessly.
                                     <i class="fa-solid fa-code about-icons"></i></p>
                             </div>
                             <div class="about-container-tech">
@@ -160,59 +159,20 @@
                 </div><!--Everything under header -->
                         
                 <!--Contact Form-->
-    <div class="contact-container" id="contact">
-        <div class="get-in-touch">
-            <h3>Get In Touch</h3>
-        </div>
-        <div class="contact-form">
-            <div id="error"></div>
-            <form id="contact-form" name="contactForm" action="/" method="post">
-                <div class="contact-form-content">
-                    <div class="first-name">
-                        <input type="text" id="first-name" name="first-name" placeholder="First Name *">
-                        <small></small>
-                    </div>
-
-                    <div class="last-name">
-                        <input type="text" id="last-name" name="last-name" placeholder="Last Name *">
-                        <small></small>
-                    </div>
-
-                    <div class="email">
-                        <input type="text" id="email" name="email" placeholder="Email Address *">
-                        <small></small>
-                    </div>
-
-                    <div class="phone">
-                        <input type="tel" id="phone" name="phone-number" placeholder="Phone Number (Optional)">
-                        <small></small>
-                    </div>
-
-                    <div class="subject">
-                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
-                        <small></small>
-                    </div>
-
-                    <div class="message">
-                        <textarea id="message" name="message" placeholder="Message (Optional)"></textarea>
-                    </div>
-                </div>
-                <div class="submit">
-                    <button type="submit" id="submit-btn" class="button-fill-submit">Submit</button>
-                </div>
-            </form>
-        </div>
+                <div class="contact-container" id="contact">
+            <?php include 'php/contact_form.php';?>
         
-    
+</div>
+                
         
                 
             
         
-</div>
+
 <footer>
 <div class="footer">
     <div class="scroll-container">
-    <a href="#header" class="scroll">
+    <a href="#header" class="scroll-up">
         <i class="fa-solid fa-arrow-up"></i>
         <br>
         <h3>Back to top</h3>

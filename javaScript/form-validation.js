@@ -1,61 +1,75 @@
-// References to the form fields and submit button //
-const firstNameInput = document.getElementById('first-name');
-const lastNameInput = document.getElementById('last-name');
-const emailInput = document.getElementById('email');
-const phoneInput = document.getElementById('phone');
-const subjectInput = document.getElementById('subject');
-const messageInput = document.getElementById('message');
-const submitButton = document.getElementById('submit-btn');
+document.addEventListener('DOMContentLoaded', function() {
+  // References to the form fields and submit button //
+  const form = document.getElementById('form');
+  const validationMsgContainer = document.querySelector('.validation-msg-container');
 
-// Add event listener to the submit button //
-submitButton.addEventListener('click', function(event) {
-  // Prevent form submission //
-  event.preventDefault();
+  // Add event listener to the form submit event //
+  form.addEventListener('submit', function(event) {
+      // Clear previous validation messages //
+      validationMsgContainer.innerHTML = '';
+  
+      // Validate name (at least 2 characters)
+      const FirstNameInput = document.getElementById('first-name');
+      const FirstName = nameInput.value.trim();
+      if (FirstName.length < 2) {
+          displayValidationMessage('Please enter a value into  first name.', 'alert-error');
+          event.preventDefault(); // Prevent form submission if there are errors
+      }
+      // Validate name (at least 2 characters)
+      const LastNameInput = document.getElementById('name');
+      const LastName = nameInput.value.trim();
+      if (LastName.length < 2) {
+          displayValidationMessage('Please enter a value into last name.', 'alert-error');
+          event.preventDefault(); // Prevent form submission if there are errors
+      }
+  
+      // Validate email (format: xxx@xxx.xxx)
+      const emailInput = document.getElementById('email');
+      const email = emailInput.value.trim();
+      const emailRegex = /^[^\s@]+([-][^\s@]+)?@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+          displayValidationMessage('Please enter a valid email address', 'alert-error');
+          event.preventDefault(); // Prevent form submission if there are errors
+      }
 
-  // Validate first name (at least 2 characters) //
-  const firstName = firstNameInput.value;
-  if (firstName.length < 2) {
-    alert('Please enter a first name with at least 2 characters');
-    return;
+      // Validate subject (at least 3 characters)
+      const subjectInput = document.getElementById('subject');
+      const subject = messageInput.value.trim();
+      if (subject.length < 3) {
+          displayValidationMessage('Please enter a message with at least 10 characters', 'alert-error');
+          event.preventDefault(); // Prevent form submission if there are errors
+      }
+
+      // Validate message (at least 10 characters)
+      const messageInput = document.getElementById('message');
+      const message = messageInput.value.trim();
+      if (message.length < 10) {
+          displayValidationMessage('Please enter a message with at least 10 characters', 'alert-error');
+          event.preventDefault(); // Prevent form submission if there are errors
+      }
+  
+      // If no validation errors, display success message //
+      if (validationMsgContainer.children.length === 0) {
+          displayValidationMessage('Your Enquiry has been Submitted', 'alert-success');
+      }
+  });
+
+  // Function to display validation messages //
+  function displayValidationMessage(message, className) {
+      const validationMsgBox = document.createElement('div');
+      validationMsgBox.classList.add('validation-msg', className);
+  
+      const msgText = document.createTextNode(message);
+      validationMsgBox.appendChild(msgText);
+  
+      const closeBtn = document.createElement('span');
+      closeBtn.classList.add('close-btn');
+      closeBtn.innerHTML = '&times;';
+      closeBtn.addEventListener('click', function() {
+          validationMsgBox.remove(); // Remove the message box when close button is clicked
+      });
+      validationMsgBox.appendChild(closeBtn);
+  
+      validationMsgContainer.appendChild(validationMsgBox);
   }
-
-  // Validate last name (at least 2 characters) //
-  const lastName = lastNameInput.value;
-  if (lastName.length < 2) {
-    alert('Please enter a last name with at least 2 characters');
-    return;
-  }
-
-  // Validate email (format: xxx@xxx.xxx) //
-const email = emailInput.value;
-const emailRegex = /^[^\s@]+([-][^\s@]+)?@[^\s@]+\.[^\s@]+$/;;
-if (!emailRegex.test(email)) {
-  alert('Please enter a valid email address');
-  return;
-}
-
-  // Optional validations
-  // Validate phone number (exactly 11 digits), if provided //
-  const phoneNumber = phoneInput.value;
-if (phoneNumber.length > 0 && !/^[\d-+]{11,}$/.test(phoneNumber)) {
-  alert('Please enter a valid phone number');
-  return;
-}
-
-  // Validate subject (any characters), if provided //
-  const subject = subjectInput.value;
-  if (subject.length > 0 && subject.length < 5) {
-    alert('Please enter a subject with at least 5 characters');
-    return;
-  }
-
-  // Validate message (any characters), if provided //
-  const message = messageInput.value;
-  if (message.length > 0 && message.length < 10) {
-    alert('Please enter a message with at least 10 characters');
-    return;
-  }
-
-  // If all validations pass, submit the form //
-  alert('Form submitted successfully!');
 });

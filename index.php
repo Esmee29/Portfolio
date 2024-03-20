@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,15 +39,15 @@
     </div>
     <aside>
         <nav class="ishidden__nav primary-nav">
-            <a href="index.html" class="primary-nav__logo">
+            <a href="index.php" class="primary-nav__logo">
                 EF
             </a>
             <div class="primary-nav__flex-container">
-                <ul class="primary-nav__pages">
-                    <li><a href="about.html">About</a></li>
+            <ul class="primary-nav__pages">
+                    <li><a href="about.php">About</a></li>
                     <li><a id="primary-nav__portfolio" href="#projects">Portfolio</a></li>
-                    <li><a href="code.html">Coding Examples</a></li>
-                    <li><a href="course.html">SCS Scheme</a></li>
+                    <li><a href="code.php">Coding Examples</a></li>
+                    <li><a href="course.php">SCS Scheme</a></li>
                     <li><a id ="primary-nav__contact" href="#contact">Contact</a></li>
                 </ul>
                 <ul class="primary-nav__socials">
@@ -71,8 +72,8 @@
             </div>
         </nav>
     </aside>
-            <div class="main-body" id="main">
-                <div class="header" id="header">
+<div class="main-body" id="main">
+            <div class="header" id="header">
                     <!--Content before waves-->
                     <div class="inner-header">
                     <h1 id="header1"> Esmee Fulcher</h1>
@@ -217,94 +218,51 @@
                 </section>
             
                                    
-    <!--Contact Form-->
-    <div class="contact-container" id="contact">
-        <div class="get-in-touch">
-            <h3>Get In Touch</h3>
-        </div>
-        <div class="contact-form">
-            <div id="error"></div>
-            <form id="contact-form" name="contactForm" action="/" method="post">
-                <div class="contact-form-content">
-                    <div class="first-name">
-                        <input type="text" id="first-name" name="first-name" placeholder="First Name *">
-                        <small></small>
-                    </div>
-
-                    <div class="last-name">
-                        <input type="text" id="last-name" name="last-name" placeholder="Last Name *">
-                        <small></small>
-                    </div>
-
-                    <div class="email">
-                        <input type="text" id="email" name="email" placeholder="Email Address *">
-                        <small></small>
-                    </div>
-
-                    <div class="phone">
-                        <input type="tel" id="phone" name="phone-number" placeholder="Phone Number (Optional)">
-                        <small></small>
-                    </div>
-
-                    <div class="subject">
-                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
-                        <small></small>
-                    </div>
-
-                    <div class="message">
-                        <textarea id="message" name="message" placeholder="Message (Optional)"></textarea>
-                    </div>
+                    <!--Contact Form-->
+                    <div class="contact-container" id="contact">
+                            <?php include 'php/contact_form.php';?>
+                        
                 </div>
-                <div class="submit">
-                    <button type="submit" id="submit-btn" class="button-fill-submit">Submit</button>
+                                
+
+                <footer>
+                <div class="footer">
+                    <div class="scroll-container">
+                    <a href="#header" class="scroll-up">
+                        <i class="fa-solid fa-arrow-up footer-arrow"></i>
+                        <br>
+                        <h4>Back to top</h4>
+                    </a>
                 </div>
-            </form>
-        </div>
-        
-    
-        
+                    
+                    <!--Waves Container-->
+                    <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                    </svg>
+                    </div>
+                    <!--Waves end-->
+                    
+                </div>
+
+                    
                 
-            
-        
+                </footer>
 </div>
-
-<footer>
-<div class="footer">
-    <div class="scroll-container">
-    <a href="#header" class="scroll">
-        <i class="fa-solid fa-arrow-up footer-arrow"></i>
-        <br>
-        <h4>Back to top</h4>
-    </a>
-</div>
-    
-    <!--Waves Container-->
-    <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-    </g>
-    </svg>
-    </div>
-    <!--Waves end-->
-    
-</div>
-
-    
-   
-</footer>
-                </div>
+              
+                
                        
             
     <script src="javaScript/main.js"></script>
     <script src="javaScript/navSidebar.js"></script>
-    <script src="javaScript/form-validation.js"></script>
-</body>
+            </body>
 </html>
