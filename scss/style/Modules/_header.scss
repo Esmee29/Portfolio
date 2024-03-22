@@ -3,28 +3,13 @@
   position:relative;
   text-align:center;
   color:$white;
-  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+
 }
 
 .footer {
   text-align:center;
   color:$white;
-  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  
   bottom: 0;
 }
 .scroll-container{
@@ -37,18 +22,24 @@ height: 40vh;
   flex-direction: column;
   
 }
-.scroll-down{
+.scroll{
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
+  color: $white;
+  font-size: 16px;
   }
 .scroll h4{
   color: $white;
 }
-.scroll {
+.scroll-up h4{
+  color: $white;
+}
+.scroll-up {
   text-decoration: none;
   color: $white;
   font-size: 16px;

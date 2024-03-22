@@ -143,19 +143,19 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  .scroll-container {
+  .scroll-up {
     margin-left: 14.5rem;
   }
 }
 
 @media (min-width: 1260px) and (max-width: 1439px) {
-  .scroll-container {
+  .scroll-up {
     margin-left: 14.5rem;
   }
 }
 
 @media (min-width: 1440px) {
-  .scroll-container {
+  .scroll-up {
     margin-left: 14.5rem;
   }
 }
@@ -669,6 +669,21 @@ html {
 
 body {
   margin: 0;
+  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -720,12 +735,6 @@ a:hover {
 ::after {
   box-sizing: border-box;
   /* 1 */
-}
-
-.page-content {
-  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
 }
 
 .about-container {
@@ -814,6 +823,75 @@ code, pre {
 #coding {
   padding-top: 0.01rem;
   padding-bottom: 3rem;
+  background-color: white;
+}
+
+.drop-down-button {
+  font-weight: 600;
+  font-size: 36px;
+  color: #333645;
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+
+.drop-down {
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 75%;
+  align-self: center;
+  margin: 3.125rem auto;
+}
+
+.drop-down-content-show {
+  display: block;
+}
+
+.drop-down-content-hidden {
+  display: none;
+}
+
+.code-title {
+  width: 80vw;
+  margin: 50px 0 105px 0;
+  text-align: center;
+  color: #185ad4;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.section-content {
+  display: block;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.comments {
+  color: #959697;
+  font-style: italic;
+}
+
+.purple-highlight {
+  color: #c678dd;
+}
+
+.orange-highlight {
+  color: #d19a66;
+}
+
+.green-highlight {
+  color: #98c379;
+}
+
+.blue-highlight {
+  color: #61aeee;
 }
 
 .get-in-touch h3 {
@@ -1215,29 +1293,11 @@ button:nth-child {
   position: relative;
   text-align: center;
   color: #fff;
-  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .footer {
   text-align: center;
   color: #fff;
-  background: linear-gradient(-45deg, #3bcee9, #329ff4, #185ad4);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   bottom: 0;
 }
 
@@ -1251,20 +1311,27 @@ button:nth-child {
   flex-direction: column;
 }
 
-.scroll-down {
+.scroll {
   width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
 
 .scroll h4 {
   color: #fff;
 }
 
-.scroll {
+.scroll-up h4 {
+  color: #fff;
+}
+
+.scroll-up {
   text-decoration: none;
   color: #fff;
   font-size: 16px;

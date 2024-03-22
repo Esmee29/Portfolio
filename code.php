@@ -48,7 +48,7 @@
                     <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
-                    <li><a id ="primary-nav__contact" href="contact.php">Contact</a></li>
+                    <li><a id ="primary-nav__contact" href="index.php#contact">Contact</a></li>
                 </ul>
                 <ul class="primary-nav__socials">
                     <li>
@@ -252,13 +252,6 @@
                     
                 </div>
 
-                <!--Contact Form-->
-                <div class="contact-container" id="contact">
-            <?php include 'php/contact_form.php';?>
-        
-</div>
-                
-        
                 
             
         

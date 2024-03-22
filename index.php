@@ -220,7 +220,7 @@
                                    
                     <!--Contact Form-->
                     <div class="contact-container" id="contact">
-                            <?php include 'php/contact_form.php';?>
+                            <?php include 'php/contact_email.php';?>
                         
                 </div>
                                 
@@ -228,7 +228,7 @@
                 <footer>
                 <div class="footer">
                     <div class="scroll-container">
-                    <a href="#header" class="scroll">
+                    <a href="#header" class="scroll-up ">
                         <i class="fa-solid fa-arrow-up footer-arrow"></i>
                         <br>
                         <h4>Back to top</h4>
