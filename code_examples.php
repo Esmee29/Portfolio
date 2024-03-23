@@ -202,56 +202,56 @@
                         
             
             <span class="comments">// Add event listener to the submit button //</span>
-            submitButton.addEventListener('click', function(event) {
-                // Prevent form submission //
-                event.preventDefault();
+            submitButton.<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, <span class="purple-highlight">function</span>(event) {
+                <span class="comments">// Prevent form submission //</span>
+                event.<span class="blue-highlight">preventDefault()</span>;
             
                 <span class="comments">// Validate first name (at least 2 characters) //</span>
-                <span class="purple-highlight">const</span> firstName = firstNameInput.value;
-                <span class="purple-highlight">if</span> (firstName.length < 2) {
-                alert('Please enter a first name with at least 2 characters');
-                return;
+                <span class="purple-highlight">const</span> firstName = firstNameInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (firstName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a first name with at least 2 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
                 <span class="comments">// Validate last name (at least 2 characters) //</span>
-                <span class="purple-highlight">const</span> lastName = lastNameInput.value;
-                <span class="purple-highlight">if</span> (lastName.length < 2) {
-                alert(<span class="green-highlight">'Please enter a last name with at least 2 characters'</span>);
-                return;
+                <span class="purple-highlight">const</span> lastName = lastNameInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (lastName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a last name with at least 2 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
                 <span class="comments">// Validate email (format: xxx@xxx.xxx) //</span>
-                const email = emailInput.value;
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
-                if (!emailRegex.test(email)) {
-                alert(<span class="green-highlight">'Please enter a valid email address'</span>);
-                return;
+                <span class="purple-highlight">const</span> email = emailInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">const</span> <span class="orange-highlight">emailRegex</span> = <span class="green-highlight">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span>;
+                <span class="purple-highlight">if</span> (!<span class="orange-highlight">emailRegex</span>.<span class="orange-highlight">test</span>(email)) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid email address'</span>);
+                <span class="purple-highlight">return</span>;
                 }
             
             
                 <span class="comments">// Validate phone number (exactly 11 digits), if provided //</span>
-                const phoneNumber = phoneInput.value;
-                if (phoneNumber.length > 0 && !/^\d{11}$/.test(phoneNumber)) {
-                alert(<span class="green-highlight">'Please enter a valid phone number'</span>);
-                return;
+                <span class="purple-highlight">const</span> phoneNumber = <span class="orange-highlight">phoneInput</span>.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (phoneNumber.<span class="orange-highlight">length</span > <span class="green-highlight">0 && !/^\d{11}$/</span>.<span class="orange-highlight">test</span>(phoneNumber)) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid phone number'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
                 <span class="comments">// Validate subject (any characters), if provided //</span>
-                const subject = subjectInput.value;
-                if (subject.length > 0 && subject.length < 5) {
-                alert(<span class="green-highlight">'Please enter a subject with at least 5 characters'</span>);
-                return;
+                <span class="blue-highlight">const</span> subject = subjectInput.value;
+                <span class="blue-highlight">if</span> (<span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">5</code>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a subject with at least 5 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
                 <span class="comments">// Validate message (any characters), if provided //</span>
-                const message = messageInput.value;
-                if (message.length > 0 && message.length < 10) {
-                alert('Please enter a message with at least 10 characters');
-                return;
+                <span class="purple-highlight">const</span> message = messageInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (message.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">message</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">10</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a message with at least 10 characters'</span>);
+                <span class="purple-highlight">return</span>;
                 }
             
                 <span class="comments">// If all validations pass, submit the form //</span>
-                alert('Form submitted successfully!');
+                <span class="blue-highlight">alert</span>(<span class="green-highlight">'Form submitted successfully!'</span>);
             });
                                                     </code>
                                                 </pre>
@@ -261,7 +261,54 @@
                     
     </div>
 </div>
-                
+<div class="drop-down">
+    <a class="drop-down-button">Javascript Array<i class="fa-solid fa-angle-down"></i> </a>
+    <div id="dropdown3" class="drop-down-content-hidden">
+            <div class="section-content">
+            <p>Below is a snippet of the code from my Javascript Array and the JavaScript function `displayRandomImage()` fetches a random image from the 'https://picsum.photos' API and displays it within the 'image-container' div on a webpage. 
+            It first converts the fetched image into a Blob object and then into a URL using `URL.createObjectURL()`. The function checks for any existing image in the container, removes it, and then creates a new image element with the fetched image URL, appending it to the container. </p>
+                <div class="container__code">
+                                <pre class="code-breaks">
+                                                <code>
+<span class="purple-highlight">function</span> displayRandomImage() {
+    <span class="blue-highlight">fetch</span>(<span class="green-highlight">'https://picsum.photos/600/300'</span>)
+    .<span class="purple-highlight">then</span>(response => response.blob())
+    .<span class="purple-highlight">then</span>(images => {
+        <span class="purple-highlight">let</span> imageLink = <span class="orange-highlight">URL</span>.<span class="blue-highlight">createObjectURL</span>(images);
+        <span class="purple-highlight">let</span> container = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'image-container'</span>);
+
+        <span class="purple-highlight">let</span> oldImage = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'display-image'</span>);
+        <span class="purple-highlight">if</span> (oldImage) {
+        oldImage.remove();
+      }
+      <span class="purple-highlight">let</span> img = <span class="orange-highlight">document</span>.<span class="blue-highlight">createElement</span>(<span class="green-highlight">'img'</span>);
+      img.id = <span class="green-highlight">'display-image'</span>;
+      img.src = imageLink;
+      img.alt = <span class="green-highlight">' '</span>;
+      img.className = <span class="green-highlight">'responsive-image'</span>; 
+      <span class="orange-highlight">container</span>.appendChild(img);
+      });
+     }                                              </code>
+                                                </pre>
+        <p>The top snippet of code below calls the displayRandomImage and the function generates an image in the image-container on page loads.
+            The second snippet of code below adds an event listener to the 'generate-image' button, which calls the displayRandomImage function when clicked
+            and changes the image in the image-container.</p>
+                                                <pre class="code-breaks">
+                                                    <code>
+        
+                                                <code>
+
+displayRandomImage();
+
+<span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'generate-image'</span>).<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, displayRandomImage);
+                                                    </code>
+                                                </pre>
+
+        </div>
+                    </div>
+                    
+    </div>
+</div>               
 </section>
                     
                 </div>
