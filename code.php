@@ -109,146 +109,207 @@
                 <div class="page-content"><!--Everything under header -->
                 <section id="coding">
                 <div class="about" id="code">
-                        <div class="title">
+                        <div class="code-title">
                         <h2 class="h1">Code Examples</h2>
                     </div>
-                    <div class="about-container">
-                        <h3>Breakpoints</h3>
-                        <p>To have a responsive websites, adaptable for all screen-sizes, breakpoints 
-                            the smallest unit where screen-sizes change, are used to mark where elements need to 
-                            be modified for larger or smaller screens. Below are the breakpoint mixins I set for the Netmatters Homepage project.</p>
-                            <pre class="code-breaks">
-                                <code>
-        @mixin viewport($break) {
-
-            @if $break == "small" { // small generally used for mobile phones
-                @media (min-width: $brkpoint-sm) and (max-width: #{$brkpoint-md - 1}) { // between 320px and 767px
-                    @content;
-                }
-            }
-            @else if $break == "smedium" {
-                @media (max-width: $brkpoint-smd) { // between 650px and 767px
-                    @content;
-                }
-            }
-            @else if $break == "medium" { 
-                @media (min-width: $brkpoint-md) and (max-width: #{$brkpoint-lg - 1}) { // between 768px and 991px
-                    @content;
-                }
-            }
-            @else if $break == "large" { // large generally used for desktop monitors
-                @media (min-width: $brkpoint-lg) and (max-width: #{$brkpoint-xlg - 1}) { // between 992px and 1259px
-                    @content;
-                }
-            }
-            @else if $break == "x-large" { // large generally used for desktop monitors
-                @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1439px
-                    @content;
-                }
-            }
-            @else if $break == "xx-large" { // extra large
-                @media (min-width: $brkpoint-xxlg) { // greater than 1440px
-                    @content;
-                }
-            }
-            @else {
-                @error "No value could be retrieved for break for `#{$break}`";
-            }
-
-            
-        }  
-                                </code>
-                            </pre>
-                            <p>When an changes to elements are made at specific screen-sizes the viewport mixin is called in for example in the code before
-                                at the x-large screen-size which is between 1260px and 1439px the logo element is changing height to 64px. </p>
+                    <div class="about" id="code">
+<div class="drop-down">
+    <a class="drop-down-button">Breakpoints <i class="fa-solid fa-angle-down"></i> </a>
+    <div id="dropdown1" class="drop-down-content-hidden">
+            <div class="section-content">
+            <p>To have a responsive websites, adaptable for all screen-sizes, breakpoints 
+                the smallest unit where screen-sizes change, are used to mark where elements need to 
+                be modified for larger or smaller screens. Below are the breakpoint mixins I set for the Netmatters Homepage project.</p>
+                <div class="container__code">
                                 <pre class="code-breaks">
-                                    <code>
-        .logo {
-            @include viewport(x-large) {
-            height: 64px;
-                }
-                }  
-                                    </code>
-                                </pre>
-                        </div>
+                                                <code>
+    <span class="purple-highlight">@mixin</span> viewport(<span class="orange-highlight">$break</span>) {
+
+        <span class="purple-highlight"> @if</span> <span class="orange-highlight">$break</span> == <span class="green-highlight">"small"</span> { <span class="comments">// small generally used for mobile phones</span>
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">min-width</span> <span class="orange-highlight">$brkpoint-sm</span>) <span class="purple-highlight">and</span> (<span class="green-highlight">max-width</span> #{<span class="orange-highlight">$brkpoint-md</span> - <span class="orange-highlight">1</span>}) { <span class="comments">// between 320px and 767px</span>
+                <span class="purple-highlight"> @content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> if <span class="orange-highlight">$break</span> == <span class="green-highlight">"smedium"</span> {
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">max-width</span> <span class="orange-highlight">$brkpoint-smd</span>) { <span class="comments">// between 650px and 767px</span>
+                <span class="purple-highlight">@content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> if <span class="orange-highlight">$break</span> == <span class="green-highlight">"medium"</span> { 
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">min-width</span> <span class="orange-highlight">$brkpoint-md</span>) <span class="purple-highlight">and</span> (<span class="green-highlight">max-width</span> #{<span class="orange-highlight">$brkpoint-lg</span> - <span class="orange-highlight">1</span>}) { <span class="comments">// between 768px and 991px</span>
+                <span class="purple-highlight">@content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> if <span class="orange-highlight">$break</span> == <span class="green-highlight">"large"</span> { <span class="comments">// large generally used for desktop monitors</span>
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">min-width</span> <span class="orange-highlight">$brkpoint-lg</span>) and (<span class="green-highlight">max-width</span> #{<span class="orange-highlight">$brkpoint-xlg</span> - <span class="orange-highlight">1</span>}) { <span class="comments">// between 992px and 1259px</span>
+                <span class="purple-highlight">@content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> if <span class="orange-highlight">$break</span> == <span class="green-highlight">"x-large"</span> { <span class="comments">// large generally used for desktop monitors</span>
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">min-width</span> <span class="orange-highlight">$brkpoint-xlg</span>) <span class="purple-highlight">and</span> (<span class="green-highlight">max-width</span> #{<span class="orange-highlight">$brkpoint-xxlg</span> - <span class="orange-highlight">1</span>}) { <span class="comments">// between 1260px and 1439px</span>
+                <span class="purple-highlight">@content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> if <span class="orange-highlight">$break</span> == <span class="green-highlight">"xx-large"</span> { <span class="comments">// extra large</span>
+            <span class="purple-highlight">@media</span> (<span class="green-highlight">min-width</span> <span class="orange-highlight">$brkpoint-xxlg</span>) { <span class="comments">// greater than 1440px</span>
+                <span class="purple-highlight">@content</span>;
+            }
+        }
+        <span class="purple-highlight">@else</span> {
+            <span class="purple-highlight">@error</span> <span class="green-highlight">"No value could be retrieved for break for `#{$break}`"</span>;
+        }
+
+        
+    }  
+                                                </code>
+                                            </pre>
+                                            <p>When an changes to elements are made at specific screen-sizes the viewport mixin is called in for example in the code before
+                                                at the x-large screen-size which is between 1260px and 1439px the logo element is changing height to 64px. </p>
+                                                <pre class="code-breaks">
+                                                    <code>
+    .logo {
+        <span class="purple-highlight">@include</span> viewport(x-large) {
+            <span class="green-highlight">height</span> <span class="orange-highlight">64px</span>;
+            }
+            }  
+                                                    </code>
+                                                </pre>
+
+        </div>
                     </div>
-                    <div class="about">
-                        
-                    <div class="about-container">
-                        <h3>Form validation</h3>
-                        <p>Form validation is essential to ensure correct user input. In the contact form below, the first and last names, 
+                    
+    </div>
+</div>
+<div class="drop-down">
+    <a class="drop-down-button">Form validation<i class="fa-solid fa-angle-down"></i> </a>
+    <div id="dropdown2" class="drop-down-content-hidden">
+            <div class="section-content">
+            <p>Form validation is essential to ensure correct user input. In the contact form below, the first and last names, 
                             as well as the email, are mandatory; prompts will appear if they are missing or if the names are under 2 characters 
                             and the email lacks the '@' and '.' symbols. Optional sections include phone number, subject, and message, each with 
                             specific requirements; prompts will appear for incorrectly filled fields. Successful completion allows form submission.</p>
-                            <pre class="code-breaks">
-                                <code>
-            // References to the form fields and submit button //
-            const firstNameInput = document.getElementById('first-name');
-            const lastNameInput = document.getElementById('last-name');
-            const emailInput = document.getElementById('email');
-            const phoneInput = document.getElementById('phone');
-            const subjectInput = document.getElementById('subject');
-            const messageInput = document.getElementById('message');
-            const submitButton = document.getElementById('submit-btn');
+                <div class="container__code">
+                                <pre class="code-breaks">
+                                                <code>
+            <span class="comments">// References to the form fields and submit button //</span>
+            <span class="purple-highlight">const</span> firstNameInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'first-name'</span>);
+            <span class="purple-highlight">const</span> lastNameInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'last-name</span>');
+            <span class="purple-highlight">const</span> emailInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'email'</span>);
+            <span class="purple-highlight">const</span> phoneInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'phone'</span>);
+            <span class="purple-highlight">const</span> subjectInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'subject'</span>);
+            <span class="purple-highlight">const</span> messageInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'message'</span>);
+            <span class="purple-highlight">const</span> submitButton =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'submit-btn'</span>);
+                        
             
-            // Add event listener to the submit button //
-            submitButton.addEventListener('click', function(event) {
-                // Prevent form submission //
-                event.preventDefault();
+            <span class="comments">// Add event listener to the submit button //</span>
+            submitButton.<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, <span class="purple-highlight">function</span>(event) {
+                <span class="comments">// Prevent form submission //</span>
+                event.<span class="blue-highlight">preventDefault()</span>;
             
-                // Validate first name (at least 2 characters) //
-                const firstName = firstNameInput.value;
-                if (firstName.length < 2) {
-                alert('Please enter a first name with at least 2 characters');
-                return;
+                <span class="comments">// Validate first name (at least 2 characters) //</span>
+                <span class="purple-highlight">const</span> firstName = firstNameInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (firstName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a first name with at least 2 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
-                // Validate last name (at least 2 characters) //
-                const lastName = lastNameInput.value;
-                if (lastName.length < 2) {
-                alert('Please enter a last name with at least 2 characters');
-                return;
+                <span class="comments">// Validate last name (at least 2 characters) //</span>
+                <span class="purple-highlight">const</span> lastName = lastNameInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (lastName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a last name with at least 2 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
-                // Validate email (format: xxx@xxx.xxx) //
-                const email = emailInput.value;
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
-                if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
-                return;
+                <span class="comments">// Validate email (format: xxx@xxx.xxx) //</span>
+                <span class="purple-highlight">const</span> email = emailInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">const</span> <span class="orange-highlight">emailRegex</span> = <span class="green-highlight">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span>;
+                <span class="purple-highlight">if</span> (!<span class="orange-highlight">emailRegex</span>.<span class="orange-highlight">test</span>(email)) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid email address'</span>);
+                <span class="purple-highlight">return</span>;
                 }
             
-                // Optional validations
-                // Validate phone number (exactly 11 digits), if provided //
-                const phoneNumber = phoneInput.value;
-                if (phoneNumber.length > 0 && !/^\d{11}$/.test(phoneNumber)) {
-                alert('Please enter a valid phone number');
-                return;
+            
+                <span class="comments">// Validate phone number (exactly 11 digits), if provided //</span>
+                <span class="purple-highlight">const</span> phoneNumber = <span class="orange-highlight">phoneInput</span>.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (phoneNumber.<span class="orange-highlight">length</span > <span class="green-highlight">0 && !/^\d{11}$/</span>.<span class="orange-highlight">test</span>(phoneNumber)) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid phone number'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
-                // Validate subject (any characters), if provided //
-                const subject = subjectInput.value;
-                if (subject.length > 0 && subject.length < 5) {
-                alert('Please enter a subject with at least 5 characters');
-                return;
+                <span class="comments">// Validate subject (any characters), if provided //</span>
+                <span class="blue-highlight">const</span> subject = subjectInput.value;
+                <span class="blue-highlight">if</span> (<span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">5</code>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a subject with at least 5 characters'</span>);
+                    <span class="purple-highlight">return</span>;
                 }
             
-                // Validate message (any characters), if provided //
-                const message = messageInput.value;
-                if (message.length > 0 && message.length < 10) {
-                alert('Please enter a message with at least 10 characters');
-                return;
+                <span class="comments">// Validate message (any characters), if provided //</span>
+                <span class="purple-highlight">const</span> message = messageInput.<span class="orange-highlight">value</span>;
+                <span class="purple-highlight">if</span> (message.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">message</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">10</span>) {
+                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a message with at least 10 characters'</span>);
+                <span class="purple-highlight">return</span>;
                 }
             
-                // If all validations pass, submit the form //
-                alert('Form submitted successfully!');
+                <span class="comments">// If all validations pass, submit the form //</span>
+                <span class="blue-highlight">alert</span>(<span class="green-highlight">'Form submitted successfully!'</span>);
             });
-                                </code>
-                            </pre>
-                            
-                        </div>
+                                                    </code>
+                                                </pre>
+
+        </div>
                     </div>
-                </section>
+                    
+    </div>
+</div>
+<div class="drop-down">
+    <a class="drop-down-button">Javascript Array<i class="fa-solid fa-angle-down"></i> </a>
+    <div id="dropdown3" class="drop-down-content-hidden">
+            <div class="section-content">
+            <p>Below is a snippet of the code from my Javascript Array and the JavaScript function `displayRandomImage()` fetches a random image from the 'https://picsum.photos' API and displays it within the 'image-container' div on a webpage. 
+            It first converts the fetched image into a Blob object and then into a URL using `URL.createObjectURL()`. The function checks for any existing image in the container, removes it, and then creates a new image element with the fetched image URL, appending it to the container. </p>
+                <div class="container__code">
+                                <pre class="code-breaks">
+                                                <code>
+<span class="purple-highlight">function</span> displayRandomImage() {
+    <span class="blue-highlight">fetch</span>(<span class="green-highlight">'https://picsum.photos/600/300'</span>)
+    .<span class="purple-highlight">then</span>(response => response.blob())
+    .<span class="purple-highlight">then</span>(images => {
+        <span class="purple-highlight">let</span> imageLink = <span class="orange-highlight">URL</span>.<span class="blue-highlight">createObjectURL</span>(images);
+        <span class="purple-highlight">let</span> container = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'image-container'</span>);
+
+        <span class="purple-highlight">let</span> oldImage = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'display-image'</span>);
+        <span class="purple-highlight">if</span> (oldImage) {
+        oldImage.remove();
+      }
+      <span class="purple-highlight">let</span> img = <span class="orange-highlight">document</span>.<span class="blue-highlight">createElement</span>(<span class="green-highlight">'img'</span>);
+      img.id = <span class="green-highlight">'display-image'</span>;
+      img.src = imageLink;
+      img.alt = <span class="green-highlight">' '</span>;
+      img.className = <span class="green-highlight">'responsive-image'</span>; 
+      <span class="orange-highlight">container</span>.appendChild(img);
+      });
+     }                                              </code>
+                                                </pre>
+        <p>The top snippet of code below calls the displayRandomImage and the function generates an image in the image-container on page loads.
+            The second snippet of code below adds an event listener to the 'generate-image' button, which calls the displayRandomImage function when clicked
+            and changes the image in the image-container.</p>
+                                                <pre class="code-breaks">
+                                                    <code>
+        
+                                                <code>
+
+displayRandomImage();
+
+<span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'generate-image'</span>).<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, displayRandomImage);
+                                                    </code>
+                                                </pre>
+
+        </div>
+                    </div>
+                    
+    </div>
+</div>               
+</section>
                     
                 </div>
 
@@ -295,5 +356,6 @@
 <script src="javaScript/main.js"></script>
     <script src="javaScript/navSidebar.js"></script>
     <script src="javaScript/form-validation.js"></script>
+    <script src="javaScript/dropdown.js"></script>
 </body>
 </html>

@@ -439,6 +439,16 @@ ul.net {
             } 
     
 }
-
-    
+//code
+.code-title{
+    @include viewport(large) {
+        width: 83.8vw;;
+    }
+    @include viewport(x-large) {
+        width: 83.8vw;;
+    }
+    @include viewport(xx-large) {
+        width: 83.8vw;;
+    }
+}
 
