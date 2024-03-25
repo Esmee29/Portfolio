@@ -228,7 +228,7 @@
                 <footer>
                 <div class="footer">
                     <div class="scroll-container">
-                    <a href="#header" class="scroll-up ">
+                    <a href="#header" class="scroll">
                         <i class="fa-solid fa-arrow-up footer-arrow"></i>
                         <br>
                         <h4>Back to top</h4>

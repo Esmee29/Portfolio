@@ -1,4 +1,3 @@
-
 <?php
 $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
@@ -27,5 +26,4 @@ $phpmailer->Body = $firstName . ' ' . $lastName . ' ' . $message;
 
 $phpmailer->send();
 
-echo 'Message has been sent';
 ?>

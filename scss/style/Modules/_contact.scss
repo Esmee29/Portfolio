@@ -1,5 +1,6 @@
-.get-in-touch h3{
-    color: $color-primary;
+.get-in-touch h3 {
+    color: #185ad4;
+    padding-top: 30px;
 }
 .contact-form-content {
     display: grid;
@@ -15,6 +16,17 @@
 }
 
 input[type=text], textarea[type=text] {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    position: center;
+    width: 100%;
+    background-color: $color-secondary;
+    color: $black;
+    border: 2px solid $color-primary;
+    border-radius: 2px;
+}
+input[type=email], textarea[type=email] {
     box-sizing: border-box;
     padding: 12px 20px;
     font-size: 1.2rem;
@@ -147,7 +159,7 @@ button:nth-child{
     }
 
         //messages
-        .alert-error{
+        .error-msg{
             display: flex;
             justify-content: space-between;
             background-color: #f2dede;
@@ -157,7 +169,7 @@ button:nth-child{
             border: 1px solid #ebccd1;
             border-radius: 2px;
         }
-        .alert-success{
+        .success-msg{
             display: flex;
             justify-content: space-between;
             background-color: #ddffdd;

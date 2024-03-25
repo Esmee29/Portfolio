@@ -180,90 +180,10 @@
                     
     </div>
 </div>
-<div class="drop-down">
-    <a class="drop-down-button">Form validation<i class="fa-solid fa-angle-down"></i> </a>
-    <div id="dropdown2" class="drop-down-content-hidden">
-            <div class="section-content">
-            <p>Form validation is essential to ensure correct user input. In the contact form below, the first and last names, 
-                            as well as the email, are mandatory; prompts will appear if they are missing or if the names are under 2 characters 
-                            and the email lacks the '@' and '.' symbols. Optional sections include phone number, subject, and message, each with 
-                            specific requirements; prompts will appear for incorrectly filled fields. Successful completion allows form submission.</p>
-                <div class="container__code">
-                                <pre class="code-breaks">
-                                                <code>
-            <span class="comments">// References to the form fields and submit button //</span>
-            <span class="purple-highlight">const</span> firstNameInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'first-name'</span>);
-            <span class="purple-highlight">const</span> lastNameInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'last-name</span>');
-            <span class="purple-highlight">const</span> emailInput = <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'email'</span>);
-            <span class="purple-highlight">const</span> phoneInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'phone'</span>);
-            <span class="purple-highlight">const</span> subjectInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'subject'</span>);
-            <span class="purple-highlight">const</span> messageInput =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'message'</span>);
-            <span class="purple-highlight">const</span> submitButton =  <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'submit-btn'</span>);
-                        
-            
-            <span class="comments">// Add event listener to the submit button //</span>
-            submitButton.<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, <span class="purple-highlight">function</span>(event) {
-                <span class="comments">// Prevent form submission //</span>
-                event.<span class="blue-highlight">preventDefault()</span>;
-            
-                <span class="comments">// Validate first name (at least 2 characters) //</span>
-                <span class="purple-highlight">const</span> firstName = firstNameInput.<span class="orange-highlight">value</span>;
-                <span class="purple-highlight">if</span> (firstName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a first name with at least 2 characters'</span>);
-                    <span class="purple-highlight">return</span>;
-                }
-            
-                <span class="comments">// Validate last name (at least 2 characters) //</span>
-                <span class="purple-highlight">const</span> lastName = lastNameInput.<span class="orange-highlight">value</span>;
-                <span class="purple-highlight">if</span> (lastName.<span class="orange-highlight">length</span> < <span class="orange-highlight">2</span>) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a last name with at least 2 characters'</span>);
-                    <span class="purple-highlight">return</span>;
-                }
-            
-                <span class="comments">// Validate email (format: xxx@xxx.xxx) //</span>
-                <span class="purple-highlight">const</span> email = emailInput.<span class="orange-highlight">value</span>;
-                <span class="purple-highlight">const</span> <span class="orange-highlight">emailRegex</span> = <span class="green-highlight">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span>;
-                <span class="purple-highlight">if</span> (!<span class="orange-highlight">emailRegex</span>.<span class="orange-highlight">test</span>(email)) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid email address'</span>);
-                <span class="purple-highlight">return</span>;
-                }
-            
-            
-                <span class="comments">// Validate phone number (exactly 11 digits), if provided //</span>
-                <span class="purple-highlight">const</span> phoneNumber = <span class="orange-highlight">phoneInput</span>.<span class="orange-highlight">value</span>;
-                <span class="purple-highlight">if</span> (phoneNumber.<span class="orange-highlight">length</span > <span class="green-highlight">0 && !/^\d{11}$/</span>.<span class="orange-highlight">test</span>(phoneNumber)) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a valid phone number'</span>);
-                    <span class="purple-highlight">return</span>;
-                }
-            
-                <span class="comments">// Validate subject (any characters), if provided //</span>
-                <span class="blue-highlight">const</span> subject = subjectInput.value;
-                <span class="blue-highlight">if</span> (<span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">subject</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">5</code>) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a subject with at least 5 characters'</span>);
-                    <span class="purple-highlight">return</span>;
-                }
-            
-                <span class="comments">// Validate message (any characters), if provided //</span>
-                <span class="purple-highlight">const</span> message = messageInput.<span class="orange-highlight">value</span>;
-                <span class="purple-highlight">if</span> (message.<span class="orange-highlight">length</span > <span class="green-highlight">0 &&</span> <span class="orange-highlight">message</span>.<span class="orange-highlight">length</span> < <span class="green-highlight">10</span>) {
-                    <span class="blue-highlight">alert</span>(<span class="green-highlight">'Please enter a message with at least 10 characters'</span>);
-                <span class="purple-highlight">return</span>;
-                }
-            
-                <span class="comments">// If all validations pass, submit the form //</span>
-                <span class="blue-highlight">alert</span>(<span class="green-highlight">'Form submitted successfully!'</span>);
-            });
-                                                    </code>
-                                                </pre>
 
-        </div>
-                    </div>
-                    
-    </div>
-</div>
 <div class="drop-down">
     <a class="drop-down-button">Javascript Array<i class="fa-solid fa-angle-down"></i> </a>
-    <div id="dropdown3" class="drop-down-content-hidden">
+    <div id="dropdown2" class="drop-down-content-hidden">
             <div class="section-content">
             <p>Below is a snippet of the code from my Javascript Array and the JavaScript function `displayRandomImage()` fetches a random image from the 'https://picsum.photos' API and displays it within the 'image-container' div on a webpage. 
             It first converts the fetched image into a Blob object and then into a URL using `URL.createObjectURL()`. The function checks for any existing image in the container, removes it, and then creates a new image element with the fetched image URL, appending it to the container. </p>
@@ -294,14 +214,127 @@
             The second snippet of code below adds an event listener to the 'generate-image' button, which calls the displayRandomImage function when clicked
             and changes the image in the image-container.</p>
                                                 <pre class="code-breaks">
-                                                    <code>
-        
-                                                <code>
+<code>
 
 displayRandomImage();
 
 <span class="orange-highlight">document</span>.<span class="blue-highlight">getElementById</span>(<span class="green-highlight">'generate-image'</span>).<span class="blue-highlight">addEventListener</span>(<span class="green-highlight">'click'</span>, displayRandomImage);
-                                                    </code>
+</code>
+                                                </pre>
+
+        </div>
+                    </div>
+                    
+    </div>
+</div>
+<div class="drop-down">
+    <a class="drop-down-button">Database Integration for Displaying Latest Articles<i class="fa-solid fa-angle-down"></i> </a>
+    <div id="dropdown3" class="drop-down-content-hidden">
+            <div class="section-content">
+            <p>This script is designed to showcase the most recent articles from the Netmatters website on its homepage.
+                 Utilizing a database backend, it retrieves the latest articles' information, including titles, images, authors, and publication dates, and displays them on the page. 
+                 The first part connects to the database and then, using the database columns for the different parts of article information, pastes the data on the page.</p>
+                <div class="container__code">
+                                <pre class="code-breaks">
+<code>
+
+<span class="red-highlight">&lt;?php</span>
+<span class="comments">// Load environment variables</span>
+<span class="purple-highlight">require_once</span> <span class="blue-highlight">__DIR__</span> . <span class="green-highlight">'/../../../vendor/autoload.php'</span>;
+<span class="orange-highlight">$dotenv</span> = <span class="green-highlight">Dotenv\Dotenv::createImmutable</span>(<span class="blue-highlight">__DIR__</span>, <span class="green-highlight">'db.env'</span>);
+<span class="orange-highlight">$dotenv</span>-><span class="blue-highlight">load</span>();
+<span class="purple-highlight">require_once</span> <span class="green-highlight">'php/controllers/DatabaseController.php'</span>;
+
+<span class="purple-highlight">try</span> {
+    <span class="comments">// Provide the required database connection details</span>
+    <span class="orange-highlight">$host</span> = <span class="blue-highlight">$_ENV</span>[<span class="green-highlight">'MySQL_DB_HOST'</span>];
+    <span class="orange-highlight">$dbname</span> = <span class="blue-highlight">$_ENV</span>[<span class="green-highlight">'MySQL_DB_NAME'</span>];
+    <span class="orange-highlight">$dbusername</span> = <span class="blue-highlight">$_ENV</span>[<span class="green-highlight">'MySQL_DB_USER_NAME'</span>];
+    <span class="orange-highlight">$dbpassword</span> = <span class="blue-highlight">$_ENV</span>[<span class="green-highlight">'MySQL_DB_PASSWORD'</span>];
+
+    <span class="comments">// Instantiate the DatabaseController with the provided details</span>
+    <span class="orange-highlight">$db</span> = new <span class="blue-highlight">DatabaseController</span>(<span class="orange-highlight">$host, $dbusername, $dbpassword, $dbname</span>);
+
+    <span class="comments">// Connect to the database</span>
+    <span class="orange-highlight">$db</span>-&gt;<span class="blue-highlight">connect</span>();
+
+    <span class="comments">// Query the database to fetch news articles</span>
+    <span class="orange-highlight">$news</span> = <span class="orange-highlight">$db</span>-&gt;<span class="blue-highlight">query</span>(<span class="green-highlight">"SELECT * FROM news ORDER BY date DESC LIMIT 3"</span>);
+
+    <span class="comments">// Disconnect from the database</span>
+    <span class="orange-highlight">$db</span>-&gt;<span class="blue-highlight">disconnect</span>();
+
+    <span class="purple-highlight">function</span> <span class="blue-highlight">articleContent</span>(<span class="orange-highlight">$image, $imageAlt, $title, $readTime, $info, $type, $authorImage, $authorName, $date, $counter</span>)
+    {
+        <span class="purple-highlight">return</span> '
+        &lt;div class=<span class="green-highlight">"block block-' . $counter . '"</span>&gt;
+            &lt;a class=<span class="green-highlight">"article-link"</span> href =<span class="green-highlight">"#"</span>&gt;&lt;/a&gt;
+            &lt;div class=<span class="green-highlight">"img-container"</span>&gt;
+                &lt;a href=<span class="green-highlight">"#"</span> class=<span class="green-highlight">"btn-tooltip btn-tooltip-' . $counter . '"</span> title=<span class="green-highlight">"View all: Digital Marketing / News"</span>&gt;' . <span class="green-highlight">$type</span> . '&lt;/a&gt;
+                &lt;a class=<span class="green-highlight">"article-img"</span>&gt;
+                &lt;img src=<span class="green-highlight">"' . $image . '" class ="img-responsive img-container" alt="' . $imageAlt . '"</span>&gt;
+                &lt;/a&gt; 
+            &lt;/div&gt;
+            &lt;div class=<span class="green-highlight">"block-content"</span>&gt;
+                &lt;h3&gt;
+                &lt;a href=<span class="green-highlight">"#"</span>&gt;' . <span class="green-highlight">$title</span>  . '&lt;/a&gt;
+                &lt;span class=<span class="green-highlight">"readtime"</span>&gt;' . <span class="green-highlight">$readTime</span> . '&lt;/span&gt;
+                &lt;/h3&gt;
+                &lt;p&gt;' . <span class="green-highlight">$info</span> . '&lt;/p&gt;
+                &lt;div class=<span class="green-highlight">"btn btn-news btn-news-' . $counter . '"</span>&gt;Read More&lt;/div&gt;
+                
+                &lt;div class=<span class="green-highlight">"user"</span>&gt;
+                    &lt;div class=<span class="green-highlight">"avatar"</span>&gt;
+                        &lt;img src=<span class="green-highlight">"' . $authorImage . '"</span> class=<span class="green-highlight">"img-responsive"</span> alt=<span class="green-highlight">"Netmatters"</span>&gt;
+                    &lt;/div&gt;
+                    &lt;div class=<span class="green-highlight">"info"</span>&gt;
+                        &lt;strong&gt;' . <span class="green-highlight">$authorName</span> . '&lt;/strong&gt; &lt;br&gt;
+                        ' . <span class="green-highlight">$date</span> . '
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+        &lt;/div&gt;
+        ';
+    }
+
+} <span class="purple-highlight">catch</span> (<span class="blue-highlight">Exception</span> <span class="orange-highlight">$e</span>) {
+    <span class="purple-highlight">echo</span> <span class="green-highlight">"Error: "</span> . <span class="orange-highlight">$e</span>-&gt;<span class="blue-highlight">getMessage</span>();
+}
+
+<span class="red-highlight">?&gt;</span>
+
+&lt;div class=<span class="green-highlight">"article-content"</span>&gt;
+    &lt;div class=<span class="green-highlight">"article-blocks"</span>&gt;
+
+    <span class="red-highlight">&lt;?php</span>
+    <span class="comments">// Print or process the fetched news data</span>
+        <span class="purple-highlight">if</span> (<span class="orange-highlight">$news</span>) {
+            <span class="purple-highlight">foreach</span> (<span class="orange-highlight">$news</span> as <span class="orange-highlight">$article</span>) {
+                <span class="purple-highlight">echo</span> <span class="green-highlight">'&lt;pre&gt;'</span> . <span class="blue-highlight">articleContent</span>(<span class="orange-highlight">$article</span>[<span class="green-highlight">"image"</span>],
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"image_alt"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"title"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"read_time"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"info"</span>],
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"type"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"author_image"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"author_name"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"date"</span>], 
+                <span class="orange-highlight">$article</span>[<span class="green-highlight">"counter"</span>]) . <span class="green-highlight">'&lt;/pre&gt;'</span>;
+            }
+        } <span class="purple-highlight">else</span> {
+            <span class="comments">// Handle error if news retrieval failed</span>
+            <span class="purple-highlight">echo</span> <span class="green-highlight">"Failed to fetch news."</span>;
+        }
+
+        <span class="red-highlight">?&gt;</span>
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+</code>
                                                 </pre>
 
         </div>
