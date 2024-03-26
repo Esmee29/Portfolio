@@ -34,6 +34,9 @@ code, pre {
     color: #333645;
     line-height: 1.875rem;
     margin-bottom: 25px;
+    @include viewport(small){
+        font-size: 25px;
+    }
 }
 
 

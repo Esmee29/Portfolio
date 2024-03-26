@@ -852,6 +852,12 @@ code, pre {
   margin-bottom: 25px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .drop-down-button {
+    font-size: 25px;
+  }
+}
+
 .drop-down {
   overflow: hidden;
   margin-bottom: 25px;
