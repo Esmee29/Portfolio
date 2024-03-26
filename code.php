@@ -1,40 +1,41 @@
 <?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/356a53e20f.js" crossorigin="anonymous"></script>
 
-          
+
     <title>
-    Esmee Fulcher | Web Developer
-    | Portfolio
-</title>
+        Esmee Fulcher | Web Developer
+        | Portfolio
+    </title>
 </head>
-    
+
 <body>
-     <!-- Hamburger-->
-     <div class="primary-nav__hamburger ishidden__hamburger">
+    <!-- Hamburger-->
+    <div class="primary-nav__hamburger ishidden__hamburger">
         <button id="btn__hamburger" type="button" class="primary-nav__hamburger hamburger hamburger-spin-backwards inactive">
             <svg viewBox="0 0 100 100" aria-hidden="true">
-            <g class="primary-nav__menu-button-burger-lines">
-                <line x1="20" y1="25" x2="80" y2="25" />
-                <line x1="20" y1="50" x2="80" y2="50" />
-                <line x1="20" y1="75" x2="80" y2="75" />
-            </g>
-            <g class="primary-nav__menu-button-cross-lines">
-                <line x1="28" y1="28" x2="72" y2="72" />
-                <line x1="28" y1="72" x2="72" y2="28" />
-            </g>
-        </svg>
+                <g class="primary-nav__menu-button-burger-lines">
+                    <line x1="20" y1="25" x2="80" y2="25" />
+                    <line x1="20" y1="50" x2="80" y2="50" />
+                    <line x1="20" y1="75" x2="80" y2="75" />
+                </g>
+                <g class="primary-nav__menu-button-cross-lines">
+                    <line x1="28" y1="28" x2="72" y2="72" />
+                    <line x1="28" y1="72" x2="72" y2="28" />
+                </g>
+            </svg>
         </button>
     </div>
     <aside>
@@ -43,85 +44,84 @@
                 EF
             </a>
             <div class="primary-nav__flex-container">
-            <ul class="primary-nav__pages">
+                <ul class="primary-nav__pages">
                     <li><a href="about.php">About</a></li>
                     <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
-                    <li><a id ="primary-nav__contact" href="index.php#contact">Contact</a></li>
+                    <li><a id="primary-nav__contact" href="index.php#contact">Contact</a></li>
                 </ul>
                 <ul class="primary-nav__socials">
                     <li>
                         <a href="https://www.linkedin.com/in/esmee-fulcher-261b3321a/" target="_blank">
-        <i class="devicon-linkedin-plain social link"></i>
+                            <i class="devicon-linkedin-plain social link"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Esmee29/" target="_blank">
                             <i class="devicon-github-original social git"></i>
                         </a>
-                        
+
                     </li>
                     <li>
                         <a href="https://www.instagram.com/esmeefdesigns/" target="_blank">
                             <i class="fa-brands fa-instagram social insta"></i>
                         </a>
-                        
+
                     </li>
                 </ul>
             </div>
         </nav>
     </aside>
-      
-            <div class="main-body" id="main">
-                <div class="header" id="header">
-                    <!--Content before waves-->
-                    <div class="inner-header">
-                    <h1 id="header1"> Esmee Fulcher</h1>
+
+    <div class="main-body" id="main">
+        <div class="header" id="header">
+            <!--Content before waves-->
+            <div class="inner-header">
+                <h1 id="header1"> Esmee Fulcher</h1>
+                <br>
+                <h2 id="header2">Web Developer</h2>
+            </div>
+            <div class="scroll-down">
+                <a href="#code" class="scroll">
+                    <i class="fa-solid fa-arrow-down footer-arrow"></i>
                     <br>
-                    <h2 id="header2">Web Developer</h2>
-                    </div>
-                    <div class="scroll-down">
-                        <a href="#code" class="scroll">
-                            <i class="fa-solid fa-arrow-down footer-arrow"></i>
-                            <br>
-                            <h4>Scroll down</h4>
-                        </a>
-                    </div>
-                    <!--Waves Container-->
-                    <div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <h4>Scroll down</h4>
+                </a>
+            </div>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                     <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
                     <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
                     </g>
-                    </svg>
-                    </div>
-                    <!--Waves end-->
-                    
-                </div>
-                <div class="page-content"><!--Everything under header -->
-                <section id="coding">
+                </svg>
+            </div>
+            <!--Waves end-->
+
+        </div>
+        <div class="page-content"><!--Everything under header -->
+            <section id="coding">
                 <div class="about" id="code">
-                        <div class="code-title">
+                    <div class="code-title">
                         <h2 class="h1">Code Examples</h2>
                     </div>
                     <div class="about" id="code">
-<div class="drop-down">
-    <a class="drop-down-button">Breakpoints <i class="fa-solid fa-angle-down"></i> </a>
-    <div id="dropdown1" class="drop-down-content-hidden">
-            <div class="section-content">
-            <p>To have a responsive websites, adaptable for all screen-sizes, breakpoints 
-                the smallest unit where screen-sizes change, are used to mark where elements need to 
-                be modified for larger or smaller screens. Below are the breakpoint mixins I set for the Netmatters Homepage project.</p>
-                <div class="container__code">
-                                <pre class="code-breaks">
+                        <div class="drop-down">
+                            <a class="drop-down-button">Breakpoints <i class="fa-solid fa-angle-down"></i> </a>
+                            <div id="dropdown1" class="drop-down-content-hidden">
+                                <div class="section-content">
+                                    <p>To have a responsive websites, adaptable for all screen-sizes, breakpoints
+                                        the smallest unit where screen-sizes change, are used to mark where elements need to
+                                        be modified for larger or smaller screens. Below are the breakpoint mixins I set for the Netmatters Homepage project.</p>
+                                    <div class="container__code">
+                                        <pre class="code-breaks">
                                                 <code>
     <span class="purple-highlight">@mixin</span> viewport(<span class="orange-highlight">$break</span>) {
 
@@ -163,9 +163,9 @@
     }  
                                                 </code>
                                             </pre>
-                                            <p>When an changes to elements are made at specific screen-sizes the viewport mixin is called in for example in the code before
-                                                at the x-large screen-size which is between 1260px and 1439px the logo element is changing height to 64px. </p>
-                                                <pre class="code-breaks">
+                                        <p>When an changes to elements are made at specific screen-sizes the viewport mixin is called in for example in the code before
+                                            at the x-large screen-size which is between 1260px and 1439px the logo element is changing height to 64px. </p>
+                                        <pre class="code-breaks">
                                                     <code>
     .logo {
         <span class="purple-highlight">@include</span> viewport(x-large) {
@@ -175,20 +175,20 @@
                                                     </code>
                                                 </pre>
 
-        </div>
-                    </div>
-                    
-    </div>
-</div>
+                                    </div>
+                                </div>
 
-<div class="drop-down">
-    <a class="drop-down-button">Javascript Array<i class="fa-solid fa-angle-down"></i> </a>
-    <div id="dropdown2" class="drop-down-content-hidden">
-            <div class="section-content">
-            <p>Below is a snippet of the code from my Javascript Array and the JavaScript function `displayRandomImage()` fetches a random image from the 'https://picsum.photos' API and displays it within the 'image-container' div on a webpage. 
-            It first converts the fetched image into a Blob object and then into a URL using `URL.createObjectURL()`. The function checks for any existing image in the container, removes it, and then creates a new image element with the fetched image URL, appending it to the container. </p>
-                <div class="container__code">
-                                <pre class="code-breaks">
+                            </div>
+                        </div>
+
+                        <div class="drop-down">
+                            <a class="drop-down-button">Javascript Array<i class="fa-solid fa-angle-down"></i> </a>
+                            <div id="dropdown2" class="drop-down-content-hidden">
+                                <div class="section-content">
+                                    <p>Below is a snippet of the code from my Javascript Array and the JavaScript function `displayRandomImage()` fetches a random image from the 'https://picsum.photos' API and displays it within the 'image-container' div on a webpage.
+                                        It first converts the fetched image into a Blob object and then into a URL using `URL.createObjectURL()`. The function checks for any existing image in the container, removes it, and then creates a new image element with the fetched image URL, appending it to the container. </p>
+                                    <div class="container__code">
+                                        <pre class="code-breaks">
                                                 <code>
 <span class="purple-highlight">function</span> displayRandomImage() {
     <span class="blue-highlight">fetch</span>(<span class="green-highlight">'https://picsum.photos/600/300'</span>)
@@ -210,10 +210,10 @@
       });
      }                                              </code>
                                                 </pre>
-        <p>The top snippet of code below calls the displayRandomImage and the function generates an image in the image-container on page loads.
-            The second snippet of code below adds an event listener to the 'generate-image' button, which calls the displayRandomImage function when clicked
-            and changes the image in the image-container.</p>
-                                                <pre class="code-breaks">
+                                        <p>The top snippet of code below calls the displayRandomImage and the function generates an image in the image-container on page loads.
+                                            The second snippet of code below adds an event listener to the 'generate-image' button, which calls the displayRandomImage function when clicked
+                                            and changes the image in the image-container.</p>
+                                        <pre class="code-breaks">
 <code>
 
 displayRandomImage();
@@ -222,20 +222,20 @@ displayRandomImage();
 </code>
                                                 </pre>
 
-        </div>
-                    </div>
-                    
-    </div>
-</div>
-<div class="drop-down">
-    <a class="drop-down-button">Database Integration for Displaying Latest Articles<i class="fa-solid fa-angle-down"></i> </a>
-    <div id="dropdown3" class="drop-down-content-hidden">
-            <div class="section-content">
-            <p>This script is designed to showcase the most recent articles from the Netmatters website on its homepage.
-                 Utilizing a database backend, it retrieves the latest articles' information, including titles, images, authors, and publication dates, and displays them on the page. 
-                 The first part connects to the database and then, using the database columns for the different parts of article information, pastes the data on the page.</p>
-                <div class="container__code">
-                                <pre class="code-breaks">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="drop-down">
+                            <a class="drop-down-button">Database Integration<i class="fa-solid fa-angle-down"></i> </a>
+                            <div id="dropdown3" class="drop-down-content-hidden">
+                                <div class="section-content">
+                                    <p>This script is designed to showcase the most recent articles from the Netmatters website on its homepage.
+                                        Utilizing a database backend, it retrieves the latest articles' information, including titles, images, authors, and publication dates, and displays them on the page.
+                                        The first part connects to the database and then, using the database columns for the different parts of article information, pastes the data on the page.</p>
+                                    <div class="container__code">
+                                        <pre class="code-breaks">
 <code>
 
 <span class="red-highlight">&lt;?php</span>
@@ -337,58 +337,58 @@ displayRandomImage();
 </code>
                                                 </pre>
 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+            </section>
+
         </div>
-                    </div>
-                    
-    </div>
-</div>               
-</section>
-                    
+
+
+
+
+
+        <footer>
+            <div class="footer">
+                <div class="scroll-container">
+                    <a href="#header" class="scroll">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <br>
+                        <h3>Back to top</h3>
+                    </a>
                 </div>
 
-                
-            
-        
+                <!--Waves Container-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+                <!--Waves end-->
 
-<footer>
-<div class="footer">
-    <div class="scroll-container">
-    <a href="#header" class="scroll">
-        <i class="fa-solid fa-arrow-up"></i>
-        <br>
-        <h3>Back to top</h3>
-    </a>
-</div>
-    
-    <!--Waves Container-->
-    <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-    </g>
-    </svg>
-    </div>
-    <!--Waves end-->
-    
-</div>
+            </div>
 
-    
-   
-</footer>
-                        
-                    
+
+
+        </footer>
+
+
     </div>
-</div>
-<script src="javaScript/main.js"></script>
+    </div>
+    <script src="javaScript/main.js"></script>
     <script src="javaScript/navSidebar.js"></script>
     <script src="javaScript/form-validation.js"></script>
     <script src="javaScript/dropdown.js"></script>
 </body>
+
 </html>
