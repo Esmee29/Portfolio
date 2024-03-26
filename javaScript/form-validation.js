@@ -69,9 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
             return; // Stop further validation if there are errors
         }
 
-        // If no validation errors, display success message //
-        displayValidationMessage('Form submitted successfully!', 'success-msg');
-        event.preventDefault(); // Prevent form submission since we're handling it here
+        // If no validation errors, submit the form //
+        // You can choose to uncomment this line to submit the form programmatically
+        // contactForm.submit();
+
+        // Alternatively, if you want to submit the form via AJAX, you can do so here
+        // Refer to appropriate AJAX submission code based on your requirements
     });
 
     // Function to display validation messages //
