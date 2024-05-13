@@ -13,14 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sending the email
     $phpmailer = new PHPMailer\PHPMailer\PHPMailer(); // Directly referencing PHPMailer class
     $phpmailer->isSMTP();
-    $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
+    $phpmailer->Host = 'smtp.hostinger.com';
     $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 2525;
-    $phpmailer->Username = '02b8b11cad76bf';
-    $phpmailer->Password = '6e928a183b4681';
+    $phpmailer->Port = 587;
+    $phpmailer->Username = 'contact@esmeefulcher.co.uk';
+    $phpmailer->Password = 'WebsiteEmail29!';
 
     $phpmailer->setFrom($email, $firstName . ' ' . $lastName); // Fixed concatenation
-    $phpmailer->addAddress('esmeefulcherdesign@gmail.com'); // Add a recipient
+    $phpmailer->addAddress('contact@esmeefulcher.co.uk', 'Esmee'); // Add a recipient
 
     $phpmailer->Subject = $subject;
     $phpmailer->Body = $firstName . ' ' . $lastName . ' ' . $message;
@@ -60,4 +60,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button class="button-fill-submit" type="submit" id="submit-btn">Submit</button>
     </form>
 </div>
-
