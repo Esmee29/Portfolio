@@ -1,4 +1,9 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 $successMessage = ''; // Initialize success message variable
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require_once __DIR__ . '/../vendor/autoload.php'; // Updated require_once statement
 
     // Sending the email
-    $phpmailer = new PHPMailer\PHPMailer\PHPMailer(); // Directly referencing PHPMailer class
+    $phpmailer = new PHPMailer();
     $phpmailer->isSMTP();
     $phpmailer->Host = 'live.smtp.mailtrap.io';
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 587;
     $phpmailer->Username = 'api';
-    $phpmailer->Password = '********6aef';
+    $phpmailer->Password = '4a2d9db46dffb3738c0de064da026aef';
 
     $phpmailer->setFrom($email, $firstName . ' ' . $lastName); // Fixed concatenation
     $phpmailer->addAddress('esmeefulcherdesign@gmail.com'); // Add a recipient
