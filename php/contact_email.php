@@ -1,4 +1,11 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'path/to/PHPMailer/src/Exception.php';
+require 'path/to/PHPMailer/src/PHPMailer.php';
+require 'path/to/PHPMailer/src/SMTP.php';
 $successMessage = ''; // Initialize success message variable
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -8,30 +15,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST['subject'] ?? '';
     $message = $_POST['message'] ?? '';
 
-    require_once __DIR__ . '/../vendor/autoload.php'; // Updated require_once statement
+    require 'vendor/autoload.php';
+}
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
-    // Sending the email
-    $phpmailer = new PHPMailer\PHPMailer\PHPMailer(); // Directly referencing PHPMailer class
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'smtp.hostinger.com';
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 587;
-    $phpmailer->Username = 'contact@esmeefulcher.co.uk';
-    $phpmailer->Password = 'WebsiteEmail29!';
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'contact@esmeefulcher.co.uk';                     //SMTP username
+    $mail->Password   = 'WebsiteEmail29!';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $phpmailer->setFrom($email, $firstName . ' ' . $lastName); // Fixed concatenation
-    $phpmailer->addAddress('contact@esmeefulcher.co.uk', 'Esmee'); // Add a recipient
+    //Recipients
+    $mail->setFrom($email, $firstName . ' ' . $lastName);
+    $mail->addAddress('contact@esmeefulcher.co.uk', 'Esmee');;
 
-    $phpmailer->Subject = $subject;
-    $phpmailer->Body = $firstName . ' ' . $lastName . ' ' . $message;
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = $subject;
+    $mail->Body    = $firstName . ' ' . $lastName . ' ' . $message;
 
-    try {
-        $phpmailer->send();
-        $successMessage = 'Message sent successfully.';
-    } catch (Exception $e) {
-        error_log('Message could not be sent. Mailer Error: ' . $phpmailer->ErrorInfo);
-        $errorMessage = 'Message could not be sent. Please try again later.';
-    }
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
 
