@@ -1,41 +1,35 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
-$successMessage = ''; // Initialize success message variable
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST['first-name'] ?? '';
-    $lastName = $_POST['last-name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $subject = $_POST['subject'] ?? '';
-    $message = $_POST['message'] ?? '';
-
-    require_once __DIR__ . '/../vendor/autoload.php'; // Updated require_once statement
-
-    // Sending the email
-    $phpmailer = new PHPMailer();
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'live.smtp.mailtrap.io';
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 587;
-    $phpmailer->Username = 'api';
-    $phpmailer->Password = '4a2d9db46dffb3738c0de064da026aef';
-
-    $phpmailer->setFrom($email, $firstName . ' ' . $lastName); // Fixed concatenation
-    $phpmailer->addAddress('esmeefulcherdesign@gmail.com'); // Add a recipient
-
-    $phpmailer->Subject = $subject;
-    $phpmailer->Body = $firstName . ' ' . $lastName . ' ' . $message;
-
-    try {
-        $phpmailer->send();
-        $successMessage = 'Message sent successfully.';
-    } catch (Exception $e) {
-        error_log('Message could not be sent. Mailer Error: ' . $phpmailer->ErrorInfo);
-        $errorMessage = 'Message could not be sent. Please try again later.';
+$msg = '';
+if (array_key_exists('email', $_POST)) {
+    require 'vendor/autoload.php';
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.hostinger.com';
+    $mail->Port = 587;
+    $mail->SMTPDebug = 0;
+    $mail->SMTPAuth = true;
+    $mail->Username = 'contact@esmeefulcher.co.uk';
+    $mail->Password = 'My$tr0ngPa55w0rd!';
+    $mail->setFrom('contact@esmeefulcher.co.uk', 'Esmee Fulcher');
+    $mail->addAddress($_POST['email'], $_POST['name']);
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+        $mail->Subject =   $_POST['subject'] ?? '';
+        $mail->isHTML(false);
+        $mail->Body = <<<EOT
+            Email: {$_POST['email']}
+            Name: {$_POST['name']}
+            Message: {$_POST['message']}
+EOT;
+        if (!$mail->send()) {
+            $msg = 'Sorry, something went wrong. Please try again later.';
+        } else {
+            $msg = 'Message sent! Thanks for contacting us.';
+        }
+    } else {
+        $msg = 'Share it with us!';
     }
 }
 ?>
