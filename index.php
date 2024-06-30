@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="javaScript/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="javaScript/slick-1.8.1/slick/slick-theme.css">
     <script src="https://kit.fontawesome.com/356a53e20f.js" crossorigin="anonymous"></script>
 
 
@@ -46,7 +48,12 @@
             <div class="primary-nav__flex-container">
                 <ul class="primary-nav__pages">
                     <li><a href="about.php">About</a></li>
-                    <li><a id="primary-nav__portfolio" href="#projects">Portfolio</a></li>
+                    <li class="dropdown"><a id="primary-nav__portfolio" href="#projects">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="design.php">Design</a>
+                            <a href="development.php">Development</a>
+                        </div>
+                    </li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
                     <li><a id="primary-nav__contact" href="#contact">Contact</a></li>
@@ -341,10 +348,12 @@
 
 
 
-
+    <script src="javaScript/slick-1.8.1/jquery-3.7.1.min.js"></script>
+    <script src="javaScript/slick-1.8.1/slick/slick.min.js"></script>
     <script src="javaScript/main.js"></script>
     <script src="javaScript/navSidebar.js"></script>
     <script src="javaScript/form-validation.js"></script>
+    <script src="javaScript/slide-show.js"></script>
 </body>
 
 </html>
