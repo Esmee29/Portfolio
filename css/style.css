@@ -1483,6 +1483,12 @@ button:nth-child {
   }
 }
 
+.h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 36px;
+}
+
 @media (min-width: 993px) {
   .grid {
     display: grid;
@@ -1579,6 +1585,30 @@ button:nth-child {
 
 .empty {
   padding-bottom: 200px;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .project-links {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+.project-links a {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.project-links a:hover {
+  color: #185ad4;
+  text-decoration: underline !important;
 }
 
 .content-grid {

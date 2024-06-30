@@ -46,10 +46,34 @@
             <div class="primary-nav__flex-container">
                 <ul class="primary-nav__pages">
                     <li><a href="about.php">About</a></li>
-                    <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
+                    <li class="dropdown"><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="design.php#design-projects">Design</a>
+                            <a href="dev.php#dev-projects">Development</a>
+                        </div>
+                    </li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
-                    <li><a id="primary-nav__contact" href="index.php#contact">Contact</a></li>
+                    <li><a id="primary-nav__contact" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="primary-nav__socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/esmee-fulcher-261b3321a/" target="_blank">
+                            <i class="devicon-linkedin-plain social link"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Esmee29/" target="_blank">
+                            <i class="devicon-github-original social git"></i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/esmeefdesigns/" target="_blank">
+                            <i class="fa-brands fa-instagram social insta"></i>
+                        </a>
+
+                    </li>
                 </ul>
                 <ul class="primary-nav__socials">
                     <li>

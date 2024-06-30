@@ -46,10 +46,34 @@
             <div class="primary-nav__flex-container">
                 <ul class="primary-nav__pages">
                     <li><a href="about.php">About</a></li>
-                    <li><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a></li>
+                    <li class="dropdown"><a id="primary-nav__portfolio" href="index.php#projects">Portfolio</a>
+                        <div class="dropdown-content">
+                            <a href="design.php#design-projects">Design</a>
+                            <a href="dev.php#dev-projects">Development</a>
+                        </div>
+                    </li>
                     <li><a href="code.php">Coding Examples</a></li>
                     <li><a href="course.php">SCS Scheme</a></li>
-                    <li><a id="primary-nav__contact" href="index.php#contact">Contact</a></li>
+                    <li><a id="primary-nav__contact" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="primary-nav__socials">
+                    <li>
+                        <a href="https://www.linkedin.com/in/esmee-fulcher-261b3321a/" target="_blank">
+                            <i class="devicon-linkedin-plain social link"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Esmee29/" target="_blank">
+                            <i class="devicon-github-original social git"></i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/esmeefdesigns/" target="_blank">
+                            <i class="fa-brands fa-instagram social insta"></i>
+                        </a>
+
+                    </li>
                 </ul>
                 <ul class="primary-nav__socials">
                     <li>
@@ -112,12 +136,12 @@
                     <h2 class="h1">About Me</h2>
                 </div>
                 <div class="about-container">
-                    <h3>Graphic Designer turned Web Developer <i class="fa-solid fa-palette about-icons"></i><i class="fa-solid fa-code about-icons"></i></h3>
-                    <p>Hey there! I'm Esmee, a creative individual with a passion for bringing ideas and concepts to life. I graduated from Nottingham Trent University in 2023 after studying Graphic Design and achieving a 2.1 degree.<i class="fa-solid fa-graduation-cap about-icons"></i><i class="fa-solid fa-palette about-icons"></i></p>
+                    <h3>Graphic Designer and Web Developer <i class="fa-solid fa-palette about-icons"></i><i class="fa-solid fa-code about-icons"></i></h3>
+                    <p>Hey there! I'm Esmee, a creative individual deeply passionate about design and constantly striving to hone my skills, especially in digital and UX/UI design. I graduated from Nottingham Trent University in 2023 with a 2.1 degree in Graphic Design. <i class="fa-solid fa-graduation-cap about-icons"></i><i class="fa-solid fa-palette about-icons"></i></p>
                     <p> During my university years, I developed a keen interest in crafting visually appealing websites and user interfaces. The process of translating designs into functioning code ignited a new spark within me, propelling me into the realm of web development.<i class="fa-solid fa-mobile-screen-button about-icons"></i><i class="fa-solid fa-laptop about-icons"></i></p>
-                    <p>Recently, I completed an award-winning, intensive, 40-hour-per-week technical training program in web development, which further enhanced my skill set. This experience reinforced my passion for crafting visually appealing websites and user interfaces, driving my ambition to excel in web development.<i class="fa-solid fa-laptop-code about-icons"></i></p>
+                    <p>Recently, I completed an award-winning, intensive, 40-hour-per-week technical training program in web development, which further enhanced my skill set. This experience reinforced my passion for creating visually compelling and user-friendly digital experiences.<i class="fa-solid fa-laptop-code about-icons"></i></p>
 
-                    <p>Now, I am enthusiastically honing my skills in web development, eager to transform my design concepts into functional and interactive websites and apps. While I'm primarily interested in front-end development as a visual person, I am also studying to become a full-stack developer to gain a comprehensive understanding of all areas of development. My ultimate goal is to seamlessly merge the realms of design and development, creating websites and user interfaces that not only look visually appealing but also function flawlessly.
+                    <p>Now, I am enthusiastically honing both my design and developer skills, eager to transform my design concepts into functional and interactive websites and apps. I have been learning front-end and back-end development to gain a comprehensive understanding of all areas of development. My goal is to seamlessly merge the realms of design and development, crafting websites and user interfaces that are not only visually appealing but also function flawlessly.d
                         <i class="fa-solid fa-code about-icons"></i>
                     </p>
                 </div>
@@ -162,6 +186,12 @@
                                 <i class="devicon-javascript-plain symbol"></i>
                             </div>
                             <h5>JavaScript</h5>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="devicon-react-original symbol"></i>
+                            </div>
+                            <h5>React</h5>
                         </li>
                         <li>
                             <div class="icon">
