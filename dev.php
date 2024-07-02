@@ -193,7 +193,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="Images/JS-Array.webp" class="image-card" alt="JavaScript-Array project">
+                        <img src="Images\Array.png" class="image-card" alt="JavaScript-Array project">
                         <div class="card__content">
                             <p class="card__title">JavaScript Array</p>
                             <p class="card__description">As part of the Scion Coalition Scheme assessment with Netmatters,
@@ -220,6 +220,33 @@
                                     <div class="icon">
                                         <i class="devicon-javascript-plain symbol"></i>
                                 </li>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img src="Images\weather-app.png" class="image-card" alt="Weather React project">
+                        <div class="card__content">
+                            <p class="card__title">React Weather App</p>
+                            <p class="card__description"> A responsive React application providing real-time weather updates using the OpenWeatherMap API</p>
+                            <div class="card__buttons">
+                                <a href="https://esmee-fulcher.netmatters-scs.co.uk/Array/" target="_blank"><button class="card__button">View Project</button></a>
+                                <a href="https://github.com/Esmee29/JavaScript-Array" target="_blank"><button class="card__button secondary">View Repository</button></a>
+                            </div>
+                            <h4 class="tools-title">Technologies</h4>
+                            <ul class="projects-block-tools">
+                                <li>
+                                    <div class="icon">
+                                        <i class="devicon-react-original symbol"></i>
+                                    </div>
+                                <li>
+                                    <div class="icon">
+                                        <i class="devicon-css3-plain symbol"></i>
+                                    </div>
+                                <li>
+                                    <div class="icon">
+                                        <i class="devicon-vitejs-plain symbol"></i>
+                                    </div>
+
                         </div>
                         </ul>
                     </div>

@@ -120,7 +120,9 @@
                 <div class="index-title">
                     <h2 class="h1">Portfolio</h2>
                 </div>
-                <h2 class="h2">Design Projects</h2>
+                <div class="project-links">
+                    <h2 class="h2"> Design Projects</h2><a href="design.php#design-projects">View all</a>
+                </div>
 
                 <div class="project-grid">
 
