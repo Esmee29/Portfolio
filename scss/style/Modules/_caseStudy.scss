@@ -1,0 +1,21 @@
+.cover-img{
+    width:100%;
+}
+
+.case-grid{
+        display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem;
+}
+
+.case-study{
+    width: 400px;
+}
+
+.case-img{
+    width: 100%;
+    object-fit: cover;
+}

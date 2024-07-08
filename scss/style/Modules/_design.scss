@@ -10,21 +10,18 @@
     perspective: 1000px;
     box-shadow: 0 0 0 5px #185ad4;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    height: 400px;
+    height: 300px;
 }
   .card{
     @include viewport(small) {
       width: 90vw;
-      height: 460px;
-    }
-    @include viewport(medium) {
-        width: 500px;
+      height: 420px;
     }
     @include viewport(x-large) {
-      height: 420px;
+      height: 300px;
   }
     @include viewport(xx-large) {
-        height: 450px;
+        height: 300px;
     }
   }
   .projects-block-tools{
@@ -41,6 +38,8 @@
 }
 .image-card-app{
     height: 100%;
+    width: 100vw;
+    
 }
   .image-array{
     font-size: 40px;

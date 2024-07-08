@@ -11,6 +11,8 @@
                 <p class="card__title">Supersonic</p>
                 <p class="card__description">Supersonic is an conceptual app designed for music enthusiasts, guaranteeing they never miss out on the concerts they desire. Presently in the form of a Figma prototype,
                     my goal is to develop it into a fully functional coded app.</p>
+                <br>
+                <a href="Supersonic.php"><button class="card__button">View Case Study</button></a>
 
             </div>
 
@@ -20,7 +22,8 @@
             <div class="card__content">
                 <p class="card__title">Forager</p>
                 <p class="card__description">Forager: Conceptual app empowering local exploration and foraging. While it currently exists as a Figma prototype, my objective is to transform it into a fully developed coded app.</p>
-
+                <br>
+                <a href="Forager.php"><button class="card__button">View Case Study</button></a>
             </div>
         </div>
         <div class="card">
@@ -28,7 +31,8 @@
             <div class="card__content">
                 <p class="card__title">P.O.W. Story</p>
                 <p class="card__description">During the Second World War, Charles Bacon, my Great-Grandfather, was a Prison of war in Italy, Germany and Poland and this project tells his journey and story as a POW. </p>
-
+                <br>
+                <a href="POW.php"><button class="card__button">View Case Study</button></a>
             </div>
 
         </div>
@@ -37,9 +41,11 @@
             <div class="card__content">
                 <p class="card__title">Parenting Pod</p>
                 <p class="card__description">An app concept tailored for parents of young children, with podcasts, sleep aid, and meditations for mental health support, day or night. Currently an Adobe XD prototype, aiming for a fully developed app.</p>
+                <br>
+                <a href="ParentingPod.php"><button class="card__button">View Case Study</button></a>
             </div>
-
         </div>
+
     </div>
 
 </section>
