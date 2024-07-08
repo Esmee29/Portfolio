@@ -45,7 +45,24 @@
                 <a href="ParentingPod.php"><button class="card__button">View Case Study</button></a>
             </div>
         </div>
-
+        <div class="card">
+            <img src="Images\Kaleidoscope-1.png" class="image-card-app" alt="Kaleidoscope project">
+            <div class="card__content">
+                <p class="card__title">Kaleidoscope</p>
+                <p class="card__description">Kaleidoscope is a Netflix TV show I have created a title sequence focusing on the characters but also colour which is an important element of the show.</p>
+                <br>
+                <a href="Kaleidoscope.php" target="_blank"><button class="card__button">View Case Study</button></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images\set.png" class="image-card-app" alt="Parenting Pod app project">
+            <div class="card__content">
+                <p class="card__title">Kefalonia Craft Spirits</p>
+                <p class="card__description">A branding project showcasing a curated collection of premium Limoncello, Ouzo, and Metaxa, capturing the essence of Kefalonia's rich heritage and natural beauty through artisanal craftsmanship and sustainable practices.</p>
+                <br>
+                <a href="#" target="_blank"><button class="card__button">View Case Study</button></a>
+            </div>
+        </div>
     </div>
 
 </section>

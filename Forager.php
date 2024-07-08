@@ -8,7 +8,7 @@ include 'php/inc/head.php';
     include 'php/inc/sidebar.php';
     ?>
     <div class="main-body" id="main">
-
+        <?php include 'php/inc/header.php'; ?>
         <div class="page-content"><!--Everything under header -->
             <?php include 'php/pages/case-studies/forager.php'; ?>
         </div>
