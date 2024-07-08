@@ -31,7 +31,7 @@
         </div>
 
 
-        <img src="Images\Screenshot 2024-07-08 115108.png" class="case-img" alt="Forager app project">
+        <img src="Images\Screenshot 2024-07-08 115108.png" class="cover-img" alt="Forager app project">
 
 
     </div>

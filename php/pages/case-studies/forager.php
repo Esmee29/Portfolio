@@ -31,7 +31,7 @@
         </div>
 
 
-        <img src="Images\Frame+1+(4).png" class="case-img" alt="Supersonic app project">
+        <img src="Images\Frame+1+(4).png" class="cover-img" alt="Supersonic app project">
 
 
     </div>

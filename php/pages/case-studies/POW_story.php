@@ -35,7 +35,7 @@
         <div class="case-study">
             <img src="Images\Fulcher_Esmee_1.jpg" class="case-img" alt="P.O.W Story project Kit Bag">
         </div>
-        <img src="Images\Fulcher_Esmee_3.jpg" class="case-img" alt="P.O.W Story project">
+        <img src="Images\Fulcher_Esmee_3.jpg" class="cover-img" alt="P.O.W Story project">
 
 
     </div>

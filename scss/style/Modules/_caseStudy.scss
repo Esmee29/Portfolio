@@ -1,5 +1,24 @@
 .cover-img{
-    width:100%;
+    @include viewport(small) {
+        width: 90%;
+        margin-top: 20px;
+    }
+      @include viewport(medium) {
+        width: 600px;
+        margin-top: 20px;
+    }
+    @include viewport(large) {
+        width: 700px;
+        margin-top: 20px;
+    }
+      @include viewport(x-large) {
+        width: 800px;
+        margin-top: 20px;
+    }
+      @include viewport(xx-large) {
+        width: 1000px;
+        margin-top: 30px;
+      }
 }
 
 .case-grid{
